@@ -1,0 +1,481 @@
+{
+  "puzzles": [
+    {
+      "title": "Animals and colors (1)",
+      "themeSlug": "animals",
+      "levelCode": "A1",
+      "languageCode": "en",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": ["nouns", "adjectives", "verb to be", "prepositions"],
+      "categories": [
+        { "label": "Animals", "emoji": "🐾", "order": 0 },
+        { "label": "Colors", "emoji": "🎨", "order": 1 },
+        { "label": "Habitats", "emoji": "🌍", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "cat", "emoji": "🐱" },
+        { "categoryIndex": 0, "label": "dog", "emoji": "🐶" },
+        { "categoryIndex": 0, "label": "rabbit", "emoji": "🐰" },
+        { "categoryIndex": 1, "label": "red", "emoji": "🔴" },
+        { "categoryIndex": 1, "label": "yellow", "emoji": "🟡" },
+        { "categoryIndex": 1, "label": "purple", "emoji": "🟣" },
+        { "categoryIndex": 2, "label": "house", "emoji": "🏠" },
+        { "categoryIndex": 2, "label": "tree", "emoji": "🌳" },
+        { "categoryIndex": 2, "label": "water", "emoji": "💧" }
+      ],
+      "clues": [
+        { "text": "🐱 The cat is not red.", "clueType": "negative" },
+        { "text": "🐱 The cat is not purple.", "clueType": "negative" },
+        {
+          "text": "🟡 The yellow animal is in the tree.",
+          "clueType": "relational"
+        },
+        {
+          "text": "🐰 The rabbit is not in the water.",
+          "clueType": "negative"
+        },
+        {
+          "text": "🔴 The red animal is not in the house.",
+          "clueType": "negative"
+        }
+      ],
+      "solution": [
+        { "itemLabels": ["cat", "yellow", "tree"], "value": "YES" },
+        { "itemLabels": ["dog", "red", "water"], "value": "YES" },
+        { "itemLabels": ["rabbit", "purple", "house"], "value": "YES" }
+      ],
+      "grammarNote": "Adjectives follow 'to be' directly: 'The cat is yellow.' Prepositions of place follow 'is': 'The cat is in the tree.' Both patterns use the same verb."
+    },
+    {
+      "title": "Animals and colors (2)",
+      "themeSlug": "animals",
+      "levelCode": "A1",
+      "languageCode": "en",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": ["nouns", "adjectives", "verb to be", "prepositions"],
+      "categories": [
+        { "label": "Animals", "emoji": "🐾", "order": 0 },
+        { "label": "Colors", "emoji": "🎨", "order": 1 },
+        { "label": "Habitats", "emoji": "🌍", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "horse", "emoji": "🐴" },
+        { "categoryIndex": 0, "label": "bear", "emoji": "🐻" },
+        { "categoryIndex": 0, "label": "frog", "emoji": "🐸" },
+        { "categoryIndex": 1, "label": "blue", "emoji": "🔵" },
+        { "categoryIndex": 1, "label": "orange", "emoji": "🟠" },
+        { "categoryIndex": 1, "label": "brown", "emoji": "🟤" },
+        { "categoryIndex": 2, "label": "ocean", "emoji": "🌊" },
+        { "categoryIndex": 2, "label": "cave", "emoji": "🪨" },
+        { "categoryIndex": 2, "label": "forest", "emoji": "🌲" }
+      ],
+      "clues": [
+        { "text": "🐴 The horse is not orange.", "clueType": "negative" },
+        { "text": "🐴 The horse is not brown.", "clueType": "negative" },
+        { "text": "🐸 The frog is not in the cave.", "clueType": "negative" },
+        {
+          "text": "🟤 The brown animal lives in the cave.",
+          "clueType": "relational"
+        },
+        {
+          "text": "🌊 The animal in the ocean is not brown.",
+          "clueType": "negative"
+        }
+      ],
+      "solution": [
+        { "itemLabels": ["horse", "blue", "ocean"], "value": "YES" },
+        { "itemLabels": ["bear", "brown", "cave"], "value": "YES" },
+        { "itemLabels": ["frog", "orange", "forest"], "value": "YES" }
+      ],
+      "grammarNote": "'Orange' and 'brown' are adjectives in English. They follow 'to be' directly: 'The frog is orange.' No article is used before the color."
+    },
+    {
+      "title": "Animals and colors (3)",
+      "themeSlug": "animals",
+      "levelCode": "A1",
+      "languageCode": "en",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": ["nouns", "adjectives", "verb to be", "prepositions"],
+      "categories": [
+        { "label": "Animals", "emoji": "🐾", "order": 0 },
+        { "label": "Colors", "emoji": "🎨", "order": 1 },
+        { "label": "Habitats", "emoji": "🌍", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "dog", "emoji": "🐶" },
+        { "categoryIndex": 0, "label": "bear", "emoji": "🐻" },
+        { "categoryIndex": 0, "label": "cat", "emoji": "🐱" },
+        { "categoryIndex": 1, "label": "green", "emoji": "🟢" },
+        { "categoryIndex": 1, "label": "pink", "emoji": "🩷" },
+        { "categoryIndex": 1, "label": "black", "emoji": "⬛" },
+        { "categoryIndex": 2, "label": "sky", "emoji": "☁️" },
+        { "categoryIndex": 2, "label": "farm", "emoji": "🌾" },
+        { "categoryIndex": 2, "label": "pond", "emoji": "🪷" }
+      ],
+      "clues": [
+        { "text": "🐱 The cat is not pink.", "clueType": "negative" },
+        { "text": "🐱 The cat is not black.", "clueType": "negative" },
+        { "text": "🐶 The dog is black.", "clueType": "positive" },
+        { "text": "🐶 The dog is not in the sky.", "clueType": "negative" },
+        {
+          "text": "⬛ The black animal lives on a farm.",
+          "clueType": "relational"
+        },
+        {
+          "text": "🩷 The pink animal is not on a farm.",
+          "clueType": "negative"
+        }
+      ],
+      "solution": [
+        { "itemLabels": ["dog", "black", "farm"], "value": "YES" },
+        { "itemLabels": ["bear", "pink", "pond"], "value": "YES" },
+        { "itemLabels": ["cat", "green", "sky"], "value": "YES" }
+      ],
+      "grammarNote": "Word order with 'to be': subject + is/is not + adjective or place. 'The cat is green.' 'The dog is not in the sky.' Never change this order."
+    },
+    {
+      "title": "Animals and habitats (1)",
+      "themeSlug": "animals",
+      "levelCode": "A1",
+      "languageCode": "en",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": ["nouns", "verb to be", "prepositions", "adjectives"],
+      "categories": [
+        { "label": "Animals", "emoji": "🐾", "order": 0 },
+        { "label": "Habitats", "emoji": "🌍", "order": 1 },
+        { "label": "Colors", "emoji": "🎨", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "fish", "emoji": "🐟" },
+        { "categoryIndex": 0, "label": "bird", "emoji": "🐦" },
+        { "categoryIndex": 0, "label": "frog", "emoji": "🐸" },
+        { "categoryIndex": 1, "label": "house", "emoji": "🏠" },
+        { "categoryIndex": 1, "label": "tree", "emoji": "🌳" },
+        { "categoryIndex": 1, "label": "water", "emoji": "💧" },
+        { "categoryIndex": 2, "label": "red", "emoji": "🔴" },
+        { "categoryIndex": 2, "label": "yellow", "emoji": "🟡" },
+        { "categoryIndex": 2, "label": "blue", "emoji": "🔵" }
+      ],
+      "clues": [
+        { "text": "🐦 The bird is in the tree.", "clueType": "positive" },
+        { "text": "🐸 The frog is not in the water.", "clueType": "negative" },
+        {
+          "text": "🔵 The blue animal is in the water.",
+          "clueType": "relational"
+        },
+        { "text": "🐦 The bird is not red.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "itemLabels": ["fish", "water", "blue"], "value": "YES" },
+        { "itemLabels": ["bird", "tree", "yellow"], "value": "YES" },
+        { "itemLabels": ["frog", "house", "red"], "value": "YES" }
+      ],
+      "grammarNote": "Use 'in' with enclosed or surrounding spaces: 'The fish is in the water.' 'The bird is in the tree.' The preposition 'in' shows the animal is surrounded by that place."
+    },
+    {
+      "title": "Animals and habitats (2)",
+      "themeSlug": "animals",
+      "levelCode": "A1",
+      "languageCode": "en",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": ["nouns", "verb to be", "prepositions", "adjectives"],
+      "categories": [
+        { "label": "Animals", "emoji": "🐾", "order": 0 },
+        { "label": "Habitats", "emoji": "🌍", "order": 1 },
+        { "label": "Colors", "emoji": "🎨", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "rabbit", "emoji": "🐰" },
+        { "categoryIndex": 0, "label": "snake", "emoji": "🐍" },
+        { "categoryIndex": 0, "label": "bear", "emoji": "🐻" },
+        { "categoryIndex": 1, "label": "house", "emoji": "🏠" },
+        { "categoryIndex": 1, "label": "tree", "emoji": "🌳" },
+        { "categoryIndex": 1, "label": "water", "emoji": "💧" },
+        { "categoryIndex": 2, "label": "orange", "emoji": "🟠" },
+        { "categoryIndex": 2, "label": "white", "emoji": "⬜" },
+        { "categoryIndex": 2, "label": "black", "emoji": "⬛" }
+      ],
+      "clues": [
+        { "text": "🐍 The snake is in the water.", "clueType": "positive" },
+        { "text": "🐰 The rabbit is at home.", "clueType": "positive" },
+        { "text": "🐰 The rabbit is orange.", "clueType": "positive" },
+        {
+          "text": "⬜ The white animal is in the water.",
+          "clueType": "relational"
+        },
+        { "text": "🐰 The rabbit is not white.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "itemLabels": ["rabbit", "house", "orange"], "value": "YES" },
+        { "itemLabels": ["snake", "water", "white"], "value": "YES" },
+        { "itemLabels": ["bear", "tree", "black"], "value": "YES" }
+      ],
+      "grammarNote": "'At home' is a fixed English expression — we say 'at home', not 'in the home', when talking about where someone lives or stays."
+    },
+    {
+      "title": "Animals and habitats (3)",
+      "themeSlug": "animals",
+      "levelCode": "A1",
+      "languageCode": "en",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": ["nouns", "verb to be", "prepositions", "adjectives"],
+      "categories": [
+        { "label": "Animals", "emoji": "🐾", "order": 0 },
+        { "label": "Habitats", "emoji": "🌍", "order": 1 },
+        { "label": "Colors", "emoji": "🎨", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "bird", "emoji": "🐦" },
+        { "categoryIndex": 0, "label": "fish", "emoji": "🐟" },
+        { "categoryIndex": 0, "label": "snake", "emoji": "🐍" },
+        { "categoryIndex": 1, "label": "house", "emoji": "🏠" },
+        { "categoryIndex": 1, "label": "tree", "emoji": "🌳" },
+        { "categoryIndex": 1, "label": "water", "emoji": "💧" },
+        { "categoryIndex": 2, "label": "pink", "emoji": "🩷" },
+        { "categoryIndex": 2, "label": "brown", "emoji": "🟤" },
+        { "categoryIndex": 2, "label": "green", "emoji": "🟢" }
+      ],
+      "clues": [
+        { "text": "🐍 The snake is not in the water.", "clueType": "negative" },
+        { "text": "🐍 The snake is not at home.", "clueType": "negative" },
+        {
+          "text": "🟤 The brown animal is not at home.",
+          "clueType": "negative"
+        },
+        { "text": "🐟 The fish is green.", "clueType": "positive" },
+        { "text": "🩷 The pink animal is at home.", "clueType": "relational" }
+      ],
+      "solution": [
+        { "itemLabels": ["bird", "house", "pink"], "value": "YES" },
+        { "itemLabels": ["fish", "water", "green"], "value": "YES" },
+        { "itemLabels": ["snake", "tree", "brown"], "value": "YES" }
+      ],
+      "grammarNote": "Prepositions of place tell us where something is. 'In' is used for spaces that surround: 'in the water', 'in the tree'. 'At' is used for specific places: 'at home'."
+    },
+    {
+      "title": "Family members and pets (1)",
+      "themeSlug": "family-members",
+      "levelCode": "A1",
+      "languageCode": "en",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": [
+        "nouns",
+        "verb to have",
+        "possessive pronouns",
+        "adjectives"
+      ],
+      "categories": [
+        { "label": "Family", "emoji": "👨‍👩‍👧", "order": 0 },
+        { "label": "Pets", "emoji": "🐾", "order": 1 },
+        { "label": "Colors", "emoji": "🎨", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "mom", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "dad", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "grandma", "emoji": "👵" },
+        { "categoryIndex": 1, "label": "cat", "emoji": "🐱" },
+        { "categoryIndex": 1, "label": "dog", "emoji": "🐶" },
+        { "categoryIndex": 1, "label": "bird", "emoji": "🐦" },
+        { "categoryIndex": 2, "label": "red", "emoji": "🔴" },
+        { "categoryIndex": 2, "label": "blue", "emoji": "🔵" },
+        { "categoryIndex": 2, "label": "green", "emoji": "🟢" }
+      ],
+      "clues": [
+        { "text": "👩 Mom has a bird.", "clueType": "positive" },
+        { "text": "👨 His pet is not a dog.", "clueType": "negative" },
+        { "text": "🔵 The blue pet is a bird.", "clueType": "relational" },
+        { "text": "👴 Grandma's pet is not green.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "itemLabels": ["mom", "bird", "blue"], "value": "YES" },
+        { "itemLabels": ["dad", "cat", "green"], "value": "YES" },
+        { "itemLabels": ["grandma", "dog", "red"], "value": "YES" }
+      ],
+      "grammarNote": "Use 'has' (not 'have') with he, she, or a name: 'Mom has a bird.' The possessive pronoun 'his' replaces a male name: 'His pet is not a dog' means 'Dad's pet is not a dog.'"
+    },
+    {
+      "title": "Family members and pets (2)",
+      "themeSlug": "family-members",
+      "levelCode": "A1",
+      "languageCode": "en",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": [
+        "nouns",
+        "verb to have",
+        "possessive pronouns",
+        "adjectives"
+      ],
+      "categories": [
+        { "label": "Family", "emoji": "👨‍👩‍👧", "order": 0 },
+        { "label": "Pets", "emoji": "🐾", "order": 1 },
+        { "label": "Colors", "emoji": "🎨", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "mom", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "grandpa", "emoji": "👴" },
+        { "categoryIndex": 0, "label": "brother", "emoji": "👦" },
+        { "categoryIndex": 1, "label": "cat", "emoji": "🐱" },
+        { "categoryIndex": 1, "label": "dog", "emoji": "🐶" },
+        { "categoryIndex": 1, "label": "bird", "emoji": "🐦" },
+        { "categoryIndex": 2, "label": "pink", "emoji": "🩷" },
+        { "categoryIndex": 2, "label": "yellow", "emoji": "🟡" },
+        { "categoryIndex": 2, "label": "purple", "emoji": "🟣" }
+      ],
+      "clues": [
+        { "text": "👴 Grandpa has a cat.", "clueType": "positive" },
+        { "text": "👩 Her pet is not a bird.", "clueType": "negative" },
+        { "text": "🟣 The purple pet is a cat.", "clueType": "relational" },
+        { "text": "👦 His pet is not yellow.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "itemLabels": ["mom", "dog", "yellow"], "value": "YES" },
+        { "itemLabels": ["grandpa", "cat", "purple"], "value": "YES" },
+        { "itemLabels": ["brother", "bird", "pink"], "value": "YES" }
+      ],
+      "grammarNote": "The possessive pronoun 'her' replaces a female name: 'Her pet is not a bird' means 'Mom's pet is not a bird.' Use 'his' for males and 'her' for females."
+    },
+    {
+      "title": "Family members and pets (3)",
+      "themeSlug": "family-members",
+      "levelCode": "A1",
+      "languageCode": "en",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": [
+        "nouns",
+        "verb to have",
+        "possessive pronouns",
+        "adjectives"
+      ],
+      "categories": [
+        { "label": "Family", "emoji": "👨‍👩‍👧", "order": 0 },
+        { "label": "Pets", "emoji": "🐾", "order": 1 },
+        { "label": "Colors", "emoji": "🎨", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "dad", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "sister", "emoji": "👧" },
+        { "categoryIndex": 0, "label": "baby", "emoji": "👶" },
+        { "categoryIndex": 1, "label": "cat", "emoji": "🐱" },
+        { "categoryIndex": 1, "label": "dog", "emoji": "🐶" },
+        { "categoryIndex": 1, "label": "bird", "emoji": "🐦" },
+        { "categoryIndex": 2, "label": "orange", "emoji": "🟠" },
+        { "categoryIndex": 2, "label": "white", "emoji": "⬜" },
+        { "categoryIndex": 2, "label": "black", "emoji": "⬛" }
+      ],
+      "clues": [
+        { "text": "👧 Her pet is not a cat.", "clueType": "negative" },
+        { "text": "👧 Her pet is not a dog.", "clueType": "negative" },
+        { "text": "👨 Dad has a dog.", "clueType": "positive" },
+        { "text": "🟠 The orange pet is a dog.", "clueType": "relational" },
+        { "text": "👶 The baby's pet is not black.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "itemLabels": ["dad", "dog", "orange"], "value": "YES" },
+        { "itemLabels": ["sister", "bird", "black"], "value": "YES" },
+        { "itemLabels": ["baby", "cat", "white"], "value": "YES" }
+      ],
+      "grammarNote": "In English, 'has' is used with third-person singular subjects: 'Dad has a dog.' The possessive 's shows belonging: 'The baby's pet is not white.'"
+    },
+    {
+      "title": "Family members and colors (1)",
+      "themeSlug": "family-members",
+      "levelCode": "A1",
+      "languageCode": "en",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": [
+        "nouns",
+        "verb to have",
+        "possessive pronouns",
+        "nouns — toys"
+      ],
+      "categories": [
+        { "label": "Family", "emoji": "👨‍👩‍👧", "order": 0 },
+        { "label": "Favorite colors", "emoji": "🎨", "order": 1 },
+        { "label": "Toys", "emoji": "🧸", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "mom", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "grandpa", "emoji": "👴" },
+        { "categoryIndex": 0, "label": "brother", "emoji": "👦" },
+        { "categoryIndex": 1, "label": "red", "emoji": "🔴" },
+        { "categoryIndex": 1, "label": "blue", "emoji": "🔵" },
+        { "categoryIndex": 1, "label": "green", "emoji": "🟢" },
+        { "categoryIndex": 2, "label": "ball", "emoji": "⚽" },
+        { "categoryIndex": 2, "label": "doll", "emoji": "🪆" },
+        { "categoryIndex": 2, "label": "car", "emoji": "🚗" }
+      ],
+      "clues": [
+        {
+          "text": "👴 His favorite color is not blue.",
+          "clueType": "negative"
+        },
+        { "text": "👴 His favorite color is not red.", "clueType": "negative" },
+        { "text": "👩 Her favorite color is red.", "clueType": "positive" },
+        {
+          "text": "🔵 The person whose color is blue has a ball.",
+          "clueType": "relational"
+        },
+        { "text": "👴 Grandpa does not have a ball.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "itemLabels": ["mom", "red", "doll"], "value": "YES" },
+        { "itemLabels": ["grandpa", "green", "car"], "value": "YES" },
+        { "itemLabels": ["brother", "blue", "ball"], "value": "YES" }
+      ],
+      "grammarNote": "Use 'his' for males and 'her' for females when replacing a name: 'His favorite color is green' means 'Grandpa's favorite color is green.'"
+    },
+    {
+      "title": "Family members and toys (1)",
+      "themeSlug": "family-members",
+      "levelCode": "A1",
+      "languageCode": "en",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": [
+        "nouns",
+        "verb to have",
+        "possessive pronouns",
+        "adjectives"
+      ],
+      "categories": [
+        { "label": "Family", "emoji": "👨‍👩‍👧", "order": 0 },
+        { "label": "Toys", "emoji": "🧸", "order": 1 },
+        { "label": "Colors", "emoji": "🎨", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "dad", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "sister", "emoji": "👧" },
+        { "categoryIndex": 0, "label": "baby", "emoji": "👶" },
+        { "categoryIndex": 1, "label": "ball", "emoji": "⚽" },
+        { "categoryIndex": 1, "label": "doll", "emoji": "🪆" },
+        { "categoryIndex": 1, "label": "car", "emoji": "🚗" },
+        { "categoryIndex": 2, "label": "red", "emoji": "🔴" },
+        { "categoryIndex": 2, "label": "blue", "emoji": "🔵" },
+        { "categoryIndex": 2, "label": "yellow", "emoji": "🟡" }
+      ],
+      "clues": [
+        { "text": "👶 The baby has a doll.", "clueType": "positive" },
+        { "text": "👶 The baby's toy is blue.", "clueType": "positive" },
+        { "text": "👧 Her toy is not a car.", "clueType": "negative" },
+        { "text": "🔴 The red toy is a car.", "clueType": "relational" },
+        { "text": "👶 The baby's toy is not red.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "itemLabels": ["dad", "car", "red"], "value": "YES" },
+        { "itemLabels": ["sister", "ball", "yellow"], "value": "YES" },
+        { "itemLabels": ["baby", "doll", "blue"], "value": "YES" }
+      ],
+      "grammarNote": "The possessive 's shows belonging: 'The baby's toy is blue.' This is different from 'is': 'The baby is blue' would mean the baby is sad! Context always matters."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hack — monospace font for headings (fCC design system) */
+@font-face {
+  font-family: "Hack";
+  src: url("/fonts/hack-mono/Hack-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hack";
+  src: url("/fonts/hack-mono/Hack-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hack";
+  src: url("/fonts/hack-mono/Hack-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Hack";
+  src: url("/fonts/hack-mono/Hack-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@keyframes tutorial-pulse {
+  0%, 100% { box-shadow: 0 0 0 2px #f1be32; }
+  50%       { box-shadow: 0 0 0 5px #f1be32; }
+}
+
+@keyframes cell-wave {
+  0%   { filter: brightness(1); }
+  40%  { filter: brightness(2) saturate(2); background-color: #acd157; color: #00471b; }
+  100% { filter: brightness(1); }
+}
+
+@layer base {
+  :root {
+    --font-hack: "Hack";
+  }
+
+  /* fCC focus style */
+  *:focus-visible {
+    outline: 3px solid #198eee;
+    outline-offset: 2px;
+  }
+
+  body {
+    font-size: 18px; /* fCC minimum readability */
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-hack), "Hack", ui-monospace, monospace;
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,491 @@
+{
+  "puzzles": [
+    {
+      "title": "Clothing (1)",
+      "themeSlug": "clothing",
+      "levelCode": "A2",
+      "languageCode": "en",
+      "gridSize": 4,
+      "narrativeIntro": null,
+      "grammarFocus": [
+        "verb to wear",
+        "simple present",
+        "pronouns he/she",
+        "color adjectives"
+      ],
+      "categories": [
+        { "label": "People", "emoji": "🧑", "order": 0 },
+        { "label": "Clothing", "emoji": "👕", "order": 1 },
+        { "label": "Colors", "emoji": "🎨", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Alice", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Ben", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Clara", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Dan", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "hat", "emoji": "🎩" },
+        { "categoryIndex": 1, "label": "scarf", "emoji": "🧣" },
+        { "categoryIndex": 1, "label": "coat", "emoji": "🧥" },
+        { "categoryIndex": 1, "label": "boots", "emoji": "👢" },
+        { "categoryIndex": 2, "label": "red", "emoji": "🔴" },
+        { "categoryIndex": 2, "label": "blue", "emoji": "🔵" },
+        { "categoryIndex": 2, "label": "green", "emoji": "🟢" },
+        { "categoryIndex": 2, "label": "yellow", "emoji": "🟡" }
+      ],
+      "clues": [
+        { "text": "Alice is wearing the scarf.", "clueType": "positive" },
+        { "text": "Ben is not wearing the hat.", "clueType": "negative" },
+        { "text": "He is not wearing the coat.", "clueType": "negative" },
+        { "text": "Clara is not wearing the coat.", "clueType": "negative" },
+        {
+          "text": "The red item of clothing is the coat.",
+          "clueType": "relational"
+        },
+        { "text": "Alice's scarf is not yellow.", "clueType": "negative" },
+        { "text": "She is not wearing green.", "clueType": "negative" },
+        { "text": "The hat is yellow.", "clueType": "positive" }
+      ],
+      "solution": [
+        { "itemLabels": ["Alice", "scarf", "blue"], "value": "YES" },
+        { "itemLabels": ["Ben", "boots", "green"], "value": "YES" },
+        { "itemLabels": ["Clara", "hat", "yellow"], "value": "YES" },
+        { "itemLabels": ["Dan", "coat", "red"], "value": "YES" }
+      ],
+      "grammarNote": "In simple present, use 'is wearing' for he/she/name: 'Alice is wearing the scarf.' The pronoun 'he' or 'she' can replace a name already mentioned: 'He is not wearing the coat' refers back to Ben."
+    },
+    {
+      "title": "Clothing (2)",
+      "themeSlug": "clothing",
+      "levelCode": "A2",
+      "languageCode": "en",
+      "gridSize": 4,
+      "narrativeIntro": null,
+      "grammarFocus": [
+        "verb to wear",
+        "simple present",
+        "pronouns he/she",
+        "color adjectives"
+      ],
+      "categories": [
+        { "label": "People", "emoji": "🧑", "order": 0 },
+        { "label": "Clothing", "emoji": "👕", "order": 1 },
+        { "label": "Colors", "emoji": "🎨", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Emma", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Finn", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Grace", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Harry", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "gloves", "emoji": "🧤" },
+        { "categoryIndex": 1, "label": "jacket", "emoji": "🫸" },
+        { "categoryIndex": 1, "label": "dress", "emoji": "👗" },
+        { "categoryIndex": 1, "label": "shirt", "emoji": "👔" },
+        { "categoryIndex": 2, "label": "pink", "emoji": "🩷" },
+        { "categoryIndex": 2, "label": "white", "emoji": "⬜" },
+        { "categoryIndex": 2, "label": "black", "emoji": "⬛" },
+        { "categoryIndex": 2, "label": "orange", "emoji": "🟠" }
+      ],
+      "clues": [
+        { "text": "Grace is wearing the gloves.", "clueType": "positive" },
+        { "text": "Emma is not wearing the dress.", "clueType": "negative" },
+        { "text": "She is not wearing the shirt.", "clueType": "negative" },
+        { "text": "Harry is not wearing the dress.", "clueType": "negative" },
+        {
+          "text": "The white item of clothing is the shirt.",
+          "clueType": "relational"
+        },
+        { "text": "Emma is not wearing black.", "clueType": "negative" },
+        { "text": "Grace is not wearing pink.", "clueType": "negative" },
+        { "text": "The dress is not orange.", "clueType": "negative" },
+        { "text": "Finn is not wearing black.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "itemLabels": ["Emma", "jacket", "orange"], "value": "YES" },
+        { "itemLabels": ["Finn", "dress", "pink"], "value": "YES" },
+        { "itemLabels": ["Grace", "gloves", "black"], "value": "YES" },
+        { "itemLabels": ["Harry", "shirt", "white"], "value": "YES" }
+      ],
+      "grammarNote": "'She is not wearing the shirt' uses the pronoun 'she' to refer back to Emma. In English, pronouns must match gender: 'he' for males, 'she' for females. The color adjective follows 'wearing': 'She is wearing an orange jacket.'"
+    },
+    {
+      "title": "Clothing (3)",
+      "themeSlug": "clothing",
+      "levelCode": "A2",
+      "languageCode": "en",
+      "gridSize": 4,
+      "narrativeIntro": null,
+      "grammarFocus": [
+        "verb to wear",
+        "simple present",
+        "pronouns he/she",
+        "color adjectives"
+      ],
+      "categories": [
+        { "label": "People", "emoji": "🧑", "order": 0 },
+        { "label": "Clothing", "emoji": "👕", "order": 1 },
+        { "label": "Colors", "emoji": "🎨", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Alice", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Clara", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Finn", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Harry", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "scarf", "emoji": "🧣" },
+        { "categoryIndex": 1, "label": "coat", "emoji": "🧥" },
+        { "categoryIndex": 1, "label": "shoes", "emoji": "👟" },
+        { "categoryIndex": 1, "label": "cap", "emoji": "🧢" },
+        { "categoryIndex": 2, "label": "purple", "emoji": "🟣" },
+        { "categoryIndex": 2, "label": "brown", "emoji": "🟤" },
+        { "categoryIndex": 2, "label": "grey", "emoji": "🩶" },
+        { "categoryIndex": 2, "label": "navy", "emoji": "🫐" }
+      ],
+      "clues": [
+        { "text": "Harry is wearing the coat.", "clueType": "positive" },
+        { "text": "Alice is not wearing the scarf.", "clueType": "negative" },
+        { "text": "She is not wearing the shoes.", "clueType": "negative" },
+        { "text": "Clara is not wearing the scarf.", "clueType": "negative" },
+        {
+          "text": "The navy item of clothing is the scarf.",
+          "clueType": "relational"
+        },
+        { "text": "Alice is not wearing brown.", "clueType": "negative" },
+        { "text": "Harry's coat is not grey.", "clueType": "negative" },
+        { "text": "He is not wearing brown.", "clueType": "negative" },
+        { "text": "Alice is not wearing purple.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "itemLabels": ["Alice", "cap", "grey"], "value": "YES" },
+        { "itemLabels": ["Clara", "shoes", "brown"], "value": "YES" },
+        { "itemLabels": ["Finn", "scarf", "navy"], "value": "YES" },
+        { "itemLabels": ["Harry", "coat", "purple"], "value": "YES" }
+      ],
+      "grammarNote": "The present continuous 'is wearing' describes what someone is doing right now: subject + is + verb-ing. For negatives: subject + is + not + verb-ing. Color adjectives come before the noun: 'a navy scarf', 'a purple coat'."
+    },
+    {
+      "title": "Daily routines (1)",
+      "themeSlug": "daily-routines",
+      "levelCode": "A2",
+      "languageCode": "en",
+      "gridSize": 4,
+      "narrativeIntro": null,
+      "grammarFocus": [
+        "simple present",
+        "adverbs of frequency",
+        "prepositions of place"
+      ],
+      "categories": [
+        { "label": "People", "emoji": "🧑", "order": 0 },
+        { "label": "Activities", "emoji": "⚡", "order": 1 },
+        { "label": "Locations", "emoji": "📍", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Ben", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Clara", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Dan", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Emma", "emoji": "👩" },
+        { "categoryIndex": 1, "label": "runs", "emoji": "🏃" },
+        { "categoryIndex": 1, "label": "reads", "emoji": "📖" },
+        { "categoryIndex": 1, "label": "cooks", "emoji": "🍳" },
+        { "categoryIndex": 1, "label": "swims", "emoji": "🏊" },
+        { "categoryIndex": 2, "label": "home", "emoji": "🏠" },
+        { "categoryIndex": 2, "label": "gym", "emoji": "🏋️" },
+        { "categoryIndex": 2, "label": "park", "emoji": "🌳" },
+        { "categoryIndex": 2, "label": "office", "emoji": "🏢" }
+      ],
+      "clues": [
+        { "text": "Emma always cooks before work.", "clueType": "positive" },
+        { "text": "Ben never reads in the morning.", "clueType": "negative" },
+        { "text": "He never runs.", "clueType": "negative" },
+        { "text": "Clara does not read.", "clueType": "negative" },
+        {
+          "text": "The person who swims does it at the gym.",
+          "clueType": "relational"
+        },
+        { "text": "Emma cooks at home.", "clueType": "positive" },
+        { "text": "Dan does not go to the gym.", "clueType": "negative" },
+        { "text": "Clara does not run in the park.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "itemLabels": ["Ben", "swims", "gym"], "value": "YES" },
+        { "itemLabels": ["Clara", "runs", "office"], "value": "YES" },
+        { "itemLabels": ["Dan", "reads", "park"], "value": "YES" },
+        { "itemLabels": ["Emma", "cooks", "home"], "value": "YES" }
+      ],
+      "grammarNote": "'Always', 'usually', and 'never' are adverbs of frequency. They go between the subject and the main verb: 'Emma always cooks.' With 'to be' they go after: 'She is always early.'"
+    },
+    {
+      "title": "Daily routines (2)",
+      "themeSlug": "daily-routines",
+      "levelCode": "A2",
+      "languageCode": "en",
+      "gridSize": 4,
+      "narrativeIntro": null,
+      "grammarFocus": [
+        "simple present",
+        "adverbs of frequency",
+        "times of day"
+      ],
+      "categories": [
+        { "label": "People", "emoji": "🧑", "order": 0 },
+        { "label": "Activities", "emoji": "⚡", "order": 1 },
+        { "label": "Time", "emoji": "🕐", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Alice", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Finn", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Grace", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Harry", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "cycles", "emoji": "🚴" },
+        { "categoryIndex": 1, "label": "walks", "emoji": "🚶" },
+        { "categoryIndex": 1, "label": "yoga", "emoji": "🧘" },
+        { "categoryIndex": 1, "label": "draws", "emoji": "✏️" },
+        { "categoryIndex": 2, "label": "morning", "emoji": "🌅" },
+        { "categoryIndex": 2, "label": "afternoon", "emoji": "☀️" },
+        { "categoryIndex": 2, "label": "evening", "emoji": "🌆" },
+        { "categoryIndex": 2, "label": "night", "emoji": "🌙" }
+      ],
+      "clues": [
+        {
+          "text": "Finn usually cycles in the morning.",
+          "clueType": "positive"
+        },
+        { "text": "Alice never walks.", "clueType": "negative" },
+        { "text": "She never draws.", "clueType": "negative" },
+        { "text": "Grace does not walk.", "clueType": "negative" },
+        {
+          "text": "The person who does yoga does it in the evening.",
+          "clueType": "relational"
+        },
+        {
+          "text": "Harry does not do his activity in the morning.",
+          "clueType": "negative"
+        },
+        { "text": "Grace does not draw at night.", "clueType": "negative" },
+        {
+          "text": "Harry does not walk in the afternoon.",
+          "clueType": "negative"
+        }
+      ],
+      "solution": [
+        { "itemLabels": ["Alice", "yoga", "evening"], "value": "YES" },
+        { "itemLabels": ["Finn", "cycles", "morning"], "value": "YES" },
+        { "itemLabels": ["Grace", "draws", "afternoon"], "value": "YES" },
+        { "itemLabels": ["Harry", "walks", "night"], "value": "YES" }
+      ],
+      "grammarNote": "Times of day use 'in' as a preposition: 'in the morning', 'in the afternoon', 'in the evening'. The exception is 'at night' — English uses 'at', not 'in': 'Harry walks at night.'"
+    },
+    {
+      "title": "Daily routines (3)",
+      "themeSlug": "daily-routines",
+      "levelCode": "A2",
+      "languageCode": "en",
+      "gridSize": 4,
+      "narrativeIntro": null,
+      "grammarFocus": [
+        "simple present",
+        "adverbs of frequency",
+        "days of the week"
+      ],
+      "categories": [
+        { "label": "People", "emoji": "🧑", "order": 0 },
+        { "label": "Activities", "emoji": "⚡", "order": 1 },
+        { "label": "Day", "emoji": "📅", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Ben", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Clara", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Emma", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Grace", "emoji": "👩" },
+        { "categoryIndex": 1, "label": "runs", "emoji": "🏃" },
+        { "categoryIndex": 1, "label": "cooks", "emoji": "🍳" },
+        { "categoryIndex": 1, "label": "walks", "emoji": "🚶" },
+        { "categoryIndex": 1, "label": "draws", "emoji": "✏️" },
+        { "categoryIndex": 2, "label": "Monday", "emoji": "1️⃣" },
+        { "categoryIndex": 2, "label": "Wednesday", "emoji": "3️⃣" },
+        { "categoryIndex": 2, "label": "Friday", "emoji": "5️⃣" },
+        { "categoryIndex": 2, "label": "Sunday", "emoji": "7️⃣" }
+      ],
+      "clues": [
+        { "text": "Emma always runs on Fridays.", "clueType": "positive" },
+        { "text": "Ben never cooks.", "clueType": "negative" },
+        { "text": "He never walks.", "clueType": "negative" },
+        { "text": "Grace does not cook.", "clueType": "negative" },
+        {
+          "text": "The person who cooks does it on Sundays.",
+          "clueType": "relational"
+        },
+        { "text": "Ben does not draw on Mondays.", "clueType": "negative" },
+        {
+          "text": "Grace does not walk on Wednesdays.",
+          "clueType": "negative"
+        },
+        { "text": "Grace does her activity on Mondays.", "clueType": "positive" }
+      ],
+      "solution": [
+        { "itemLabels": ["Ben", "draws", "Wednesday"], "value": "YES" },
+        { "itemLabels": ["Clara", "cooks", "Sunday"], "value": "YES" },
+        { "itemLabels": ["Emma", "runs", "Friday"], "value": "YES" },
+        { "itemLabels": ["Grace", "walks", "Monday"], "value": "YES" }
+      ],
+      "grammarNote": "Days of the week use 'on' as a preposition: 'Emma runs on Fridays.' Adding -s to the day ('on Fridays') means it happens every week. Without -s ('on Friday') it usually means one specific day."
+    },
+    {
+      "title": "Food and eating out (1)",
+      "themeSlug": "food-and-eating-out",
+      "levelCode": "A2",
+      "languageCode": "en",
+      "gridSize": 4,
+      "narrativeIntro": null,
+      "grammarFocus": [
+        "verb to like",
+        "would like",
+        "countable/uncountable nouns"
+      ],
+      "categories": [
+        { "label": "People", "emoji": "🧑", "order": 0 },
+        { "label": "Food", "emoji": "🍽️", "order": 1 },
+        { "label": "Drinks", "emoji": "🥤", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Alice", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Dan", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Emma", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Finn", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "pizza", "emoji": "🍕" },
+        { "categoryIndex": 1, "label": "sushi", "emoji": "🍣" },
+        { "categoryIndex": 1, "label": "soup", "emoji": "🍜" },
+        { "categoryIndex": 1, "label": "salad", "emoji": "🥗" },
+        { "categoryIndex": 2, "label": "water", "emoji": "💧" },
+        { "categoryIndex": 2, "label": "juice", "emoji": "🧃" },
+        { "categoryIndex": 2, "label": "coffee", "emoji": "☕" },
+        { "categoryIndex": 2, "label": "tea", "emoji": "🍵" }
+      ],
+      "clues": [
+        { "text": "Emma likes pizza.", "clueType": "positive" },
+        { "text": "Alice does not like sushi.", "clueType": "negative" },
+        { "text": "She does not like salad.", "clueType": "negative" },
+        { "text": "Finn does not like salad.", "clueType": "negative" },
+        {
+          "text": "The person who orders soup always drinks tea.",
+          "clueType": "relational"
+        },
+        { "text": "Emma drinks coffee.", "clueType": "positive" },
+        { "text": "Emma does not drink juice.", "clueType": "negative" },
+        { "text": "Dan does not drink water.", "clueType": "negative" },
+        { "text": "Alice does not drink coffee.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "itemLabels": ["Alice", "soup", "tea"], "value": "YES" },
+        { "itemLabels": ["Dan", "salad", "juice"], "value": "YES" },
+        { "itemLabels": ["Emma", "pizza", "coffee"], "value": "YES" },
+        { "itemLabels": ["Finn", "sushi", "water"], "value": "YES" }
+      ],
+      "grammarNote": "'Like' expresses a general preference: 'Emma likes pizza.' 'Would like' expresses a specific desire right now, often used in restaurants: 'I would like the soup.' Note: 'soup' and 'salad' are uncountable — no plural 's'."
+    },
+    {
+      "title": "Food and eating out (2)",
+      "themeSlug": "food-and-eating-out",
+      "levelCode": "A2",
+      "languageCode": "en",
+      "gridSize": 4,
+      "narrativeIntro": null,
+      "grammarFocus": [
+        "verb to like",
+        "would like",
+        "countable/uncountable nouns"
+      ],
+      "categories": [
+        { "label": "People", "emoji": "🧑", "order": 0 },
+        { "label": "Food", "emoji": "🍽️", "order": 1 },
+        { "label": "Drinks", "emoji": "🥤", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Ben", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Clara", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Grace", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Harry", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "pasta", "emoji": "🍝" },
+        { "categoryIndex": 1, "label": "tacos", "emoji": "🌮" },
+        { "categoryIndex": 1, "label": "curry", "emoji": "🍛" },
+        { "categoryIndex": 1, "label": "burger", "emoji": "🍔" },
+        { "categoryIndex": 2, "label": "milk", "emoji": "🥛" },
+        { "categoryIndex": 2, "label": "soda", "emoji": "🥤" },
+        { "categoryIndex": 2, "label": "lemonade", "emoji": "🍋" },
+        { "categoryIndex": 2, "label": "beer", "emoji": "🍺" }
+      ],
+      "clues": [
+        { "text": "Harry likes pasta.", "clueType": "positive" },
+        { "text": "Ben does not like curry.", "clueType": "negative" },
+        { "text": "He does not like burger.", "clueType": "negative" },
+        { "text": "Clara does not like curry.", "clueType": "negative" },
+        {
+          "text": "The person who orders tacos drinks lemonade.",
+          "clueType": "relational"
+        },
+        { "text": "Harry does not drink beer.", "clueType": "negative" },
+        { "text": "Clara does not drink soda.", "clueType": "negative" },
+        { "text": "Clara does not drink beer.", "clueType": "negative" },
+        { "text": "Grace does not drink milk.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "itemLabels": ["Ben", "tacos", "lemonade"], "value": "YES" },
+        { "itemLabels": ["Clara", "burger", "milk"], "value": "YES" },
+        { "itemLabels": ["Grace", "curry", "beer"], "value": "YES" },
+        { "itemLabels": ["Harry", "pasta", "soda"], "value": "YES" }
+      ],
+      "grammarNote": "To form a negative with 'like' in simple present, use 'does not like' for he/she/name: 'Clara does not like curry.' In spoken English this is often shortened to 'doesn't like'."
+    },
+    {
+      "title": "Food and eating out (3)",
+      "themeSlug": "food-and-eating-out",
+      "levelCode": "A2",
+      "languageCode": "en",
+      "gridSize": 4,
+      "narrativeIntro": null,
+      "grammarFocus": [
+        "verb to like",
+        "would like",
+        "countable/uncountable nouns"
+      ],
+      "categories": [
+        { "label": "People", "emoji": "🧑", "order": 0 },
+        { "label": "Food", "emoji": "🍽️", "order": 1 },
+        { "label": "Drinks", "emoji": "🥤", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Alice", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Clara", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Dan", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Harry", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "sushi", "emoji": "🍣" },
+        { "categoryIndex": 1, "label": "pasta", "emoji": "🍝" },
+        { "categoryIndex": 1, "label": "tacos", "emoji": "🌮" },
+        { "categoryIndex": 1, "label": "burger", "emoji": "🍔" },
+        { "categoryIndex": 2, "label": "milk", "emoji": "🥛" },
+        { "categoryIndex": 2, "label": "juice", "emoji": "🧃" },
+        { "categoryIndex": 2, "label": "soda", "emoji": "🥤" },
+        { "categoryIndex": 2, "label": "wine", "emoji": "🍷" }
+      ],
+      "clues": [
+        { "text": "Harry likes sushi.", "clueType": "positive" },
+        { "text": "Alice does not like pasta.", "clueType": "negative" },
+        { "text": "She does not like burger.", "clueType": "negative" },
+        { "text": "Dan does not like pasta.", "clueType": "negative" },
+        {
+          "text": "The person who orders sushi drinks wine.",
+          "clueType": "relational"
+        },
+        { "text": "Alice does not drink soda.", "clueType": "negative" },
+        { "text": "Clara does not drink wine.", "clueType": "negative" },
+        { "text": "Dan does not drink juice.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "itemLabels": ["Alice", "tacos", "juice"], "value": "YES" },
+        { "itemLabels": ["Clara", "pasta", "soda"], "value": "YES" },
+        { "itemLabels": ["Dan", "burger", "milk"], "value": "YES" },
+        { "itemLabels": ["Harry", "sushi", "wine"], "value": "YES" }
+      ],
+      "grammarNote": "'Would like' is more polite and specific than 'like': 'I would like the sushi, please.' Use it when ordering in a restaurant. 'Like' is for general preferences: 'Harry likes sushi' means he always enjoys it, not just today."
+    }
+  ]
+}

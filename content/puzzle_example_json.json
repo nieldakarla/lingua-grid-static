@@ -1,0 +1,87 @@
+{
+  "_comment": "Reference file for LinguaGrid puzzle format. One example per level. Solution uses itemLabels array — one label per category. Only YES rows listed — NO cells are inferred automatically.",
+  "examples": [
+    {
+      "_level": "A1 example — 3x3, 3 categories, emoji in clues, simple is/is not pattern",
+      "title": "Animals — colors and habitats (1)",
+      "themeSlug": "animals-colors-habitats-1",
+      "levelCode": "A1",
+      "languageCode": "en",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": ["nouns", "adjectives", "verb to be", "prepositions"],
+      "categories": [
+        { "label": "Animals",  "emoji": "🐾", "order": 0 },
+        { "label": "Colors",   "emoji": "🎨", "order": 1 },
+        { "label": "Habitats", "emoji": "🌍", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "cat",   "emoji": "🐱" },
+        { "categoryIndex": 0, "label": "dog",   "emoji": "🐶" },
+        { "categoryIndex": 0, "label": "frog",  "emoji": "🐸" },
+        { "categoryIndex": 1, "label": "red",   "emoji": "🔴" },
+        { "categoryIndex": 1, "label": "green", "emoji": "🟢" },
+        { "categoryIndex": 1, "label": "blue",  "emoji": "🔵" },
+        { "categoryIndex": 2, "label": "house", "emoji": "🏠" },
+        { "categoryIndex": 2, "label": "tree",  "emoji": "🌳" },
+        { "categoryIndex": 2, "label": "water", "emoji": "💧" }
+      ],
+      "clues": [
+        { "text": "🐱 The cat is not red.",                 "clueType": "negative"   },
+        { "text": "🐸 The frog is blue.",                   "clueType": "positive"   },
+        { "text": "🔵 The blue animal lives in the water.", "clueType": "relational" },
+        { "text": "🐶 The dog does not live in a house.",   "clueType": "negative"   }
+      ],
+      "solution": [
+        { "itemLabels": ["cat",  "red",   "tree"],  "value": "YES" },
+        { "itemLabels": ["dog",  "green", "house"], "value": "YES" },
+        { "itemLabels": ["frog", "blue",  "water"], "value": "YES" }
+      ],
+      "grammarNote": "Adjectives follow 'to be' directly: 'The frog is blue.' No article before the color."
+    },
+    {
+      "_level": "A2 example — 4x4, 3 categories, full sentences, pronouns, adverbs of frequency",
+      "title": "People — clothing and routines (1)",
+      "themeSlug": "people-clothing-routines-1",
+      "levelCode": "A2",
+      "languageCode": "en",
+      "gridSize": 4,
+      "narrativeIntro": null,
+      "grammarFocus": ["simple present", "verb to wear", "adverbs of frequency", "pronouns he/she"],
+      "categories": [
+        { "label": "People",   "emoji": "👤", "order": 0 },
+        { "label": "Clothing", "emoji": "👕", "order": 1 },
+        { "label": "Activity", "emoji": "🌅", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Alice", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Ben",   "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Clara", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Dan",   "emoji": "👨" },
+        { "categoryIndex": 1, "label": "hat",   "emoji": "🎩" },
+        { "categoryIndex": 1, "label": "scarf", "emoji": "🧣" },
+        { "categoryIndex": 1, "label": "coat",  "emoji": "🧥" },
+        { "categoryIndex": 1, "label": "boots", "emoji": "👢" },
+        { "categoryIndex": 2, "label": "runs",  "emoji": "🏃" },
+        { "categoryIndex": 2, "label": "reads", "emoji": "📖" },
+        { "categoryIndex": 2, "label": "cooks", "emoji": "🍳" },
+        { "categoryIndex": 2, "label": "swims", "emoji": "🏊" }
+      ],
+      "clues": [
+        { "text": "Alice always runs in the morning.",        "clueType": "positive"   },
+        { "text": "He is wearing the scarf.",                "clueType": "positive"   },
+        { "text": "Clara does not swim.",                    "clueType": "negative"   },
+        { "text": "The person who cooks wears a coat.",      "clueType": "relational" },
+        { "text": "She usually reads after breakfast.",      "clueType": "positive"   },
+        { "text": "Ben is not wearing the hat.",             "clueType": "negative"   }
+      ],
+      "solution": [
+        { "itemLabels": ["Alice", "hat",   "runs"],  "value": "YES" },
+        { "itemLabels": ["Ben",   "scarf", "swims"], "value": "YES" },
+        { "itemLabels": ["Clara", "boots", "reads"], "value": "YES" },
+        { "itemLabels": ["Dan",   "coat",  "cooks"], "value": "YES" }
+      ],
+      "grammarNote": "Adverbs of frequency (always, usually, never) go before the main verb: 'She usually reads.' They tell us how often someone does something."
+    }
+  ]
+}

@@ -1,0 +1,671 @@
+{
+  "puzzles": [
+    {
+      "title": "Jobs and hours (1)",
+      "themeSlug": "jobs-and-hours",
+      "levelCode": "B1",
+      "languageCode": "en",
+      "gridSize": 4,
+      "narrativeIntro": "Four people are talking about their jobs at a community event. They all have different roles and worked very different hours last week.",
+      "grammarFocus": ["simple past", "present continuous", "comparatives"],
+      "categories": [
+        { "label": "People", "emoji": "🧑", "order": 0 },
+        { "label": "Jobs", "emoji": "💼", "order": 1 },
+        { "label": "Hours worked", "emoji": "⏱️", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Mia", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Owen", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Priya", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Sam", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "teacher", "emoji": "📚" },
+        { "categoryIndex": 1, "label": "chef", "emoji": "👨‍🍳" },
+        { "categoryIndex": 1, "label": "nurse", "emoji": "🩺" },
+        { "categoryIndex": 1, "label": "driver", "emoji": "🚗" },
+        { "categoryIndex": 2, "label": "30 hours", "emoji": "🕞" },
+        { "categoryIndex": 2, "label": "35 hours", "emoji": "🕣" },
+        { "categoryIndex": 2, "label": "40 hours", "emoji": "🕓" },
+        { "categoryIndex": 2, "label": "50 hours", "emoji": "🕔" }
+      ],
+      "clues": [
+        { "text": "Mia worked fewer hours than anyone else last week.", "clueType": "positive" },
+        { "text": "Mia is not working as a nurse.", "clueType": "negative" },
+        { "text": "Owen worked more hours than the driver.", "clueType": "relational" },
+        { "text": "The chef worked longer hours than the nurse.", "clueType": "relational" },
+        { "text": "Priya worked more night shifts than anyone else.", "clueType": "positive" },
+        { "text": "Priya didn't work 35 hours last week.", "clueType": "negative" },
+        { "text": "Sam worked exactly 35 hours last week.", "clueType": "positive" },
+        { "text": "The driver worked fewer hours than the teacher.", "clueType": "relational" }
+      ],
+      "solution": [
+        { "itemLabels": ["Mia", "teacher", "30 hours"], "value": "YES" },
+        { "itemLabels": ["Owen", "chef", "50 hours"], "value": "YES" },
+        { "itemLabels": ["Priya", "nurse", "40 hours"], "value": "YES" },
+        { "itemLabels": ["Sam", "driver", "35 hours"], "value": "YES" }
+      ],
+      "grammarNote": "'Worked fewer hours than' uses 'fewer' because hours are countable. Compare: 'fewer hours' (countable) vs 'less time' (uncountable). At B1, this distinction is important: use 'fewer' with plural countable nouns and 'less' with uncountable nouns."
+    },
+    {
+      "title": "Jobs and hours (2)",
+      "themeSlug": "jobs-and-hours",
+      "levelCode": "B1",
+      "languageCode": "en",
+      "gridSize": 4,
+      "narrativeIntro": "Four colleagues met at a job fair and compared their working weeks. Each person has a different role and worked a different number of hours.",
+      "grammarFocus": ["simple past", "present continuous", "comparatives"],
+      "categories": [
+        { "label": "People", "emoji": "🧑", "order": 0 },
+        { "label": "Jobs", "emoji": "💼", "order": 1 },
+        { "label": "Hours worked", "emoji": "⏱️", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Clara", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Finn", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Grace", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Leo", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "accountant", "emoji": "🧮" },
+        { "categoryIndex": 1, "label": "journalist", "emoji": "📰" },
+        { "categoryIndex": 1, "label": "mechanic", "emoji": "🔧" },
+        { "categoryIndex": 1, "label": "librarian", "emoji": "📖" },
+        { "categoryIndex": 2, "label": "25 hours", "emoji": "🕒" },
+        { "categoryIndex": 2, "label": "32 hours", "emoji": "🕞" },
+        { "categoryIndex": 2, "label": "40 hours", "emoji": "🕓" },
+        { "categoryIndex": 2, "label": "48 hours", "emoji": "🕔" }
+      ],
+      "clues": [
+        { "text": "Clara worked with numbers all day.", "clueType": "positive" },
+        { "text": "Clara didn't work in a newsroom.", "clueType": "negative" },
+        { "text": "Finn is currently writing a story about local elections.", "clueType": "positive" },
+        { "text": "The mechanic worked more hours than the librarian.", "clueType": "relational" },
+        { "text": "The journalist worked more hours than the accountant.", "clueType": "relational" },
+        { "text": "Grace didn't work 25 hours last week.", "clueType": "negative" },
+        { "text": "Leo worked the fewest hours of the four.", "clueType": "positive" },
+        { "text": "The librarian worked fewer hours than the accountant.", "clueType": "relational" }
+      ],
+      "solution": [
+        { "itemLabels": ["Clara", "accountant", "32 hours"], "value": "YES" },
+        { "itemLabels": ["Finn", "journalist", "48 hours"], "value": "YES" },
+        { "itemLabels": ["Grace", "mechanic", "40 hours"], "value": "YES" },
+        { "itemLabels": ["Leo", "librarian", "25 hours"], "value": "YES" }
+      ],
+      "grammarNote": "'The fewest hours' is the superlative of 'few'. Superlatives compare one item against all others in a group: 'Leo worked the fewest hours of the four.' At B1, superlatives are often used alongside comparatives to establish a clear order."
+    },
+    {
+      "title": "Jobs and hours (3)",
+      "themeSlug": "jobs-and-hours",
+      "levelCode": "B1",
+      "languageCode": "en",
+      "gridSize": 4,
+      "narrativeIntro": "A career counsellor is meeting four clients this week. Each person works in a different field and logged a different number of hours last month.",
+      "grammarFocus": ["simple past", "present continuous", "comparatives"],
+      "categories": [
+        { "label": "People", "emoji": "🧑", "order": 0 },
+        { "label": "Jobs", "emoji": "💼", "order": 1 },
+        { "label": "Hours worked", "emoji": "⏱️", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Alice", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Ben", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Nadia", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Tom", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "designer", "emoji": "🎨" },
+        { "categoryIndex": 1, "label": "scientist", "emoji": "🔬" },
+        { "categoryIndex": 1, "label": "lawyer", "emoji": "⚖️" },
+        { "categoryIndex": 1, "label": "paramedic", "emoji": "🚑" },
+        { "categoryIndex": 2, "label": "28 hours", "emoji": "🕒" },
+        { "categoryIndex": 2, "label": "36 hours", "emoji": "🕣" },
+        { "categoryIndex": 2, "label": "44 hours", "emoji": "🕓" },
+        { "categoryIndex": 2, "label": "55 hours", "emoji": "🕔" }
+      ],
+      "clues": [
+        { "text": "Alice spent more time at her desk than anyone else last week.", "clueType": "positive" },
+        { "text": "Alice didn't work as a scientist.", "clueType": "negative" },
+        { "text": "Ben is currently running experiments on new materials.", "clueType": "positive" },
+        { "text": "The lawyer worked more hours than the designer.", "clueType": "relational" },
+        { "text": "The paramedic worked more hours than the lawyer.", "clueType": "relational" },
+        { "text": "Nadia didn't work 28 hours last week.", "clueType": "negative" },
+        { "text": "Tom is not working as a designer.", "clueType": "negative" },
+        { "text": "Ben worked fewer hours than Nadia.", "clueType": "relational" }
+      ],
+      "solution": [
+        { "itemLabels": ["Alice", "paramedic", "55 hours"], "value": "YES" },
+        { "itemLabels": ["Ben", "scientist", "28 hours"], "value": "YES" },
+        { "itemLabels": ["Nadia", "lawyer", "44 hours"], "value": "YES" },
+        { "itemLabels": ["Tom", "designer", "36 hours"], "value": "YES" }
+      ],
+      "grammarNote": "Chaining comparatives establishes an order: 'The paramedic worked more hours than the lawyer' and 'The lawyer worked more hours than the designer' together tell us paramedic > lawyer > designer. This is a useful logical pattern for B1 learners."
+    },
+    {
+      "title": "Jobs and hours (4)",
+      "themeSlug": "jobs-and-hours",
+      "levelCode": "B1",
+      "languageCode": "en",
+      "gridSize": 4,
+      "narrativeIntro": "Four friends reunited after five years and discovered they all ended up in very different careers. They compared how many hours they had worked the previous week.",
+      "grammarFocus": ["simple past", "present continuous", "comparatives"],
+      "categories": [
+        { "label": "People", "emoji": "🧑", "order": 0 },
+        { "label": "Jobs", "emoji": "💼", "order": 1 },
+        { "label": "Hours worked", "emoji": "⏱️", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Diana", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Jake", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Rosa", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Will", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "architect", "emoji": "📐" },
+        { "categoryIndex": 1, "label": "pharmacist", "emoji": "💊" },
+        { "categoryIndex": 1, "label": "firefighter", "emoji": "🧯" },
+        { "categoryIndex": 1, "label": "programmer", "emoji": "💻" },
+        { "categoryIndex": 2, "label": "30 hours", "emoji": "🕞" },
+        { "categoryIndex": 2, "label": "38 hours", "emoji": "🕣" },
+        { "categoryIndex": 2, "label": "45 hours", "emoji": "🕓" },
+        { "categoryIndex": 2, "label": "52 hours", "emoji": "🕔" }
+      ],
+      "clues": [
+        { "text": "Diana worked the most hours of the four last week.", "clueType": "positive" },
+        { "text": "Diana didn't work as a pharmacist.", "clueType": "negative" },
+        { "text": "Jake is currently giving medicine to patients.", "clueType": "positive" },
+        { "text": "The firefighter worked more hours than the programmer.", "clueType": "relational" },
+        { "text": "The programmer worked more hours than the pharmacist.", "clueType": "relational" },
+        { "text": "Rosa didn't work 52 hours last week.", "clueType": "negative" },
+        { "text": "Will is not working as an architect.", "clueType": "negative" },
+        { "text": "Jake worked fewer hours than Rosa.", "clueType": "relational" }
+      ],
+      "solution": [
+        { "itemLabels": ["Diana", "architect", "52 hours"], "value": "YES" },
+        { "itemLabels": ["Jake", "pharmacist", "30 hours"], "value": "YES" },
+        { "itemLabels": ["Rosa", "programmer", "45 hours"], "value": "YES" },
+        { "itemLabels": ["Will", "firefighter", "38 hours"], "value": "YES" }
+      ],
+      "grammarNote": "'Worked the most hours' is the superlative of 'many'. The pattern 'the most + noun' compares one item to all others: 'Diana worked the most hours.' The opposite is 'the fewest hours'. Both superlatives are common in B1 discussions about work and performance."
+    },
+    {
+      "title": "Jobs and hours (5)",
+      "themeSlug": "jobs-and-hours",
+      "levelCode": "B1",
+      "languageCode": "en",
+      "gridSize": 4,
+      "narrativeIntro": "A magazine is writing a feature about people who changed careers. The four people interviewed talked about how their working hours changed after their career switch.",
+      "grammarFocus": ["simple past", "present continuous", "comparatives"],
+      "categories": [
+        { "label": "People", "emoji": "🧑", "order": 0 },
+        { "label": "Jobs", "emoji": "💼", "order": 1 },
+        { "label": "Hours worked", "emoji": "⏱️", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Elena", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Marcus", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Sonia", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Victor", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "vet", "emoji": "🐾" },
+        { "categoryIndex": 1, "label": "pilot", "emoji": "✈️" },
+        { "categoryIndex": 1, "label": "coach", "emoji": "🏅" },
+        { "categoryIndex": 1, "label": "dentist", "emoji": "🦷" },
+        { "categoryIndex": 2, "label": "20 hours", "emoji": "🕒" },
+        { "categoryIndex": 2, "label": "35 hours", "emoji": "🕣" },
+        { "categoryIndex": 2, "label": "42 hours", "emoji": "🕓" },
+        { "categoryIndex": 2, "label": "60 hours", "emoji": "🕔" }
+      ],
+      "clues": [
+        { "text": "Elena worked more hours than the dentist.", "clueType": "relational" },
+        { "text": "Elena didn't work as a pilot.", "clueType": "negative" },
+        { "text": "Marcus is currently preparing for a long international flight.", "clueType": "positive" },
+        { "text": "The coach worked fewer hours than the dentist.", "clueType": "relational" },
+        { "text": "The pilot worked more hours than the vet.", "clueType": "relational" },
+        { "text": "Sonia didn't work 20 hours last week.", "clueType": "negative" },
+        { "text": "Victor is not working as a pilot.", "clueType": "negative" },
+        { "text": "Sonia worked fewer hours than Elena.", "clueType": "relational" }
+      ],
+      "solution": [
+        { "itemLabels": ["Elena", "vet", "42 hours"], "value": "YES" },
+        { "itemLabels": ["Marcus", "pilot", "60 hours"], "value": "YES" },
+        { "itemLabels": ["Sonia", "dentist", "35 hours"], "value": "YES" },
+        { "itemLabels": ["Victor", "coach", "20 hours"], "value": "YES" }
+      ],
+      "grammarNote": "Multiple comparative clues can be chained to establish a full order: pilot (60) > vet (42) > dentist (35) > coach (20). Reading comparatives carefully and building a ranking is a key B1 reading strategy for both puzzles and real-world texts like reports or reviews."
+    },
+    {
+      "title": "Technology and devices (1)",
+      "themeSlug": "technology-and-devices",
+      "levelCode": "B1",
+      "languageCode": "en",
+      "gridSize": 4,
+      "narrativeIntro": "Four students are discussing how they use technology for studying and entertainment. Each person relies on a different device and uses it for a very different purpose.",
+      "grammarFocus": ["simple past", "present continuous", "comparatives"],
+      "categories": [
+        { "label": "People", "emoji": "🧑", "order": 0 },
+        { "label": "Devices", "emoji": "📱", "order": 1 },
+        { "label": "Uses", "emoji": "💡", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Aisha", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Connor", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Maya", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Rafi", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "laptop", "emoji": "💻" },
+        { "categoryIndex": 1, "label": "tablet", "emoji": "📱" },
+        { "categoryIndex": 1, "label": "smartwatch", "emoji": "⌚" },
+        { "categoryIndex": 1, "label": "camera", "emoji": "📷" },
+        { "categoryIndex": 2, "label": "studying", "emoji": "📚" },
+        { "categoryIndex": 2, "label": "gaming", "emoji": "🎮" },
+        { "categoryIndex": 2, "label": "fitness", "emoji": "🏃" },
+        { "categoryIndex": 2, "label": "photography", "emoji": "🖼️" }
+      ],
+      "clues": [
+        { "text": "Aisha used her device for coursework every evening last semester.", "clueType": "positive" },
+        { "text": "Aisha didn't use it for gaming.", "clueType": "negative" },
+        { "text": "Connor is currently playing an online multiplayer game.", "clueType": "positive" },
+        { "text": "The person who tracks fitness wore their device on their wrist.", "clueType": "relational" },
+        { "text": "Maya didn't use a laptop.", "clueType": "negative" },
+        { "text": "Rafi didn't take any photos last weekend.", "clueType": "negative" },
+        { "text": "The person who studies used the largest device.", "clueType": "relational" },
+        { "text": "The photographer used the camera.", "clueType": "relational" }
+      ],
+      "solution": [
+        { "itemLabels": ["Aisha", "laptop", "studying"], "value": "YES" },
+        { "itemLabels": ["Connor", "tablet", "gaming"], "value": "YES" },
+        { "itemLabels": ["Maya", "smartwatch", "fitness"], "value": "YES" },
+        { "itemLabels": ["Rafi", "camera", "photography"], "value": "YES" }
+      ],
+      "grammarNote": "The simple past describes a completed habit: 'Aisha used her device every evening last semester.' The present continuous shows something happening right now: 'Connor is currently playing.' 'Currently' emphasises the ongoing nature of the action."
+    },
+    {
+      "title": "Technology and devices (2)",
+      "themeSlug": "technology-and-devices",
+      "levelCode": "B1",
+      "languageCode": "en",
+      "gridSize": 4,
+      "narrativeIntro": "A tech blogger interviewed four people about their favourite gadgets. Each person had a different device and used it in a very specific way.",
+      "grammarFocus": ["simple past", "present continuous", "comparatives"],
+      "categories": [
+        { "label": "People", "emoji": "🧑", "order": 0 },
+        { "label": "Devices", "emoji": "📱", "order": 1 },
+        { "label": "Uses", "emoji": "💡", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Beth", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Hugo", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Lena", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Omar", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "e-reader", "emoji": "📖" },
+        { "categoryIndex": 1, "label": "drone", "emoji": "🚁" },
+        { "categoryIndex": 1, "label": "speaker", "emoji": "🔊" },
+        { "categoryIndex": 1, "label": "VR headset", "emoji": "🥽" },
+        { "categoryIndex": 2, "label": "reading", "emoji": "📚" },
+        { "categoryIndex": 2, "label": "filming", "emoji": "🎬" },
+        { "categoryIndex": 2, "label": "music", "emoji": "🎵" },
+        { "categoryIndex": 2, "label": "virtual travel", "emoji": "🌍" }
+      ],
+      "clues": [
+        { "text": "Beth read more books last year than the year before.", "clueType": "positive" },
+        { "text": "Beth didn't use a drone.", "clueType": "negative" },
+        { "text": "Hugo is currently filming a short documentary.", "clueType": "positive" },
+        { "text": "The person who uses the VR headset never goes outside to use their device.", "clueType": "relational" },
+        { "text": "Lena didn't use an e-reader.", "clueType": "negative" },
+        { "text": "Omar didn't listen to music with his device.", "clueType": "negative" },
+        { "text": "The person who listens to music uses the speaker.", "clueType": "relational" }
+      ],
+      "solution": [
+        { "itemLabels": ["Beth", "e-reader", "reading"], "value": "YES" },
+        { "itemLabels": ["Hugo", "drone", "filming"], "value": "YES" },
+        { "itemLabels": ["Lena", "speaker", "music"], "value": "YES" },
+        { "itemLabels": ["Omar", "VR headset", "virtual travel"], "value": "YES" }
+      ],
+      "grammarNote": "'Read more books than the year before' compares two past periods using the simple past. 'Is currently filming' describes an action happening around now. These two tenses often appear together to contrast past habits with present activities."
+    },
+    {
+      "title": "Technology and devices (3)",
+      "themeSlug": "technology-and-devices",
+      "levelCode": "B1",
+      "languageCode": "en",
+      "gridSize": 4,
+      "narrativeIntro": "Four colleagues at a digital agency each have a favourite piece of technology that helps them do their job. They recently compared their setups at a team meeting.",
+      "grammarFocus": ["simple past", "present continuous", "comparatives"],
+      "categories": [
+        { "label": "People", "emoji": "🧑", "order": 0 },
+        { "label": "Devices", "emoji": "📱", "order": 1 },
+        { "label": "Tasks", "emoji": "✅", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Dana", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Felix", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Iris", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Noel", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "dual monitor", "emoji": "🖥️" },
+        { "categoryIndex": 1, "label": "drawing tablet", "emoji": "🖊️" },
+        { "categoryIndex": 1, "label": "microphone", "emoji": "🎙️" },
+        { "categoryIndex": 1, "label": "external drive", "emoji": "💾" },
+        { "categoryIndex": 2, "label": "editing", "emoji": "✂️" },
+        { "categoryIndex": 2, "label": "illustration", "emoji": "🎨" },
+        { "categoryIndex": 2, "label": "podcasting", "emoji": "🎧" },
+        { "categoryIndex": 2, "label": "backup", "emoji": "☁️" }
+      ],
+      "clues": [
+        { "text": "Dana edited more videos last quarter than any other team member.", "clueType": "positive" },
+        { "text": "Dana didn't use a drawing tablet.", "clueType": "negative" },
+        { "text": "Felix is currently recording a new episode.", "clueType": "positive" },
+        { "text": "The person who does illustration needs a device they can draw on directly.", "clueType": "relational" },
+        { "text": "Iris didn't use a microphone.", "clueType": "negative" },
+        { "text": "Noel didn't back up any files last week.", "clueType": "negative" },
+        { "text": "The person doing backups used the external drive.", "clueType": "relational" }
+      ],
+      "solution": [
+        { "itemLabels": ["Dana", "dual monitor", "editing"], "value": "YES" },
+        { "itemLabels": ["Felix", "microphone", "podcasting"], "value": "YES" },
+        { "itemLabels": ["Iris", "drawing tablet", "illustration"], "value": "YES" },
+        { "itemLabels": ["Noel", "external drive", "backup"], "value": "YES" }
+      ],
+      "grammarNote": "'Edited more videos than any other team member' uses 'more than any other' for a superlative-like comparison in past context. This is a natural alternative to 'the most': 'She worked harder than anyone else' = 'She worked the hardest'."
+    },
+    {
+      "title": "Technology and devices (4)",
+      "themeSlug": "technology-and-devices",
+      "levelCode": "B1",
+      "languageCode": "en",
+      "gridSize": 4,
+      "narrativeIntro": "A group of friends share a flat and each person has one piece of tech they couldn't live without. They argued about whose gadget was the most useful.",
+      "grammarFocus": ["simple past", "present continuous", "comparatives"],
+      "categories": [
+        { "label": "People", "emoji": "🧑", "order": 0 },
+        { "label": "Devices", "emoji": "📱", "order": 1 },
+        { "label": "Benefits", "emoji": "✨", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Chloe", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Dylan", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Freya", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Miles", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "robot vacuum", "emoji": "🤖" },
+        { "categoryIndex": 1, "label": "air fryer", "emoji": "🍳" },
+        { "categoryIndex": 1, "label": "smart thermostat", "emoji": "🌡️" },
+        { "categoryIndex": 1, "label": "projector", "emoji": "📽️" },
+        { "categoryIndex": 2, "label": "saves time", "emoji": "⏱️" },
+        { "categoryIndex": 2, "label": "saves money", "emoji": "💰" },
+        { "categoryIndex": 2, "label": "saves energy", "emoji": "⚡" },
+        { "categoryIndex": 2, "label": "entertainment", "emoji": "🎬" }
+      ],
+      "clues": [
+        { "text": "Chloe spent less time cleaning after she got her device.", "clueType": "positive" },
+        { "text": "Chloe didn't use a projector.", "clueType": "negative" },
+        { "text": "Dylan is currently cooking dinner more quickly than before.", "clueType": "positive" },
+        { "text": "The device that saves energy controls the temperature at home.", "clueType": "relational" },
+        { "text": "Freya didn't use a robot vacuum.", "clueType": "negative" },
+        { "text": "Miles didn't use his device for entertainment.", "clueType": "negative" },
+        { "text": "The projector was used mainly for entertainment.", "clueType": "relational" }
+      ],
+      "solution": [
+        { "itemLabels": ["Chloe", "robot vacuum", "saves time"], "value": "YES" },
+        { "itemLabels": ["Dylan", "air fryer", "saves money"], "value": "YES" },
+        { "itemLabels": ["Freya", "smart thermostat", "saves energy"], "value": "YES" },
+        { "itemLabels": ["Miles", "projector", "entertainment"], "value": "YES" }
+      ],
+      "grammarNote": "'Is currently cooking more quickly than before' shows present continuous + comparative adverb. 'Quickly' is an adverb, so it uses 'more quickly' not 'quicklier'. Most adverbs ending in -ly form comparatives with 'more': more carefully, more slowly, more quickly."
+    },
+    {
+      "title": "Technology and devices (5)",
+      "themeSlug": "technology-and-devices",
+      "levelCode": "B1",
+      "languageCode": "en",
+      "gridSize": 4,
+      "narrativeIntro": "Four people presented their tech products at a startup event. Each product was designed for a different audience and solved a different problem.",
+      "grammarFocus": ["simple past", "present continuous", "comparatives"],
+      "categories": [
+        { "label": "People", "emoji": "🧑", "order": 0 },
+        { "label": "Products", "emoji": "📦", "order": 1 },
+        { "label": "Target users", "emoji": "👥", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Amara", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Joel", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Nina", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Theo", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "sleep tracker", "emoji": "😴" },
+        { "categoryIndex": 1, "label": "language app", "emoji": "🗣️" },
+        { "categoryIndex": 1, "label": "money planning tool", "emoji": "💳" },
+        { "categoryIndex": 1, "label": "focus timer", "emoji": "⏲️" },
+        { "categoryIndex": 2, "label": "teenagers", "emoji": "🧑‍🎓" },
+        { "categoryIndex": 2, "label": "travellers", "emoji": "✈️" },
+        { "categoryIndex": 2, "label": "families", "emoji": "👨‍👩‍👧" },
+        { "categoryIndex": 2, "label": "students", "emoji": "📖" }
+      ],
+      "clues": [
+        { "text": "Amara's product helped users sleep better than before.", "clueType": "positive" },
+        { "text": "Amara didn't design it for students.", "clueType": "negative" },
+        { "text": "Joel is currently showing his app to a group of tourists.", "clueType": "positive" },
+        { "text": "The money planning tool was designed for people who share household costs.", "clueType": "relational" },
+        { "text": "Nina didn't build a sleep tracker.", "clueType": "negative" },
+        { "text": "Theo didn't target teenagers with his product.", "clueType": "negative" },
+        { "text": "The focus timer was designed for students.", "clueType": "relational" }
+      ],
+      "solution": [
+        { "itemLabels": ["Amara", "sleep tracker", "teenagers"], "value": "YES" },
+        { "itemLabels": ["Joel", "language app", "travellers"], "value": "YES" },
+        { "itemLabels": ["Nina", "money planning tool", "families"], "value": "YES" },
+        { "itemLabels": ["Theo", "focus timer", "students"], "value": "YES" }
+      ],
+      "grammarNote": "'Helped users sleep better than before' combines the simple past with a comparative adverb. 'Better' is the irregular comparative of 'well' and 'good'. Other irregular comparatives at B1: good→better, bad→worse, far→further/farther."
+    },
+    {
+      "title": "Health and lifestyle (1)",
+      "themeSlug": "health-and-lifestyle",
+      "levelCode": "B1",
+      "languageCode": "en",
+      "gridSize": 4,
+      "narrativeIntro": "Four friends joined a wellness challenge last month. Each person chose a different healthy habit and found a different way to track their progress.",
+      "grammarFocus": ["simple past", "present continuous", "comparatives"],
+      "categories": [
+        { "label": "People", "emoji": "🧑", "order": 0 },
+        { "label": "Habits", "emoji": "💪", "order": 1 },
+        { "label": "Tracking", "emoji": "📊", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Carl", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Jade", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Marta", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Sam", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "running", "emoji": "🏃" },
+        { "categoryIndex": 1, "label": "meditation", "emoji": "🧘" },
+        { "categoryIndex": 1, "label": "meal prep", "emoji": "🥗" },
+        { "categoryIndex": 1, "label": "cycling", "emoji": "🚴" },
+        { "categoryIndex": 2, "label": "journal", "emoji": "📓" },
+        { "categoryIndex": 2, "label": "app", "emoji": "📱" },
+        { "categoryIndex": 2, "label": "spreadsheet", "emoji": "📊" },
+        { "categoryIndex": 2, "label": "calendar", "emoji": "📅" }
+      ],
+      "clues": [
+        { "text": "Carl ran more kilometres last month than the month before.", "clueType": "positive" },
+        { "text": "Carl didn't track his progress in a journal.", "clueType": "negative" },
+        { "text": "Jade is currently writing down her thoughts after each session.", "clueType": "positive" },
+        { "text": "The person who does meal prep records everything in a detailed document.", "clueType": "relational" },
+        { "text": "Marta didn't take up running.", "clueType": "negative" },
+        { "text": "Marta didn't use a spreadsheet.", "clueType": "negative" },
+        { "text": "Sam is not using an app to track his habit.", "clueType": "negative" },
+        { "text": "The cyclist tracked their rides on a calendar.", "clueType": "relational" }
+      ],
+      "solution": [
+        { "itemLabels": ["Carl", "running", "app"], "value": "YES" },
+        { "itemLabels": ["Jade", "meditation", "journal"], "value": "YES" },
+        { "itemLabels": ["Marta", "meal prep", "spreadsheet"], "value": "YES" },
+        { "itemLabels": ["Sam", "cycling", "calendar"], "value": "YES" }
+      ],
+      "grammarNote": "'Ran more kilometres than the month before' uses the irregular simple past of 'run'. Many common verbs are irregular: run→ran, write→wrote, take→took. These must be memorised as they don't follow the regular -ed pattern."
+    },
+    {
+      "title": "Health and lifestyle (2)",
+      "themeSlug": "health-and-lifestyle",
+      "levelCode": "B1",
+      "languageCode": "en",
+      "gridSize": 4,
+      "narrativeIntro": "A health clinic organised a wellbeing week for its staff. Four employees each tried a different activity and reported back on how it went.",
+      "grammarFocus": ["simple past", "present continuous", "comparatives"],
+      "categories": [
+        { "label": "People", "emoji": "🧑", "order": 0 },
+        { "label": "Activities", "emoji": "🏋️", "order": 1 },
+        { "label": "Results", "emoji": "📈", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Amy", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Dan", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Holly", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Kai", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "swimming", "emoji": "🏊" },
+        { "categoryIndex": 1, "label": "yoga", "emoji": "🧘" },
+        { "categoryIndex": 1, "label": "hiking", "emoji": "🥾" },
+        { "categoryIndex": 1, "label": "gym", "emoji": "🏋️" },
+        { "categoryIndex": 2, "label": "better sleep", "emoji": "😴" },
+        { "categoryIndex": 2, "label": "less stress", "emoji": "😌" },
+        { "categoryIndex": 2, "label": "more energy", "emoji": "⚡" },
+        { "categoryIndex": 2, "label": "stronger muscles", "emoji": "💪" }
+      ],
+      "clues": [
+        { "text": "Amy slept better after the first week than before.", "clueType": "positive" },
+        { "text": "Amy didn't go hiking.", "clueType": "negative" },
+        { "text": "Dan is currently lifting heavier weights than last month.", "clueType": "positive" },
+        { "text": "The activity that reduced stress most was done indoors without moving much.", "clueType": "relational" },
+        { "text": "Holly didn't do yoga.", "clueType": "negative" },
+        { "text": "Kai didn't report feeling less stressed.", "clueType": "negative" },
+        { "text": "The hiker reported having more energy than before.", "clueType": "relational" }
+      ],
+      "solution": [
+        { "itemLabels": ["Amy", "swimming", "better sleep"], "value": "YES" },
+        { "itemLabels": ["Dan", "gym", "stronger muscles"], "value": "YES" },
+        { "itemLabels": ["Holly", "hiking", "more energy"], "value": "YES" },
+        { "itemLabels": ["Kai", "yoga", "less stress"], "value": "YES" }
+      ],
+      "grammarNote": "'Slept better after the first week than before' uses the irregular past of 'sleep' and the comparative 'better'. 'Is currently lifting heavier weights' combines the present continuous with a comparative adjective, showing ongoing improvement."
+    },
+    {
+      "title": "Health and lifestyle (3)",
+      "themeSlug": "health-and-lifestyle",
+      "levelCode": "B1",
+      "languageCode": "en",
+      "gridSize": 4,
+      "narrativeIntro": "Four people started new health routines at the beginning of the year. They each focused on a different area and found a different source of motivation.",
+      "grammarFocus": ["simple past", "present continuous", "comparatives"],
+      "categories": [
+        { "label": "People", "emoji": "🧑", "order": 0 },
+        { "label": "Focus area", "emoji": "🎯", "order": 1 },
+        { "label": "Motivation", "emoji": "🌟", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Grace", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Leon", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Petra", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Will", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "nutrition", "emoji": "🥦" },
+        { "categoryIndex": 1, "label": "sleep", "emoji": "😴" },
+        { "categoryIndex": 1, "label": "mental health", "emoji": "🧠" },
+        { "categoryIndex": 1, "label": "strength", "emoji": "🏋️" },
+        { "categoryIndex": 2, "label": "a coach", "emoji": "🧑‍🏫" },
+        { "categoryIndex": 2, "label": "a podcast", "emoji": "🎧" },
+        { "categoryIndex": 2, "label": "a friend", "emoji": "🤝" },
+        { "categoryIndex": 2, "label": "a book", "emoji": "📗" }
+      ],
+      "clues": [
+        { "text": "Grace changed her diet more than anyone else in the group.", "clueType": "positive" },
+        { "text": "Grace didn't get advice from a coach.", "clueType": "negative" },
+        { "text": "Leon is currently listening to his favourite wellness show.", "clueType": "positive" },
+        { "text": "The person focused on mental health worked with a professional.", "clueType": "relational" },
+        { "text": "Petra didn't focus on nutrition.", "clueType": "negative" },
+        { "text": "Will didn't focus on strength training.", "clueType": "negative" },
+        { "text": "The person focused on strength was inspired by a book.", "clueType": "relational" }
+      ],
+      "solution": [
+        { "itemLabels": ["Grace", "nutrition", "a friend"], "value": "YES" },
+        { "itemLabels": ["Leon", "sleep", "a podcast"], "value": "YES" },
+        { "itemLabels": ["Petra", "mental health", "a coach"], "value": "YES" },
+        { "itemLabels": ["Will", "strength", "a book"], "value": "YES" }
+      ],
+      "grammarNote": "'Changed her diet more than anyone else' uses 'more than anyone else' for a superlative-style comparison. This pattern is very natural in spoken and written B1 English: 'He trained harder than anyone else', 'She studied more than anyone on the course'."
+    },
+    {
+      "title": "Health and lifestyle (4)",
+      "themeSlug": "health-and-lifestyle",
+      "levelCode": "B1",
+      "languageCode": "en",
+      "gridSize": 4,
+      "narrativeIntro": "Four teenagers took part in a school health project. Each one researched a different topic and presented their findings to the class.",
+      "grammarFocus": ["simple past", "present continuous", "comparatives"],
+      "categories": [
+        { "label": "People", "emoji": "🧑", "order": 0 },
+        { "label": "Topics", "emoji": "📋", "order": 1 },
+        { "label": "Key finding", "emoji": "🔍", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Eve", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Liam", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Nora", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Zack", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "hydration", "emoji": "💧" },
+        { "categoryIndex": 1, "label": "screen time", "emoji": "📺" },
+        { "categoryIndex": 1, "label": "posture", "emoji": "🪑" },
+        { "categoryIndex": 1, "label": "sugar intake", "emoji": "🍬" },
+        { "categoryIndex": 2, "label": "drink more water", "emoji": "🚰" },
+        { "categoryIndex": 2, "label": "take more breaks", "emoji": "⏸️" },
+        { "categoryIndex": 2, "label": "sit up straighter", "emoji": "🧍" },
+        { "categoryIndex": 2, "label": "eat less sugar", "emoji": "🚫" }
+      ],
+      "clues": [
+        { "text": "Eve found that most students drank less water than they should.", "clueType": "positive" },
+        { "text": "Eve didn't research screen time.", "clueType": "negative" },
+        { "text": "Liam is currently adding the final slides to his presentation about devices.", "clueType": "positive" },
+        { "text": "The student who researched posture recommended a physical change to the body.", "clueType": "relational" },
+        { "text": "Nora didn't research hydration.", "clueType": "negative" },
+        { "text": "Zack didn't conclude that students should sit up straighter.", "clueType": "negative" },
+        { "text": "The student who researched sugar recommended eating less of it.", "clueType": "relational" }
+      ],
+      "solution": [
+        { "itemLabels": ["Eve", "hydration", "drink more water"], "value": "YES" },
+        { "itemLabels": ["Liam", "screen time", "take more breaks"], "value": "YES" },
+        { "itemLabels": ["Nora", "posture", "sit up straighter"], "value": "YES" },
+        { "itemLabels": ["Zack", "sugar intake", "eat less sugar"], "value": "YES" }
+      ],
+      "grammarNote": "'Drank less water than they should' uses the irregular past of 'drink' and a modal in the comparative clause. 'Than they should' is short for 'than they should drink' — a common way to compare behaviour with a recommended standard."
+    },
+    {
+      "title": "Health and lifestyle (5)",
+      "themeSlug": "health-and-lifestyle",
+      "levelCode": "B1",
+      "languageCode": "en",
+      "gridSize": 4,
+      "narrativeIntro": "Four adults visited a health expo and each one left inspired by something different. They all made a change to their lifestyle the following week.",
+      "grammarFocus": ["simple past", "present continuous", "comparatives"],
+      "categories": [
+        { "label": "People", "emoji": "🧑", "order": 0 },
+        { "label": "Inspiration", "emoji": "💡", "order": 1 },
+        { "label": "Change made", "emoji": "🔄", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Bea", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Finn", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Leila", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Marcus", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "a talk", "emoji": "🎤" },
+        { "categoryIndex": 1, "label": "a workshop", "emoji": "🛠️" },
+        { "categoryIndex": 1, "label": "a demo", "emoji": "🎯" },
+        { "categoryIndex": 1, "label": "a leaflet", "emoji": "📄" },
+        { "categoryIndex": 2, "label": "quit sugar", "emoji": "🚫🍬" },
+        { "categoryIndex": 2, "label": "started stretching", "emoji": "🤸" },
+        { "categoryIndex": 2, "label": "bought a bike", "emoji": "🚲" },
+        { "categoryIndex": 2, "label": "improved sleep", "emoji": "😴" }
+      ],
+      "clues": [
+        { "text": "Bea was more inspired by the live presentation than by anything she read.", "clueType": "positive" },
+        { "text": "Bea didn't quit sugar.", "clueType": "negative" },
+        { "text": "Finn is currently stretching every morning before work.", "clueType": "positive" },
+        { "text": "The person who bought a bike was inspired by something they tried themselves at the event.", "clueType": "relational" },
+        { "text": "Leila didn't attend a talk.", "clueType": "negative" },
+        { "text": "Marcus didn't pick up a leaflet at the event.", "clueType": "negative" },
+        { "text": "The person inspired by the leaflet quit sugar.", "clueType": "relational" }
+      ],
+      "solution": [
+        { "itemLabels": ["Bea", "a talk", "improved sleep"], "value": "YES" },
+        { "itemLabels": ["Finn", "a workshop", "started stretching"], "value": "YES" },
+        { "itemLabels": ["Leila", "a demo", "bought a bike"], "value": "YES" },
+        { "itemLabels": ["Marcus", "a leaflet", "quit sugar"], "value": "YES" }
+      ],
+      "grammarNote": "'Was more inspired by X than by Y' uses the comparative with a past passive structure. The passive 'was inspired by' is common at B1 for describing reactions or influences: 'She was surprised by the results', 'He was motivated by his coach'."
+    }
+  ]
+}

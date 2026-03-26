@@ -7,6 +7,7 @@ import Link from "next/link";
 import PuzzleGrid, { GridState } from "./PuzzleGrid";
 import ClueList from "./ClueList";
 import TutorialOverlay, { TUTORIAL_COMPLETED_KEY } from "./TutorialOverlay";
+import basePath from "@/lib/basePath";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -256,7 +257,7 @@ export default function PuzzlePlayer({
           {/* Left: fCC logo */}
           <div>
             <Image
-              src="/fcc_primary_large.svg"
+              src={`${basePath}/fcc_primary_large.svg`}
               alt="freeCodeCamp"
               width={160}
               height={18}
@@ -330,7 +331,7 @@ export default function PuzzlePlayer({
             {puzzleTitle}
           </h1>
           <div className="flex items-center gap-1.5 font-mono text-base text-fcc-fg-muted tabular-nums shrink-0 bg-fcc-bg-tertiary border border-fcc-bg-quaternary rounded px-3 py-1.5">
-            <Image src="/icons/timer.svg" alt="" width={16} height={16} className="opacity-50" />
+            <Image src={`${basePath}/icons/timer.svg`} alt="" width={16} height={16} className="opacity-50" />
             {formatTime(elapsed)}
           </div>
         </div>
@@ -446,7 +447,7 @@ export default function PuzzlePlayer({
                 className="w-full flex items-center justify-center gap-1.5 px-5 py-2.5 font-mono font-bold text-base rounded bg-fcc-green text-fcc-green-dark hover:opacity-90 transition-opacity"
               >
                 Next puzzle
-                <Image src="/icons/arrow_forward.svg" alt="" width={16} height={16} style={{ filter: "brightness(0)" }} />
+                <Image src={`${basePath}/icons/arrow_forward.svg`} alt="" width={16} height={16} style={{ filter: "brightness(0)" }} />
               </Link>
             ) : (
               <p className="font-mono text-base text-cell-yes font-bold">✓ All done!</p>

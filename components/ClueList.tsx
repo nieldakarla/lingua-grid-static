@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useAudio } from "@/hooks/useAudio";
+import basePath from "@/lib/basePath";
 
 export interface Clue {
   id: string;
@@ -32,7 +33,7 @@ function ClueRow({ clue, index, lang }: { clue: Clue; index: number; lang: strin
         aria-label={`Play clue ${index + 1}`}
       >
         <Image
-          src="/icons/play_circle.svg"
+          src={`${basePath}/icons/play_circle.svg`}
           alt=""
           width={22}
           height={22}

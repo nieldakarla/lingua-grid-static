@@ -80,8 +80,8 @@
           "clueType": "relational"
         },
         {
-          "text": "🌊 The animal in the ocean is not brown.",
-          "clueType": "negative"
+          "text": "🟠 The orange animal lives in the forest.",
+          "clueType": "relational"
         }
       ],
       "solution": [
@@ -119,7 +119,7 @@
         { "text": "🐱 The cat is not pink.", "clueType": "negative" },
         { "text": "🐱 The cat is not black.", "clueType": "negative" },
         { "text": "🐶 The dog is black.", "clueType": "positive" },
-        { "text": "🐶 The dog is not in the sky.", "clueType": "negative" },
+        { "text": "🟢 The green animal is in the sky.", "clueType": "relational" },
         {
           "text": "⬛ The black animal lives on a farm.",
           "clueType": "relational"
@@ -291,7 +291,7 @@
         { "text": "👩 Mom has a bird.", "clueType": "positive" },
         { "text": "👨 His pet is not a dog.", "clueType": "negative" },
         { "text": "🔵 The blue pet is a bird.", "clueType": "relational" },
-        { "text": "👴 Grandma's pet is not green.", "clueType": "negative" }
+        { "text": "👵 Grandma's pet is not green.", "clueType": "negative" }
       ],
       "solution": [
         { "itemLabels": ["mom", "bird", "blue"], "value": "YES" },
@@ -425,7 +425,7 @@
           "text": "🔵 The person whose color is blue has a ball.",
           "clueType": "relational"
         },
-        { "text": "👴 Grandpa does not have a ball.", "clueType": "negative" }
+        { "text": "👩 Mom has a doll.", "clueType": "positive" }
       ],
       "solution": [
         { "itemLabels": ["mom", "red", "doll"], "value": "YES" },

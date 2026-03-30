@@ -70,10 +70,30 @@ Opens Prisma Studio at `http://localhost:5555` — a GUI to browse and edit all 
 Puzzles are generated using the **LinguaGrid — Puzzle Factory** project in Claude.ai. That project contains the prompt templates and generation pipeline. Once generated, save the output to the appropriate file in `content/puzzle/` and run:
 
 ```bash
-pnpm validate-puzzles              # check structure and solution integrity
-pnpm validate-puzzles en-a1.json  # validate a single file
-pnpm db:seed-puzzles               # import after validation passes
+python3 scripts/validate_puzzles.py              # validate all files
+python3 scripts/validate_puzzles.py en-a1.json  # validate a single file
+pnpm db:seed-puzzles                              # import after validation passes
 ```
+
+### Puzzle validator
+
+`scripts/validate_puzzles.py` checks every puzzle in a file before it reaches the database. It catches:
+
+- **Structural errors** — duplicate items in solution, gridSize mismatch
+- **Clue contradictions** — a negative clue that matches the solution, or a positive clue that doesn't
+- **Ordering errors** — hour comparisons in B1 puzzles that are reversed
+- **Uniqueness failures** — puzzles with 0 or 2+ valid solutions (PRE / A1 / A2 levels)
+
+#### Pre-commit hook
+
+To run the validator automatically on every `git commit` that touches a puzzle file, install the hook once after cloning:
+
+```bash
+cp scripts/pre-commit-hook.sh .git/hooks/pre-commit
+chmod +x .git/hooks/pre-commit
+```
+
+> **Bypassing the hook:** `git commit --no-verify`
 
 ---
 
@@ -178,9 +198,10 @@ prisma/
   schema.prisma         # Full database schema
   seed.ts               # Base seed (languages, levels, themes)
 scripts/
-  seed-puzzles.ts       # Puzzle importer (skips existing)
-  reseed.ts             # Puzzle replacer (reseed-file / reseed-puzzle)
-  validate-puzzle.ts    # Puzzle structure and solution validator
+  seed-puzzles.ts          # Puzzle importer (skips existing)
+  reseed.ts                # Puzzle replacer (reseed-file / reseed-puzzle)
+  validate_puzzles.py      # Puzzle structure, clue logic and uniqueness validator
+  pre-commit-hook.sh       # Git pre-commit hook installer
 ```
 
 ---

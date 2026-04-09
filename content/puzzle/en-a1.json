@@ -25,8 +25,8 @@
         { "categoryIndex": 2, "label": "water", "emoji": "💧" }
       ],
       "clues": [
-        { "text": "🐱 The cat is not red.", "clueType": "negative" },
-        { "text": "🐱 The cat is not purple.", "clueType": "negative" },
+        { "text": "🐱 The cat's collar is not red.", "clueType": "negative" },
+        { "text": "🐱 The cat's collar is not purple.", "clueType": "negative" },
         {
           "text": "🟡 The animal with the yellow collar is in the tree.",
           "clueType": "relational"
@@ -72,8 +72,8 @@
         { "categoryIndex": 2, "label": "forest", "emoji": "🌲" }
       ],
       "clues": [
-        { "text": "🐴 The horse is not orange.", "clueType": "negative" },
-        { "text": "🐴 The horse is not brown.", "clueType": "negative" },
+        { "text": "🐴 The horse's collar is not orange.", "clueType": "negative" },
+        { "text": "🐴 The horse's collar is not brown.", "clueType": "negative" },
         { "text": "🐸 The frog is not in the cave.", "clueType": "negative" },
         {
           "text": "🟤 The animal with the brown collar lives in the cave.",
@@ -116,9 +116,9 @@
         { "categoryIndex": 2, "label": "pond", "emoji": "🪷" }
       ],
       "clues": [
-        { "text": "🐱 The cat is not pink.", "clueType": "negative" },
-        { "text": "🐱 The cat is not black.", "clueType": "negative" },
-        { "text": "🐶 The dog is black.", "clueType": "positive" },
+        { "text": "🐱 The cat's collar is not pink.", "clueType": "negative" },
+        { "text": "🐱 The cat's collar is not black.", "clueType": "negative" },
+        { "text": "🐶 The dog's collar is black.", "clueType": "positive" },
         { "text": "🟢 The animal with the green collar is in the sky.", "clueType": "relational" },
         {
           "text": "⬛ The animal with the black collar lives on a farm.",

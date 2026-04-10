@@ -159,7 +159,7 @@
       "clues": [
         { "text": "O presente da livraria é o livro.", "clueType": "relational" },
         { "text": "Quem comprou online escolheu a caneca.", "clueType": "relational" },
-        { "text": "Beto não comprou na livraria.", "clueType": "negative" },
+        { "text": "Cida comprou o livro.", "clueType": "positive" },
         { "text": "O chocolate veio do mercado.", "clueType": "relational" },
         { "text": "Davi comprou no shopping.", "clueType": "positive" },
         { "text": "Alice comprou online.", "clueType": "positive" }
@@ -201,11 +201,11 @@
       ],
       "clues": [
         { "text": "A consulta das 08h é com o dentista.", "clueType": "relational" },
-        { "text": "Tom está às 11h.", "clueType": "positive" },
-        { "text": "Eva é às 10h.", "clueType": "positive" },
-        { "text": "João não é com o psicólogo.", "clueType": "negative" },
-        { "text": "Quem está às 11h é com o psicólogo.", "clueType": "relational" },
-        { "text": "João é com o médico.", "clueType": "positive" }
+        { "text": "Tom tem consulta às 11h.", "clueType": "positive" },
+        { "text": "Eva tem consulta às 10h.", "clueType": "positive" },
+        { "text": "João não consulta o psicólogo.", "clueType": "negative" },
+        { "text": "Quem está às 11h consulta o psicólogo.", "clueType": "relational" },
+        { "text": "A consulta de João é com o médico.", "clueType": "positive" }
       ],
       "solution": [
         { "itemLabels": ["João", "médico", "09h"], "value": "YES" },
@@ -213,7 +213,7 @@
         { "itemLabels": ["Tom", "psicólogo", "11h"], "value": "YES" },
         { "itemLabels": ["Eva", "fisioterapeuta", "10h"], "value": "YES" }
       ],
-      "grammarNote": "Relacione horário e profissional: \"a consulta das 08h é com o dentista\"; \"quem está às 11h é com o psicólogo\". Positivas diretas fixam pares restantes: \"Tom está às 11h\"."
+      "grammarNote": "Relacione horário e profissional: \"a consulta das 08h é com o dentista\"; \"quem está às 11h consulta o psicólogo\". Positivas diretas fixam pares restantes: \"Tom tem consulta às 11h\"."
     },
     {
       "title": "Agenda de Estudos (1)",
@@ -243,7 +243,7 @@
         { "categoryIndex": 2, "label": "quinta" }
       ],
       "clues": [
-        { "text": "Quem estuda na quarta é inglês.", "clueType": "relational" },
+        { "text": "A matéria de quarta é inglês.", "clueType": "relational" },
         { "text": "Nina estuda matemática.", "clueType": "positive" },
         { "text": "Léo estuda na quarta.", "clueType": "positive" },
         { "text": "Paula não estuda história.", "clueType": "negative" },
@@ -256,7 +256,7 @@
         { "itemLabels": ["Paula", "ciências", "quinta"], "value": "YES" },
         { "itemLabels": ["Rui", "história", "terça"], "value": "YES" }
       ],
-      "grammarNote": "Relacione dia e matéria com \"de\"/\"na\": \"a matéria de terça é história\"; \"quem estuda na quarta é inglês\". Positivas diretas fixam pessoa+dia: \"Léo estuda na quarta\"."
+      "grammarNote": "Relacione dia e matéria com \"de\": \"a matéria de terça é história\"; \"a matéria de quarta é inglês\". Positivas diretas fixam pessoa+dia: \"Léo estuda na quarta\"."
     },
     {
       "title": "Viagem de Trabalho (2)",
@@ -417,7 +417,7 @@
       "clues": [
         { "text": "O dentista atende na Clínica Norte.", "clueType": "relational" },
         { "text": "A consulta na Clínica Centro é com o médico.", "clueType": "relational" },
-        { "text": "Quem vai à Clínica Viva é com o psicólogo.", "clueType": "relational" },
+        { "text": "Na Clínica Viva o profissional é o psicólogo.", "clueType": "relational" },
         { "text": "João vai à Clínica Centro.", "clueType": "positive" },
         { "text": "Eva não vai ao psicólogo.", "clueType": "negative" },
         { "text": "Mia vai à Clínica Norte.", "clueType": "positive" }
@@ -428,7 +428,7 @@
         { "itemLabels": ["Tom", "psicólogo", "Clínica Viva"], "value": "YES" },
         { "itemLabels": ["Eva", "fisioterapeuta", "Clínica Sol"], "value": "YES" }
       ],
-      "grammarNote": "Relacione profissional↔clínica: \"o dentista atende na Clínica Norte\"; \"na Clínica Centro é com o médico\". Positivas diretas fixam quem vai a qual clínica."
+      "grammarNote": "Relacione profissional↔clínica: \"o dentista atende na Clínica Norte\"; \"a consulta na Clínica Centro é com o médico\". Positivas diretas fixam quem vai a qual clínica."
     },
     {
       "title": "Exames (1)",
@@ -459,11 +459,11 @@
       ],
       "clues": [
         { "text": "O exame de quarta é raio-x.", "clueType": "relational" },
-        { "text": "Rui faz urina.", "clueType": "positive" },
+        { "text": "Rui faz exame de urina.", "clueType": "positive" },
         { "text": "Léo não faz raio-x.", "clueType": "negative" },
-        { "text": "Paula faz visão.", "clueType": "positive" },
+        { "text": "Paula faz exame de visão.", "clueType": "positive" },
         { "text": "O exame de segunda é sangue.", "clueType": "relational" },
-        { "text": "Visão não é na terça.", "clueType": "negative" }
+        { "text": "O exame de visão não é na terça.", "clueType": "negative" }
       ],
       "solution": [
         { "itemLabels": ["Léo", "sangue", "segunda"], "value": "YES" },
@@ -471,7 +471,7 @@
         { "itemLabels": ["Paula", "visão", "quinta"], "value": "YES" },
         { "itemLabels": ["Rui", "urina", "terça"], "value": "YES" }
       ],
-      "grammarNote": "Relacione dia↔exame: \"o exame de segunda é sangue\"; \"o exame de quarta é raio-x\". Positivas diretas fixam pessoa↔exame: \"Rui faz urina\", \"Paula faz visão\"."
+      "grammarNote": "Relacione dia↔exame: \"o exame de segunda é sangue\"; \"o exame de quarta é raio-x\". Positivas diretas fixam pessoa↔exame: \"Rui faz exame de urina\", \"Paula faz exame de visão\"."
     }
   ]
 }

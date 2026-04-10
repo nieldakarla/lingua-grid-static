@@ -540,6 +540,59 @@ def check_uniqueness(puzzle):
     return errors, warnings
 
 
+# ─── 5. Pair coverage check ──────────────────────────────────────────────────
+
+def check_pair_coverage(puzzle):
+    """
+    For every pair of categories (A↔B, A↔C, B↔C, …), at least one clue should
+    mention items from both categories.  Works for any number of categories and
+    any language — uses item labels directly, not text patterns.
+    Always emits warnings (never errors).
+    """
+    errors = []
+    warnings = []
+
+    if is_pre_format(puzzle):
+        return errors, warnings  # PRE has only 2 categories — one pair by definition
+
+    all_items  = puzzle.get("items", [])
+    label_to_cat = {item["label"].lower(): item["categoryIndex"] for item in all_items}
+    n_cats = len(puzzle.get("categories", []))
+
+    if n_cats < 3:
+        return errors, warnings
+
+    # Count how many clues cover each category pair
+    pair_counts = {}
+    for a in range(n_cats):
+        for b in range(a + 1, n_cats):
+            pair_counts[(a, b)] = 0
+
+    for clue in puzzle.get("clues", []):
+        text = clue.get("text", "")
+        cats_in_clue = set()
+        for item in all_items:
+            if re.search(r'\b' + re.escape(item["label"]) + r'\b', text, re.IGNORECASE):
+                cats_in_clue.add(item["categoryIndex"])
+        # Mark every pair of categories that both appear in this clue
+        cats_list = sorted(cats_in_clue)
+        for i in range(len(cats_list)):
+            for j in range(i + 1, len(cats_list)):
+                key = (cats_list[i], cats_list[j])
+                if key in pair_counts:
+                    pair_counts[key] += 1
+
+    cat_labels = {c["order"]: c["label"] for c in puzzle.get("categories", [])}
+
+    for (a, b), count in sorted(pair_counts.items()):
+        if count == 0:
+            warnings.append(warn(
+                f"No clue covers the {cat_labels.get(a, a)}↔{cat_labels.get(b, b)} pair"
+            ))
+
+    return errors, warnings
+
+
 # ─── Main runner ──────────────────────────────────────────────────────────────
 
 def validate_file(path):
@@ -559,7 +612,8 @@ def validate_file(path):
         all_warnings = []
 
         for check in (check_structure, check_clue_contradictions,
-                      check_numeric_ordering, check_uniqueness):
+                      check_numeric_ordering, check_uniqueness,
+                      check_pair_coverage):
             e, w = check(puzzle)
             all_errors   += e
             all_warnings += w

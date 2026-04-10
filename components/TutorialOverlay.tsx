@@ -3,6 +3,7 @@
 import { useState, useCallback } from "react";
 import confetti from "canvas-confetti";
 import PuzzleGrid from "./PuzzleGrid";
+import { useTranslations } from "@/lib/translations";
 
 // ---------------------------------------------------------------------------
 // Constants
@@ -192,11 +193,13 @@ function cellKeyFrom(idA: string, idB: string): string {
 
 interface TutorialOverlayProps {
   onClose: () => void;
+  lang?: string;
 }
 
 type CompletionState = "none" | "t1-complete" | "t2-complete";
 
-export default function TutorialOverlay({ onClose }: TutorialOverlayProps) {
+export default function TutorialOverlay({ onClose, lang = "en" }: TutorialOverlayProps) {
+  const tr = useTranslations(lang);
   const [phase, setPhase] = useState<1 | 2>(1);
   const [stepIdx, setStepIdx] = useState(0);
   const [gridKey, setGridKey] = useState(0);
@@ -280,7 +283,7 @@ export default function TutorialOverlay({ onClose }: TutorialOverlayProps) {
             <div className="w-full flex items-center justify-between">
               <span className="w-8" />{/* spacer to centre title */}
               <h2 className="font-mono font-bold text-fcc-fg-primary text-2xl text-center">
-                LinguaGrid Tutorial
+                {tr.tutorialTitle}
               </h2>
               <button
                 type="button"
@@ -297,7 +300,7 @@ export default function TutorialOverlay({ onClose }: TutorialOverlayProps) {
               {/* Header row inside instruction card */}
               <div className="flex items-center justify-between">
                 <span className="font-mono text-xs font-bold text-fcc-fg-tertiary uppercase tracking-widest">
-                  Tutorial {phase} of 2 — Step {stepIdx + 1} of {steps.length}
+                  {tr.tutorialPhaseStep(phase, stepIdx + 1, steps.length)}
                 </span>
               </div>
               <p className="font-mono text-fcc-fg-primary text-base leading-relaxed">
@@ -312,7 +315,7 @@ export default function TutorialOverlay({ onClose }: TutorialOverlayProps) {
                     onClick={handleBack}
                     className="px-4 py-2 font-mono font-bold text-sm rounded border border-fcc-fg-muted/40 text-fcc-fg-secondary hover:border-fcc-fg-muted hover:text-fcc-fg-primary transition-colors"
                   >
-                    Back
+                    {tr.tutorialBackBtn}
                   </button>
                 ) : (
                   <span />
@@ -324,11 +327,11 @@ export default function TutorialOverlay({ onClose }: TutorialOverlayProps) {
                     onClick={handleOk}
                     className="px-5 py-2 font-mono font-bold text-sm rounded bg-fcc-yellow text-fcc-yellow-dark hover:opacity-90 transition-opacity"
                   >
-                    Next
+                    {tr.tutorialNextBtn}
                   </button>
                 ) : (
                   <p className="font-mono text-xs text-fcc-fg-muted">
-                    {tutorialFreeSolve ? "↑ Solve the puzzle above" : "↑ Click the highlighted cell above"}
+                    {tutorialFreeSolve ? tr.tutorialSolvePuzzle : tr.tutorialClickCell}
                   </p>
                 )}
               </div>
@@ -388,16 +391,14 @@ export default function TutorialOverlay({ onClose }: TutorialOverlayProps) {
           <div className="bg-fcc-bg-secondary rounded-lg border border-fcc-bg-quaternary p-8 max-w-sm w-full flex flex-col items-center gap-6 text-center">
             <p className="text-4xl">🎉</p>
             <p className="font-mono font-bold text-cell-yes text-lg">
-              {completion === "t1-complete"
-                ? "Well done! Tutorial 1 complete."
-                : "You're ready to play! Good luck."}
+              {completion === "t1-complete" ? tr.tutorialWellDone : tr.tutorialReady}
             </p>
             <button
               type="button"
               onClick={handleContinueAfterComplete}
               className="w-full px-5 py-2.5 font-mono font-bold text-base rounded bg-fcc-yellow text-fcc-yellow-dark hover:opacity-90 transition-opacity"
             >
-              {completion === "t1-complete" ? "Continue to Tutorial 2 →" : "Start playing!"}
+              {completion === "t1-complete" ? tr.tutorialContinueToT2 : tr.tutorialStartPlaying}
             </button>
           </div>
         </div>

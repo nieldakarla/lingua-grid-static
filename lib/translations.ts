@@ -83,7 +83,7 @@ const en: Translations = {
 };
 
 const pt: Translations = {
-  howToPlay: "Como jogar",
+  howToPlay: "How to play",
   filterLanguage: "Idioma",
   filterLevel: "Nível",
   filterCategory: "Categoria",

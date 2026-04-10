@@ -78,11 +78,7 @@ interface TutorialStep {
 
 const T1_STEPS: TutorialStep[] = [
   {
-    text: "LinguaGrid is a logic puzzle game that helps you practice a new language. Read the clues and fill in the grid.",
-    action: "ok",
-  },
-  {
-    text: "The goal is to find the unique match between all categories. Each item belongs to exactly one item in every other category.",
+    text: "LinguaGrid is a logic puzzle game that helps you practice a new language. The goal is to find the unique match between all categories — each item belongs to exactly one item in every other category.",
     action: "ok",
   },
   {
@@ -106,8 +102,19 @@ const T1_STEPS: TutorialStep[] = [
     activeClue: 1,
   },
   {
-    text: "Now use what you know. The dog is not green — so which color is left for the dog? Finish the puzzle!",
-    action: "freeSolve",
+    text: "The dog is not green and not red — it must be blue! Click dog × blue to confirm.",
+    action: "interact",
+    targetA: "t1-a-dog",
+    targetB: "t1-c-blue",
+    requiredState: "YES",
+    activeClue: 1,
+  },
+  {
+    text: "Only green is left for the bird. Click bird × green to finish the puzzle!",
+    action: "interact",
+    targetA: "t1-a-bird",
+    targetB: "t1-c-green",
+    requiredState: "YES",
     activeClue: 1,
   },
 ];
@@ -250,19 +257,18 @@ export default function TutorialOverlay({ onClose }: TutorialOverlayProps) {
     }
   }
 
-  if (!currentStep) return null;
-
   const tutorialTarget =
-    currentStep.action === "interact" && currentStep.targetA && currentStep.targetB
+    currentStep?.action === "interact" && currentStep.targetA && currentStep.targetB
       ? { itemAId: currentStep.targetA, itemBId: currentStep.targetB }
       : null;
 
-  const tutorialFreeSolve = currentStep.action === "freeSolve";
+  const tutorialFreeSolve = currentStep?.action === "freeSolve" || false;
+  const tutorialGridLocked = !currentStep || currentStep.action === "ok";
 
   return (
     <>
-      {/* ── Full-screen dark overlay ── */}
-      <div
+      {/* ── Full-screen dark overlay — hidden once stepIdx goes past the last step ── */}
+      {currentStep && <div
         className="fixed inset-0 z-[9999] flex items-start justify-center overflow-y-auto py-8 px-4"
         style={{ backgroundColor: "rgba(0,0,0,0.75)" }}
       >
@@ -281,6 +287,7 @@ export default function TutorialOverlay({ onClose }: TutorialOverlayProps) {
                 key={gridKey}
                 categories={categories}
                 items={items}
+                disabled={tutorialGridLocked}
                 tutorialTarget={tutorialTarget}
                 tutorialFreeSolve={tutorialFreeSolve}
                 onCellChange={handleCellChange}
@@ -366,7 +373,7 @@ export default function TutorialOverlay({ onClose }: TutorialOverlayProps) {
 
           </div>
         </div>{/* end page card */}
-      </div>
+      </div>}{/* end currentStep overlay */}
 
       {/* ── Completion modal — above the overlay ── */}
       {completion !== "none" && (

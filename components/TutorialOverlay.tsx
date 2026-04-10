@@ -276,10 +276,21 @@ export default function TutorialOverlay({ onClose }: TutorialOverlayProps) {
         <div className="w-full max-w-2xl bg-fcc-bg-secondary rounded-2xl shadow-2xl flex flex-col gap-6 p-8 my-auto">
           <div className="flex flex-col items-center gap-6">
 
-            {/* Title */}
-            <h2 className="font-mono font-bold text-fcc-fg-primary text-2xl text-center">
-              LinguaGrid Tutorial
-            </h2>
+            {/* Title row with close button */}
+            <div className="w-full flex items-center justify-between">
+              <span className="w-8" />{/* spacer to centre title */}
+              <h2 className="font-mono font-bold text-fcc-fg-primary text-2xl text-center">
+                LinguaGrid Tutorial
+              </h2>
+              <button
+                type="button"
+                onClick={handleSkip}
+                aria-label="Close tutorial"
+                className="w-8 h-8 flex items-center justify-center rounded font-bold text-fcc-fg-tertiary hover:text-fcc-fg-primary hover:bg-fcc-bg-quaternary transition-colors"
+              >
+                ✕
+              </button>
+            </div>
 
             {/* Instruction card — below title, above puzzle */}
             <div className="w-full rounded-lg p-5 flex flex-col gap-3 bg-fcc-bg-quaternary border border-fcc-fg-muted/20">

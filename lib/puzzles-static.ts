@@ -125,7 +125,7 @@ const LANGUAGE_NAMES: Record<string, string> = {
   en: "English",
   es: "Spanish",
   fr: "French",
-  pt: "Portuguese",
+  pt: "Português",
 };
 
 const LEVEL_ORDER: Record<string, number> = {
@@ -294,13 +294,27 @@ export function getNextPuzzle(
   languageId: string
 ): { id: string } | null {
   const puzzles = getAllPuzzles();
-  const inTheme = puzzles.filter((p) => p.themeId === themeId && p.id !== currentId);
-  if (inTheme.length > 0) return { id: inTheme[0].id };
+  const current = puzzles.find((p) => p.id === currentId);
+  if (!current) return null;
 
+  // Next puzzle within the same theme — only forward (title sorts after current)
+  const afterInTheme = puzzles
+    .filter((p) => p.themeId === themeId && p.title > current.title)
+    .sort((a, b) => a.title.localeCompare(b.title));
+  if (afterInTheme.length > 0) return { id: afterInTheme[0].id };
+
+  // First puzzle of the next theme (themes sorted alphabetically)
   const inLevel = puzzles.filter(
-    (p) => p.levelId === levelId && p.languageId === languageId && p.id !== currentId
+    (p) => p.levelId === levelId && p.languageId === languageId && p.themeId !== themeId
   );
-  return inLevel.length > 0 ? { id: inLevel[0].id } : null;
+  const themeIds = [...new Set(inLevel.map((p) => p.themeId))].sort();
+  const nextThemeId = themeIds.find((t) => t > themeId) ?? themeIds[0];
+  if (!nextThemeId) return null;
+
+  const firstOfNextTheme = inLevel
+    .filter((p) => p.themeId === nextThemeId)
+    .sort((a, b) => a.title.localeCompare(b.title))[0];
+  return firstOfNextTheme ? { id: firstOfNextTheme.id } : null;
 }
 
 export function getAvailableLanguages() {

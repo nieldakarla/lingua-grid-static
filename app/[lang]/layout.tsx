@@ -1,3 +1,5 @@
+import LangSync from "@/components/LangSync";
+
 export default function LangLayout({
   children,
   params,
@@ -5,5 +7,10 @@ export default function LangLayout({
   children: React.ReactNode;
   params: { lang: string };
 }) {
-  return <div data-lang={params.lang}>{children}</div>;
+  return (
+    <>
+      <LangSync lang={params.lang} />
+      <div data-lang={params.lang}>{children}</div>
+    </>
+  );
 }

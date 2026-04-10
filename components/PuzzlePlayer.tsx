@@ -8,6 +8,7 @@ import PuzzleGrid, { GridState } from "./PuzzleGrid";
 import ClueList from "./ClueList";
 import TutorialOverlay, { TUTORIAL_COMPLETED_KEY } from "./TutorialOverlay";
 import basePath from "@/lib/basePath";
+import { useTranslations } from "@/lib/translations";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -136,6 +137,7 @@ export default function PuzzlePlayer({
   levelCode,
 }: PuzzlePlayerProps) {
   const router = useRouter();
+  const tr = useTranslations(languageCode);
   const [, setGridState] = useState<GridState>({});
   const [modalState, setModalState] = useState<ModalState>("idle");
   const [mistakeCount, setMistakeCount] = useState(0);
@@ -145,16 +147,18 @@ export default function PuzzlePlayer({
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const [showTutorial, setShowTutorial] = useState(false);
   const [filterOpen, setFilterOpen] = useState(false);
+  const [completedIds, setCompletedIds] = useState<string[]>([]);
   const [grammarOpen, setGrammarOpen] = useState(false);
   useEffect(() => {
     setGrammarOpen(window.innerWidth >= 640);
   }, []);
 
-  // Check tutorial status on mount
+  // Check tutorial status on mount + load completed puzzle history
   useEffect(() => {
     if (!localStorage.getItem(TUTORIAL_COMPLETED_KEY)) {
       setShowTutorial(true);
     }
+    setCompletedIds(getLocalCompleted());
   }, []);
 
   // Timer — starts on first cell interaction, stops when solved
@@ -218,6 +222,7 @@ export default function PuzzlePlayer({
 
   function saveProgress() {
     addLocalCompleted(puzzleId);
+    setCompletedIds(getLocalCompleted());
   }
 
   function handleRestart() {
@@ -265,7 +270,7 @@ export default function PuzzlePlayer({
             onClick={() => setShowTutorial(true)}
             className="font-mono font-bold text-sm rounded px-4 py-2 bg-fcc-blue text-fcc-blue-dark hover:opacity-90 transition-opacity"
           >
-            How to play
+            {tr.howToPlay}
           </button>
           {/* Mobile: filter icon in header */}
           <button
@@ -286,25 +291,25 @@ export default function PuzzlePlayer({
         {filterOpen && (
           <div className="sm:hidden border-t border-fcc-bg-quaternary bg-fcc-bg-secondary px-4 py-3 flex flex-col gap-3">
             <FilterDropdown
-              label="Language"
+              label={tr.filterLanguage}
               value={languageCode}
               options={filterContext.languages.map((l) => ({ value: l.code, label: l.name }))}
               onChange={(v) => { handleLangChange(v); setFilterOpen(false); }}
             />
             <FilterDropdown
-              label="Level"
+              label={tr.filterLevel}
               value={levelCode}
               options={filterContext.levels.map((l) => ({ value: l.code, label: l.code }))}
               onChange={(v) => { handleLevelChange(v); setFilterOpen(false); }}
             />
             <FilterDropdown
-              label="Category"
+              label={tr.filterCategory}
               value={currentThemeId}
               options={filterContext.themes.map((t) => ({ value: t.id, label: t.name }))}
               onChange={(v) => { handleThemeChange(v); setFilterOpen(false); }}
             />
             <FilterDropdown
-              label="Puzzle"
+              label={tr.filterPuzzle}
               value={puzzleId}
               options={filterContext.puzzlesInTheme.map((p) => ({
                 value: p.id,
@@ -351,7 +356,7 @@ export default function PuzzlePlayer({
 
       {/* ── Tutorial overlay ── */}
       {showTutorial && (
-        <TutorialOverlay onClose={() => setShowTutorial(false)} />
+        <TutorialOverlay onClose={() => setShowTutorial(false)} lang={languageCode} />
       )}
 
       {/* ── Main content ── */}
@@ -385,7 +390,7 @@ export default function PuzzlePlayer({
         <section aria-label="Clues">
           <div className="w-fit p-4 rounded border border-fcc-bg-quaternary bg-fcc-bg-primary">
             <p className="font-mono text-xs font-bold text-fcc-fg-muted uppercase tracking-widest mb-2">
-              Clues — click any sentence to hear it
+              {tr.cluesHeader}
             </p>
             <div className="bg-fcc-bg-tertiary rounded p-3 mt-2 sm:max-h-none sm:overflow-visible max-h-48 overflow-y-auto">
               <ClueList clues={clues} lang={lang} />
@@ -409,7 +414,7 @@ export default function PuzzlePlayer({
                   height={22}
                   className="opacity-60 invert"
                 />
-                Grammar note
+                {tr.grammarNote}
               </summary>
               <p className="px-4 pt-0 pb-4 text-fcc-fg-primary">{grammarNote}</p>
             </details>
@@ -429,7 +434,11 @@ export default function PuzzlePlayer({
                 href={`/${languageCode}/puzzle/${p.id}`}
                 aria-label={`Puzzle ${i + 1}`}
                 className={`w-2.5 h-2.5 rounded-full transition-colors ${
-                  p.id === puzzleId
+                  completedIds.includes(p.id)
+                    ? p.id === puzzleId
+                      ? "bg-cell-yes ring-2 ring-fcc-yellow ring-offset-1 ring-offset-fcc-bg-secondary"
+                      : "bg-cell-yes hover:opacity-80"
+                    : p.id === puzzleId
                     ? "bg-fcc-yellow"
                     : "bg-fcc-bg-quaternary hover:bg-fcc-fg-muted"
                 }`}
@@ -448,12 +457,8 @@ export default function PuzzlePlayer({
           <div className="bg-fcc-bg-secondary rounded-lg border border-fcc-bg-quaternary p-8 max-w-sm w-full flex flex-col items-center gap-6 text-center">
             <p className="text-4xl">🤔</p>
             <div>
-              <p className="font-mono font-bold text-fcc-fg-primary text-lg mb-1">Not quite!</p>
-              <p className="text-fcc-fg-muted text-base">
-                You have{" "}
-                <span className="text-cell-no font-bold">{mistakeCount}</span>{" "}
-                {mistakeCount === 1 ? "mistake" : "mistakes"}. Review the clues and try again.
-              </p>
+              <p className="font-mono font-bold text-fcc-fg-primary text-lg mb-1">{tr.notQuiteTitle}</p>
+              <p className="text-fcc-fg-muted text-base">{tr.mistakes(mistakeCount)}</p>
             </div>
             <div className="w-full flex flex-col gap-3">
               <button
@@ -461,14 +466,14 @@ export default function PuzzlePlayer({
                 onClick={() => setModalState("idle")}
                 className="w-full px-5 py-2.5 font-mono font-bold text-base rounded bg-fcc-yellow text-fcc-yellow-dark hover:opacity-90 transition-opacity"
               >
-                Continue
+                {tr.continueBtn}
               </button>
               <button
                 type="button"
                 onClick={handleRestart}
                 className="w-full px-5 py-2.5 font-mono font-bold text-base rounded border border-fcc-bg-quaternary text-fcc-fg-muted hover:text-fcc-fg-primary hover:border-fcc-fg-muted transition-colors"
               >
-                Restart puzzle
+                {tr.restartPuzzle}
               </button>
             </div>
           </div>
@@ -489,8 +494,8 @@ export default function PuzzlePlayer({
             </button>
             <p className="text-4xl">🎉</p>
             <div>
-              <p className="font-mono font-bold text-cell-yes text-lg mb-1">Puzzle complete!</p>
-              <p className="text-fcc-fg-muted text-base">Finished in {formatTime(elapsed)}</p>
+              <p className="font-mono font-bold text-cell-yes text-lg mb-1">{tr.puzzleComplete}</p>
+              <p className="text-fcc-fg-muted text-base">{tr.finishedIn(formatTime(elapsed))}</p>
             </div>
 
             {nextPuzzlePath ? (
@@ -498,11 +503,11 @@ export default function PuzzlePlayer({
                 href={nextPuzzlePath}
                 className="w-full flex items-center justify-center gap-1.5 px-5 py-2.5 font-mono font-bold text-base rounded bg-fcc-green text-fcc-green-dark hover:opacity-90 transition-opacity"
               >
-                Next puzzle
+                {tr.nextPuzzle}
                 <Image src={`${basePath}/icons/arrow_forward.svg`} alt="" width={16} height={16} style={{ filter: "brightness(0)" }} />
               </Link>
             ) : (
-              <p className="font-mono text-base text-cell-yes font-bold">✓ All done!</p>
+              <p className="font-mono text-base text-cell-yes font-bold">{tr.allDone}</p>
             )}
           </div>
         </div>

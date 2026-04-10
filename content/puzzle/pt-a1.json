@@ -1,0 +1,687 @@
+{
+  "puzzles": [
+    {
+      "title": "Brincadeira Colorida (1)",
+      "themeSlug": "Animais",
+      "levelCode": "A1",
+      "languageCode": "pt",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": ["substantivos", "adjetivos", "preposições", "verbo ser"],
+      "categories": [
+        { "label": "Animais", "emoji": "🐾", "order": 0 },
+        { "label": "Brinquedos", "emoji": "🧸", "order": 1 },
+        { "label": "Cores", "emoji": "🎨", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "gato", "emoji": "🐱" },
+        { "categoryIndex": 0, "label": "cachorro", "emoji": "🐶" },
+        { "categoryIndex": 0, "label": "pato", "emoji": "🦆" },
+        { "categoryIndex": 1, "label": "bola", "emoji": "⚽" },
+        { "categoryIndex": 1, "label": "pipa", "emoji": "🪁" },
+        { "categoryIndex": 1, "label": "carrinho", "emoji": "🚗" },
+        { "categoryIndex": 2, "label": "vermelho", "emoji": "🔴" },
+        { "categoryIndex": 2, "label": "azul", "emoji": "🔵" },
+        { "categoryIndex": 2, "label": "verde", "emoji": "🟢" }
+      ],
+      "clues": [
+        { "text": "🪁 O animal com a pipa é azul.", "clueType": "relational" },
+        { "text": "🐶 O cachorro está com o carrinho.", "clueType": "relational" },
+        { "text": "🦆 O pato é vermelho.", "clueType": "relational" },
+        { "text": "🐱 O gato não tem a bola.", "clueType": "negative" },
+        { "text": "🔵 O animal azul não é o pato.", "clueType": "negative" },
+        { "text": "🟢 O animal verde não é o gato.", "clueType": "negative" },
+        { "text": "⚽ O animal com a bola não é azul.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "itemLabels": ["gato", "pipa", "azul"], "value": "YES" },
+        { "itemLabels": ["cachorro", "carrinho", "verde"], "value": "YES" },
+        { "itemLabels": ["pato", "bola", "vermelho"], "value": "YES" }
+      ],
+      "grammarNote": "Use estruturas relacionais com \"com\" para ligar categorias: \"O animal com a pipa é azul\". Para negar, use \"não tem\" ou \"não é\" quando preciso: \"O gato não tem a bola\", \"O item com a bola não é azul\". Padrão: sujeito + \"com\" + item + \"é (não é)\" + cor, ou sujeito + \"não tem\" + item."
+    },
+    {
+      "title": "Brincadeira Colorida (2)",
+      "themeSlug": "Animais",
+      "levelCode": "A1",
+      "languageCode": "pt",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": ["substantivos", "adjetivos", "relações"],
+      "categories": [
+        { "label": "Animais", "emoji": "🐾", "order": 0 },
+        { "label": "Brinquedos", "emoji": "🧸", "order": 1 },
+        { "label": "Cores", "emoji": "🎨", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "gato", "emoji": "🐱" },
+        { "categoryIndex": 0, "label": "coelho", "emoji": "🐰" },
+        { "categoryIndex": 0, "label": "sapo", "emoji": "🐸" },
+        { "categoryIndex": 1, "label": "bola", "emoji": "⚽" },
+        { "categoryIndex": 1, "label": "pipa", "emoji": "🪁" },
+        { "categoryIndex": 1, "label": "carrinho", "emoji": "🚗" },
+        { "categoryIndex": 2, "label": "vermelho", "emoji": "🔴" },
+        { "categoryIndex": 2, "label": "azul", "emoji": "🔵" },
+        { "categoryIndex": 2, "label": "verde", "emoji": "🟢" }
+      ],
+      "clues": [
+        { "text": "⚽ O animal com a bola é azul.", "clueType": "relational" },
+        { "text": "🪁 O coelho está com a pipa.", "clueType": "relational" },
+        { "text": "🚗 O animal com o carrinho é vermelho.", "clueType": "relational" },
+        { "text": "🟢 O animal verde não é o sapo.", "clueType": "negative" },
+        { "text": "🐱 O gato não tem o carrinho.", "clueType": "negative" },
+        { "text": "🪁 O animal com a pipa não é azul.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "itemLabels": ["gato", "bola", "azul"], "value": "YES" },
+        { "itemLabels": ["coelho", "pipa", "verde"], "value": "YES" },
+        { "itemLabels": ["sapo", "carrinho", "vermelho"], "value": "YES" }
+      ],
+      "grammarNote": "Equilibre relações entre animal↔brinquedo, brinquedo↔cor e animal↔cor. Use negativas para eliminar ambiguidade sem revelar diretamente."
+    },
+    {
+      "title": "Coisas na Cidade (1)",
+      "themeSlug": "Objetos",
+      "levelCode": "A1",
+      "languageCode": "pt",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": ["substantivos", "preposições", "relações", "verbo estar"],
+      "categories": [
+        { "label": "Objetos", "emoji": "📦", "order": 0 },
+        { "label": "Pessoas", "emoji": "👥", "order": 1 },
+        { "label": "Lugares", "emoji": "📍", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "chave", "emoji": "🔑" },
+        { "categoryIndex": 0, "label": "livro", "emoji": "📘" },
+        { "categoryIndex": 0, "label": "mochila", "emoji": "🎒" },
+        { "categoryIndex": 1, "label": "Ana", "emoji": "👩" },
+        { "categoryIndex": 1, "label": "Beto", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "Gabi", "emoji": "👩" },
+        { "categoryIndex": 2, "label": "parque", "emoji": "🌳" },
+        { "categoryIndex": 2, "label": "escola", "emoji": "🏫" },
+        { "categoryIndex": 2, "label": "mercado", "emoji": "🛒" }
+      ],
+      "clues": [
+        { "text": "🎒 A pessoa com a mochila está na escola.", "clueType": "relational" },
+        { "text": "🌳 Quem está no parque está com o livro.", "clueType": "relational" },
+        { "text": "🛒 A pessoa no mercado é Gabi.", "clueType": "relational" },
+        { "text": "🔑 A chave não está no parque.", "clueType": "negative" },
+        { "text": "Ana não está no mercado.", "clueType": "negative" },
+        { "text": "🎒 Quem tem a mochila não é Beto.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "itemLabels": ["mochila", "Ana", "escola"], "value": "YES" },
+        { "itemLabels": ["livro", "Beto", "parque"], "value": "YES" },
+        { "itemLabels": ["chave", "Gabi", "mercado"], "value": "YES" }
+      ],
+      "grammarNote": "Use cabeças neutras para relacionar: \"a pessoa com a mochila\" + \"está em\" + lugar. Relacione também lugar↔objeto: \"Quem está no parque está com o livro\". Evite gênero usando nomes sem artigo e \"a pessoa\"."
+    },
+    {
+      "title": "Coisas na Cidade (2)",
+      "themeSlug": "Objetos",
+      "levelCode": "A1",
+      "languageCode": "pt",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": ["preposições", "relações", "verbo estar"],
+      "categories": [
+        { "label": "Objetos", "emoji": "📦", "order": 0 },
+        { "label": "Pessoas", "emoji": "👥", "order": 1 },
+        { "label": "Lugares", "emoji": "📍", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "guarda-chuva", "emoji": "🌂" },
+        { "categoryIndex": 0, "label": "garrafa", "emoji": "🧴" },
+        { "categoryIndex": 0, "label": "mapa", "emoji": "🗺️" },
+        { "categoryIndex": 1, "label": "Rafa", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "Tina", "emoji": "👩" },
+        { "categoryIndex": 1, "label": "Léo", "emoji": "👨" },
+        { "categoryIndex": 2, "label": "parque", "emoji": "🌳" },
+        { "categoryIndex": 2, "label": "estação", "emoji": "🚉" },
+        { "categoryIndex": 2, "label": "museu", "emoji": "🏛️" }
+      ],
+      "clues": [
+        { "text": "🏛️ A pessoa no museu está com o mapa.", "clueType": "relational" },
+        { "text": "🚉 Quem está na estação é Tina.", "clueType": "relational" },
+        { "text": "🌳 Quem está no parque fica com a garrafa.", "clueType": "relational" },
+        { "text": "Rafa não está no parque.", "clueType": "negative" },
+        { "text": "🚉 O objeto da estação não é o mapa.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "itemLabels": ["guarda-chuva", "Tina", "estação"], "value": "YES" },
+        { "itemLabels": ["garrafa", "Léo", "parque"], "value": "YES" },
+        { "itemLabels": ["mapa", "Rafa", "museu"], "value": "YES" }
+      ],
+      "grammarNote": "Construa relações centradas em lugar: lugar↔objeto e lugar↔pessoa, com negativas pontuais para fechar o quadro."
+    },
+    {
+      "title": "Dia de Evento (1)",
+      "themeSlug": "Eventos",
+      "levelCode": "A1",
+      "languageCode": "pt",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": ["substantivos", "preposições", "relações"],
+      "categories": [
+        { "label": "Objetos", "emoji": "📦", "order": 0 },
+        { "label": "Lugares", "emoji": "📍", "order": 1 },
+        { "label": "Eventos", "emoji": "🎉", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "câmera", "emoji": "📷" },
+        { "categoryIndex": 0, "label": "bola", "emoji": "⚽" },
+        { "categoryIndex": 0, "label": "guarda-chuva", "emoji": "🌂" },
+        { "categoryIndex": 1, "label": "praia", "emoji": "🏖️" },
+        { "categoryIndex": 1, "label": "parque", "emoji": "🌳" },
+        { "categoryIndex": 1, "label": "casa", "emoji": "🏠" },
+        { "categoryIndex": 2, "label": "festa", "emoji": "🎈" },
+        { "categoryIndex": 2, "label": "jogo", "emoji": "🏟️" },
+        { "categoryIndex": 2, "label": "passeio", "emoji": "🚶" }
+      ],
+      "clues": [
+        { "text": "🏖️ O objeto na praia é a bola.", "clueType": "relational" },
+        { "text": "🌳 Quem está no parque vai ao passeio.", "clueType": "relational" },
+        { "text": "🌂 O guarda-chuva fica em casa.", "clueType": "relational" },
+        { "text": "📷 O evento com a câmera não é festa.", "clueType": "negative" },
+        { "text": "🏖️ O evento na praia é o jogo.", "clueType": "relational" }
+      ],
+      "solution": [
+        { "itemLabels": ["câmera", "parque", "passeio"], "value": "YES" },
+        { "itemLabels": ["bola", "praia", "jogo"], "value": "YES" },
+        { "itemLabels": ["guarda-chuva", "casa", "festa"], "value": "YES" }
+      ],
+      "grammarNote": "Relacione lugar↔objeto e lugar↔evento: \"o objeto na praia é a bola\"; \"quem está no parque vai ao passeio\". Negue para eliminar opções: \"o evento com a câmera não é festa\"."
+    },
+    {
+      "title": "Dia de Evento (2)",
+      "themeSlug": "Eventos",
+      "levelCode": "A1",
+      "languageCode": "pt",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": ["substantivos", "preposições", "relações"],
+      "categories": [
+        { "label": "Objetos", "emoji": "📦", "order": 0 },
+        { "label": "Lugares", "emoji": "📍", "order": 1 },
+        { "label": "Eventos", "emoji": "🎉", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "câmera", "emoji": "📷" },
+        { "categoryIndex": 0, "label": "violão", "emoji": "🎸" },
+        { "categoryIndex": 0, "label": "bandeira", "emoji": "🚩" },
+        { "categoryIndex": 1, "label": "praça", "emoji": "🏞️" },
+        { "categoryIndex": 1, "label": "ginásio", "emoji": "🏟️" },
+        { "categoryIndex": 1, "label": "teatro", "emoji": "🎭" },
+        { "categoryIndex": 2, "label": "show", "emoji": "🎤" },
+        { "categoryIndex": 2, "label": "jogo", "emoji": "🏟️" },
+        { "categoryIndex": 2, "label": "desfile", "emoji": "🎏" }
+      ],
+      "clues": [
+        { "text": "🏞️ O objeto na praça é a câmera.", "clueType": "relational" },
+        { "text": "🎭 Quem está no teatro é o show.", "clueType": "relational" },
+        { "text": "🚩 O evento com a bandeira é no ginásio.", "clueType": "relational" },
+        { "text": "📷 O evento com a câmera não é show.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "itemLabels": ["câmera", "praça", "desfile"], "value": "YES" },
+        { "itemLabels": ["violão", "teatro", "show"], "value": "YES" },
+        { "itemLabels": ["bandeira", "ginásio", "jogo"], "value": "YES" }
+      ],
+      "grammarNote": "Use pares lugar↔objeto e lugar↔evento para amarrar: \"o objeto na praça é a câmera\"; \"no teatro é o show\"; \"com a bandeira é no ginásio\"."
+    },
+    {
+      "title": "Casa e Rotina (1)",
+      "themeSlug": "Casa",
+      "levelCode": "A1",
+      "languageCode": "pt",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": ["preposições", "dias", "relações"],
+      "categories": [
+        { "label": "Objetos", "emoji": "📦", "order": 0 },
+        { "label": "Cômodos", "emoji": "🏠", "order": 1 },
+        { "label": "Dias", "emoji": "🗓️", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "copo", "emoji": "🥤" },
+        { "categoryIndex": 0, "label": "prato", "emoji": "🍽️" },
+        { "categoryIndex": 0, "label": "livro", "emoji": "📘" },
+        { "categoryIndex": 1, "label": "cozinha", "emoji": "🍴" },
+        { "categoryIndex": 1, "label": "sala", "emoji": "🛋️" },
+        { "categoryIndex": 1, "label": "quarto", "emoji": "🛏️" },
+        { "categoryIndex": 2, "label": "segunda", "emoji": "1️⃣" },
+        { "categoryIndex": 2, "label": "terça", "emoji": "2️⃣" },
+        { "categoryIndex": 2, "label": "quarta", "emoji": "3️⃣" }
+      ],
+      "clues": [
+        { "text": "1️⃣ O item de segunda fica na cozinha.", "clueType": "relational" },
+        { "text": "2️⃣ O item de terça fica na sala.", "clueType": "relational" },
+        { "text": "🛏️ O item do quarto é o livro.", "clueType": "relational" },
+        { "text": "O copo está na cozinha.", "clueType": "relational" }
+      ],
+      "solution": [
+        { "itemLabels": ["copo", "cozinha", "segunda"], "value": "YES" },
+        { "itemLabels": ["prato", "sala", "terça"], "value": "YES" },
+        { "itemLabels": ["livro", "quarto", "quarta"], "value": "YES" }
+      ],
+      "grammarNote": "Use marcadores de dia como cabeças: \"o item de segunda\" + \"fica na\" + cômodo. Relacione também cômodo↔objeto: \"o item do quarto é o livro\"."
+    },
+    {
+      "title": "Casa e Rotina (2)",
+      "themeSlug": "Casa",
+      "levelCode": "A1",
+      "languageCode": "pt",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": ["preposições", "dias", "relações"],
+      "categories": [
+        { "label": "Objetos", "emoji": "📦", "order": 0 },
+        { "label": "Cômodos", "emoji": "🏠", "order": 1 },
+        { "label": "Dias", "emoji": "🗓️", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "escova", "emoji": "🪥" },
+        { "categoryIndex": 0, "label": "panela", "emoji": "🍳" },
+        { "categoryIndex": 0, "label": "TV", "emoji": "📺" },
+        { "categoryIndex": 1, "label": "banheiro", "emoji": "🚿" },
+        { "categoryIndex": 1, "label": "cozinha", "emoji": "🍴" },
+        { "categoryIndex": 1, "label": "sala", "emoji": "🛋️" },
+        { "categoryIndex": 2, "label": "segunda", "emoji": "1️⃣" },
+        { "categoryIndex": 2, "label": "quinta", "emoji": "4️⃣" },
+        { "categoryIndex": 2, "label": "sexta", "emoji": "5️⃣" }
+      ],
+      "clues": [
+        { "text": "🚿 O item do banheiro é a escova.", "clueType": "relational" },
+        { "text": "4️⃣ O item de quinta fica na cozinha.", "clueType": "relational" },
+        { "text": "🛋️ O item da sala é de sexta.", "clueType": "relational" },
+        { "text": "📺 A TV não é de quinta.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "itemLabels": ["escova", "banheiro", "segunda"], "value": "YES" },
+        { "itemLabels": ["panela", "cozinha", "quinta"], "value": "YES" },
+        { "itemLabels": ["TV", "sala", "sexta"], "value": "YES" }
+      ],
+      "grammarNote": "Relacione cômodo↔objeto e dia↔cômodo: \"item do banheiro\"; \"de quinta fica na cozinha\"; \"da sala é de sexta\"."
+    },
+    {
+      "title": "Moda na Rua (1)",
+      "themeSlug": "Roupas",
+      "levelCode": "A1",
+      "languageCode": "pt",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": ["adjetivos", "preposições", "relações"],
+      "categories": [
+        { "label": "Roupas", "emoji": "👗", "order": 0 },
+        { "label": "Cores", "emoji": "🎨", "order": 1 },
+        { "label": "Lugares", "emoji": "📍", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "camisa", "emoji": "👕" },
+        { "categoryIndex": 0, "label": "boné", "emoji": "🧢" },
+        { "categoryIndex": 0, "label": "sapato", "emoji": "👟" },
+        { "categoryIndex": 1, "label": "azul", "emoji": "🔵" },
+        { "categoryIndex": 1, "label": "vermelho", "emoji": "🔴" },
+        { "categoryIndex": 1, "label": "verde", "emoji": "🟢" },
+        { "categoryIndex": 2, "label": "praia", "emoji": "🏖️" },
+        { "categoryIndex": 2, "label": "escola", "emoji": "🏫" },
+        { "categoryIndex": 2, "label": "praça", "emoji": "🏞️" }
+      ],
+      "clues": [
+        { "text": "🏫 A roupa na escola é a camisa.", "clueType": "relational" },
+        { "text": "🟢 O item verde está na praia.", "clueType": "relational" },
+        { "text": "🧢 O boné é vermelho.", "clueType": "relational" },
+        { "text": "🔵 O item azul não está na praia.", "clueType": "negative" },
+        { "text": "🏞️ Na praça não está a camisa.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "itemLabels": ["camisa", "azul", "escola"], "value": "YES" },
+        { "itemLabels": ["boné", "vermelho", "praça"], "value": "YES" },
+        { "itemLabels": ["sapato", "verde", "praia"], "value": "YES" }
+      ],
+      "grammarNote": "Relacione lugar↔roupa e cor↔lugar para montar o mapa: \"a roupa na escola é a camisa\", \"o item verde está na praia\". Mantenha adjetivos simples e naturais."
+    },
+    {
+      "title": "Moda na Rua (2)",
+      "themeSlug": "Roupas",
+      "levelCode": "A1",
+      "languageCode": "pt",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": ["adjetivos", "preposições", "relações"],
+      "categories": [
+        { "label": "Roupas", "emoji": "👗", "order": 0 },
+        { "label": "Cores", "emoji": "🎨", "order": 1 },
+        { "label": "Lugares", "emoji": "📍", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "jaqueta", "emoji": "🧥" },
+        { "categoryIndex": 0, "label": "boné", "emoji": "🧢" },
+        { "categoryIndex": 0, "label": "camisa", "emoji": "👕" },
+        { "categoryIndex": 1, "label": "amarelo", "emoji": "🟡" },
+        { "categoryIndex": 1, "label": "preto", "emoji": "⬛" },
+        { "categoryIndex": 1, "label": "branco", "emoji": "⚪" },
+        { "categoryIndex": 2, "label": "praia", "emoji": "🏖️" },
+        { "categoryIndex": 2, "label": "shopping", "emoji": "🛍️" },
+        { "categoryIndex": 2, "label": "parque", "emoji": "🌳" }
+      ],
+      "clues": [
+        { "text": "🛍️ A peça no shopping é a jaqueta.", "clueType": "relational" },
+        { "text": "🟡 O item amarelo está no parque.", "clueType": "relational" },
+        { "text": "👕 A camisa é branca.", "clueType": "relational" },
+        { "text": "⬛ O item preto não está na praia.", "clueType": "negative" },
+        { "text": "🧢 O boné não é branco.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "itemLabels": ["jaqueta", "preto", "shopping"], "value": "YES" },
+        { "itemLabels": ["boné", "amarelo", "parque"], "value": "YES" },
+        { "itemLabels": ["camisa", "branco", "praia"], "value": "YES" }
+      ],
+      "grammarNote": "Balanceie relações roupa↔lugar, cor↔lugar e roupa↔cor. Negativas pontuais evitam amarrações falsas."
+    },
+    {
+      "title": "Trabalho na Semana (1)",
+      "themeSlug": "Pessoas",
+      "levelCode": "A1",
+      "languageCode": "pt",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": ["profissões", "dias", "relações", "verbo ser"],
+      "categories": [
+        { "label": "Pessoas", "emoji": "👥", "order": 0 },
+        { "label": "Profissões", "emoji": "💼", "order": 1 },
+        { "label": "Dias", "emoji": "🗓️", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Lia", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Nuno", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Rui", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "artista", "emoji": "🎨" },
+        { "categoryIndex": 1, "label": "jornalista", "emoji": "📰" },
+        { "categoryIndex": 1, "label": "estudante", "emoji": "🎒" },
+        { "categoryIndex": 2, "label": "segunda", "emoji": "1️⃣" },
+        { "categoryIndex": 2, "label": "terça", "emoji": "2️⃣" },
+        { "categoryIndex": 2, "label": "quarta", "emoji": "3️⃣" }
+      ],
+      "clues": [
+        { "text": "📰 A pessoa jornalista é de segunda.", "clueType": "relational" },
+        { "text": "🎨 Quem é artista vai na terça.", "clueType": "relational" },
+        { "text": "Nuno é estudante.", "clueType": "relational" },
+        { "text": "Lia não é jornalista.", "clueType": "negative" },
+        { "text": "Quem vai na quarta não é jornalista.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "itemLabels": ["Lia", "artista", "terça"], "value": "YES" },
+        { "itemLabels": ["Nuno", "estudante", "quarta"], "value": "YES" },
+        { "itemLabels": ["Rui", "jornalista", "segunda"], "value": "YES" }
+      ],
+      "grammarNote": "Profissões invariáveis ajudam a evitar gênero: use \"a pessoa jornalista/artista/estudante\". Combine profissão↔dia e pessoa↔profissão para travar a solução."
+    },
+    {
+      "title": "Sabores da Semana (1)",
+      "themeSlug": "Pessoas",
+      "levelCode": "A1",
+      "languageCode": "pt",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": ["posse", "dias", "relações"],
+      "categories": [
+        { "label": "Pessoas", "emoji": "👥", "order": 0 },
+        { "label": "Comidas", "emoji": "🍽️", "order": 1 },
+        { "label": "Dias", "emoji": "🗓️", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Ana", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Beto", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Cida", "emoji": "👩" },
+        { "categoryIndex": 1, "label": "pizza", "emoji": "🍕" },
+        { "categoryIndex": 1, "label": "sopa", "emoji": "🍲" },
+        { "categoryIndex": 1, "label": "bolo", "emoji": "🍰" },
+        { "categoryIndex": 2, "label": "segunda", "emoji": "1️⃣" },
+        { "categoryIndex": 2, "label": "terça", "emoji": "2️⃣" },
+        { "categoryIndex": 2, "label": "quarta", "emoji": "3️⃣" }
+      ],
+      "clues": [
+        { "text": "1️⃣ A comida de segunda é a sopa.", "clueType": "relational" },
+        { "text": "🍕 A pessoa com a pizza vai na quarta.", "clueType": "relational" },
+        { "text": "Ana vai na terça.", "clueType": "relational" },
+        { "text": "Ana não tem a pizza.", "clueType": "negative" },
+        { "text": "Cida não vai na quarta.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "itemLabels": ["Ana", "bolo", "terça"], "value": "YES" },
+        { "itemLabels": ["Beto", "pizza", "quarta"], "value": "YES" },
+        { "itemLabels": ["Cida", "sopa", "segunda"], "value": "YES" }
+      ],
+      "grammarNote": "Relacione dia↔comida e pessoa↔comida: \"a comida de segunda é a sopa\"; \"a pessoa com a pizza vai na quarta\". Use negativas leves para eliminar colisões."
+    },
+    {
+      "title": "Sabores da Semana (2)",
+      "themeSlug": "Pessoas",
+      "levelCode": "A1",
+      "languageCode": "pt",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": ["posse", "dias", "relações"],
+      "categories": [
+        { "label": "Pessoas", "emoji": "👥", "order": 0 },
+        { "label": "Comidas", "emoji": "🍽️", "order": 1 },
+        { "label": "Dias", "emoji": "🗓️", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Lia", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Neto", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Sora", "emoji": "👩" },
+        { "categoryIndex": 1, "label": "salada", "emoji": "🥗" },
+        { "categoryIndex": 1, "label": "torta", "emoji": "🥧" },
+        { "categoryIndex": 1, "label": "suco", "emoji": "🧃" },
+        { "categoryIndex": 2, "label": "quinta", "emoji": "4️⃣" },
+        { "categoryIndex": 2, "label": "sexta", "emoji": "5️⃣" },
+        { "categoryIndex": 2, "label": "segunda", "emoji": "1️⃣" }
+      ],
+      "clues": [
+        { "text": "4️⃣ A comida de quinta é salada.", "clueType": "relational" },
+        { "text": "🥧 Quem tem torta vai na sexta.", "clueType": "relational" },
+        { "text": "Sora fica com o suco.", "clueType": "relational" },
+        { "text": "Lia não vai na quinta.", "clueType": "negative" },
+        { "text": "Neto não tem suco.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "itemLabels": ["Lia", "torta", "sexta"], "value": "YES" },
+        { "itemLabels": ["Neto", "salada", "quinta"], "value": "YES" },
+        { "itemLabels": ["Sora", "suco", "segunda"], "value": "YES" }
+      ],
+      "grammarNote": "Relacione dia↔comida e comida↔dia em frases curtas. Negativas com nomes sem artigo mantêm neutralidade de gênero."
+    },
+    {
+      "title": "Ferramentas de Trabalho (1)",
+      "themeSlug": "Profissões",
+      "levelCode": "A1",
+      "languageCode": "pt",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": ["profissões", "objetos", "lugares", "relações"],
+      "categories": [
+        { "label": "Profissões", "emoji": "💼", "order": 0 },
+        { "label": "Objetos", "emoji": "📦", "order": 1 },
+        { "label": "Lugares", "emoji": "📍", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "motorista", "emoji": "🚌" },
+        { "categoryIndex": 0, "label": "artista", "emoji": "🎨" },
+        { "categoryIndex": 0, "label": "estudante", "emoji": "🎒" },
+        { "categoryIndex": 1, "label": "volante", "emoji": "🛞" },
+        { "categoryIndex": 1, "label": "pincel", "emoji": "🖌️" },
+        { "categoryIndex": 1, "label": "caderno", "emoji": "📓" },
+        { "categoryIndex": 2, "label": "ônibus", "emoji": "🚌" },
+        { "categoryIndex": 2, "label": "estúdio", "emoji": "🖼️" },
+        { "categoryIndex": 2, "label": "sala", "emoji": "🏫" }
+      ],
+      "clues": [
+        { "text": "🖌️ A profissão com o pincel trabalha no estúdio.", "clueType": "relational" },
+        { "text": "🛞 Quem está com o volante está no ônibus.", "clueType": "relational" },
+        { "text": "O estudante usa o caderno.", "clueType": "relational" },
+        { "text": "🎨 A pessoa artista não está no ônibus.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "itemLabels": ["motorista", "volante", "ônibus"], "value": "YES" },
+        { "itemLabels": ["artista", "pincel", "estúdio"], "value": "YES" },
+        { "itemLabels": ["estudante", "caderno", "sala"], "value": "YES" }
+      ],
+      "grammarNote": "Monte cadeias objeto↔lugar↔profissão: \"com o volante\" → \"no ônibus\" → motorista. Use negativas para impedir cruzamentos errados."
+    },
+    {
+      "title": "Ferramentas de Trabalho (2)",
+      "themeSlug": "Profissões",
+      "levelCode": "A1",
+      "languageCode": "pt",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": ["profissões", "objetos", "lugares", "relações"],
+      "categories": [
+        { "label": "Profissões", "emoji": "💼", "order": 0 },
+        { "label": "Objetos", "emoji": "📦", "order": 1 },
+        { "label": "Lugares", "emoji": "📍", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "dentista", "emoji": "🦷" },
+        { "categoryIndex": 0, "label": "jornalista", "emoji": "📰" },
+        { "categoryIndex": 0, "label": "motorista", "emoji": "🚌" },
+        { "categoryIndex": 1, "label": "broca", "emoji": "🦷" },
+        { "categoryIndex": 1, "label": "microfone", "emoji": "🎙️" },
+        { "categoryIndex": 1, "label": "volante", "emoji": "🛞" },
+        { "categoryIndex": 2, "label": "clínica", "emoji": "🏥" },
+        { "categoryIndex": 2, "label": "estúdio", "emoji": "🎬" },
+        { "categoryIndex": 2, "label": "ônibus", "emoji": "🚌" }
+      ],
+      "clues": [
+        { "text": "🛞 Quem usa o volante trabalha no ônibus.", "clueType": "relational" },
+        { "text": "🎙️ Quem usa o microfone trabalha no estúdio.", "clueType": "relational" },
+        { "text": "🏥 A profissão na clínica usa a broca.", "clueType": "relational" },
+        { "text": "A pessoa jornalista não usa o volante.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "itemLabels": ["motorista", "volante", "ônibus"], "value": "YES" },
+        { "itemLabels": ["jornalista", "microfone", "estúdio"], "value": "YES" },
+        { "itemLabels": ["dentista", "broca", "clínica"], "value": "YES" }
+      ],
+      "grammarNote": "Profissões invariáveis evitam gênero. Encadeie objeto↔lugar↔profissão para travar a solução."
+    },
+    {
+      "title": "Rotina do Dia (1)",
+      "themeSlug": "Pessoas",
+      "levelCode": "A1",
+      "languageCode": "pt",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": ["ações", "horários", "relações"],
+      "categories": [
+        { "label": "Pessoas", "emoji": "👥", "order": 0 },
+        { "label": "Ações", "emoji": "⚡", "order": 1 },
+        { "label": "Horários", "emoji": "⏰", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Léo", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Mia", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Tom", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "ler", "emoji": "📖" },
+        { "categoryIndex": 1, "label": "correr", "emoji": "🏃" },
+        { "categoryIndex": 1, "label": "dormir", "emoji": "🛌" },
+        { "categoryIndex": 2, "label": "08h", "emoji": "🕗" },
+        { "categoryIndex": 2, "label": "10h", "emoji": "🕙" },
+        { "categoryIndex": 2, "label": "12h", "emoji": "🕛" }
+      ],
+      "clues": [
+        { "text": "🏃 Quem corre é às 10h.", "clueType": "relational" },
+        { "text": "📖 A pessoa de 08h lê.", "clueType": "relational" },
+        { "text": "Tom não corre.", "clueType": "negative" },
+        { "text": "Léo não lê.", "clueType": "negative" },
+        { "text": "Tom dorme.", "clueType": "relational" }
+      ],
+      "solution": [
+        { "itemLabels": ["Léo", "correr", "10h"], "value": "YES" },
+        { "itemLabels": ["Mia", "ler", "08h"], "value": "YES" },
+        { "itemLabels": ["Tom", "dormir", "12h"], "value": "YES" }
+      ],
+      "grammarNote": "Relacione ação↔horário: \"quem corre é às 10h\"; relacione horário↔ação: \"a pessoa de 08h lê\". Use negativas com nomes sem artigo para evitar marcação de gênero."
+    },
+    {
+      "title": "Pela Cidade (1)",
+      "themeSlug": "Lugares",
+      "levelCode": "A1",
+      "languageCode": "pt",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": ["transportes", "preposições", "dias", "relações"],
+      "categories": [
+        { "label": "Transportes", "emoji": "🚌", "order": 0 },
+        { "label": "Lugares", "emoji": "📍", "order": 1 },
+        { "label": "Dias", "emoji": "🗓️", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "ônibus", "emoji": "🚌" },
+        { "categoryIndex": 0, "label": "metrô", "emoji": "🚇" },
+        { "categoryIndex": 0, "label": "bicicleta", "emoji": "🚲" },
+        { "categoryIndex": 1, "label": "centro", "emoji": "🏢" },
+        { "categoryIndex": 1, "label": "parque", "emoji": "🌳" },
+        { "categoryIndex": 1, "label": "escola", "emoji": "🏫" },
+        { "categoryIndex": 2, "label": "segunda", "emoji": "1️⃣" },
+        { "categoryIndex": 2, "label": "terça", "emoji": "2️⃣" },
+        { "categoryIndex": 2, "label": "quarta", "emoji": "3️⃣" }
+      ],
+      "clues": [
+        { "text": "3️⃣ O transporte de quarta vai ao parque.", "clueType": "relational" },
+        { "text": "🚇 O metrô vai para a escola.", "clueType": "relational" },
+        { "text": "2️⃣ O de terça vai ao centro.", "clueType": "relational" },
+        { "text": "🚲 A bicicleta não vai para a escola.", "clueType": "negative" },
+        { "text": "🚌 O ônibus não é de quarta.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "itemLabels": ["ônibus", "centro", "terça"], "value": "YES" },
+        { "itemLabels": ["metrô", "escola", "segunda"], "value": "YES" },
+        { "itemLabels": ["bicicleta", "parque", "quarta"], "value": "YES" }
+      ],
+      "grammarNote": "Relacione dia↔destino e transporte↔lugar: \"o de terça vai ao centro\", \"o metrô vai para a escola\". Negativas evitam leituras alternativas."
+    },
+    {
+      "title": "Pela Cidade (2)",
+      "themeSlug": "Lugares",
+      "levelCode": "A1",
+      "languageCode": "pt",
+      "gridSize": 3,
+      "narrativeIntro": null,
+      "grammarFocus": ["transportes", "preposições", "dias", "relações"],
+      "categories": [
+        { "label": "Transportes", "emoji": "🚌", "order": 0 },
+        { "label": "Lugares", "emoji": "📍", "order": 1 },
+        { "label": "Dias", "emoji": "🗓️", "order": 2 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "ônibus", "emoji": "🚌" },
+        { "categoryIndex": 0, "label": "metrô", "emoji": "🚇" },
+        { "categoryIndex": 0, "label": "táxi", "emoji": "🚕" },
+        { "categoryIndex": 1, "label": "aeroporto", "emoji": "✈️" },
+        { "categoryIndex": 1, "label": "shopping", "emoji": "🛍️" },
+        { "categoryIndex": 1, "label": "praça", "emoji": "🏞️" },
+        { "categoryIndex": 2, "label": "segunda", "emoji": "1️⃣" },
+        { "categoryIndex": 2, "label": "quinta", "emoji": "4️⃣" },
+        { "categoryIndex": 2, "label": "sexta", "emoji": "5️⃣" }
+      ],
+      "clues": [
+        { "text": "5️⃣ O transporte de sexta vai ao aeroporto.", "clueType": "relational" },
+        { "text": "4️⃣ O de quinta vai ao shopping.", "clueType": "relational" },
+        { "text": "🚌 O ônibus vai para a praça.", "clueType": "relational" },
+        { "text": "🚇 O metrô não é de sexta.", "clueType": "negative" },
+        { "text": "🚕 O táxi não vai para a praça.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "itemLabels": ["ônibus", "praça", "segunda"], "value": "YES" },
+        { "itemLabels": ["metrô", "shopping", "quinta"], "value": "YES" },
+        { "itemLabels": ["táxi", "aeroporto", "sexta"], "value": "YES" }
+      ],
+      "grammarNote": "Use moldes curtos: \"o de sexta vai ao aeroporto\"; \"o ônibus vai para a praça\". Negativas removem colisões finais."
+    }
+  ]
+}

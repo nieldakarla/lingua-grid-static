@@ -147,16 +147,18 @@ export default function PuzzlePlayer({
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const [showTutorial, setShowTutorial] = useState(false);
   const [filterOpen, setFilterOpen] = useState(false);
+  const [completedIds, setCompletedIds] = useState<string[]>([]);
   const [grammarOpen, setGrammarOpen] = useState(false);
   useEffect(() => {
     setGrammarOpen(window.innerWidth >= 640);
   }, []);
 
-  // Check tutorial status on mount
+  // Check tutorial status on mount + load completed puzzle history
   useEffect(() => {
     if (!localStorage.getItem(TUTORIAL_COMPLETED_KEY)) {
       setShowTutorial(true);
     }
+    setCompletedIds(getLocalCompleted());
   }, []);
 
   // Timer — starts on first cell interaction, stops when solved
@@ -220,6 +222,7 @@ export default function PuzzlePlayer({
 
   function saveProgress() {
     addLocalCompleted(puzzleId);
+    setCompletedIds(getLocalCompleted());
   }
 
   function handleRestart() {
@@ -431,7 +434,11 @@ export default function PuzzlePlayer({
                 href={`/${languageCode}/puzzle/${p.id}`}
                 aria-label={`Puzzle ${i + 1}`}
                 className={`w-2.5 h-2.5 rounded-full transition-colors ${
-                  p.id === puzzleId
+                  completedIds.includes(p.id)
+                    ? p.id === puzzleId
+                      ? "bg-cell-yes ring-2 ring-fcc-yellow ring-offset-1 ring-offset-fcc-bg-secondary"
+                      : "bg-cell-yes hover:opacity-80"
+                    : p.id === puzzleId
                     ? "bg-fcc-yellow"
                     : "bg-fcc-bg-quaternary hover:bg-fcc-fg-muted"
                 }`}

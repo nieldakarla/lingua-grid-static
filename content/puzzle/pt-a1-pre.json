@@ -1,0 +1,635 @@
+{
+  "puzzles": [
+    {
+      "title": "Animais e cores (1)",
+      "themeSlug": "Animais",
+      "levelCode": "PRE",
+      "languageCode": "pt",
+      "gridSize": 5,
+      "narrativeIntro": null,
+      "grammarFocus": ["substantivos", "adjetivos", "verbo ser"],
+      "categories": [
+        { "label": "Animais", "emoji": "🐾", "order": 0 },
+        { "label": "Cores", "emoji": "🎨", "order": 1 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "gato", "emoji": "🐱" },
+        { "categoryIndex": 0, "label": "cachorro", "emoji": "🐶" },
+        { "categoryIndex": 0, "label": "coelho", "emoji": "🐰" },
+        { "categoryIndex": 0, "label": "peixe", "emoji": "🐟" },
+        { "categoryIndex": 0, "label": "pássaro", "emoji": "🐦" },
+        { "categoryIndex": 1, "label": "vermelho", "emoji": "🔴" },
+        { "categoryIndex": 1, "label": "amarelo", "emoji": "🟡" },
+        { "categoryIndex": 1, "label": "azul", "emoji": "🔵" },
+        { "categoryIndex": 1, "label": "verde", "emoji": "🟢" },
+        { "categoryIndex": 1, "label": "laranja", "emoji": "🟠" }
+      ],
+      "clues": [
+        { "text": "🐱 O gato é amarelo.", "clueType": "positive" },
+        { "text": "🐟 O peixe é azul.", "clueType": "positive" },
+        { "text": "🐦 O pássaro é verde.", "clueType": "positive" },
+        { "text": "🐶 O cachorro não é vermelho.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "rowItemLabel": "gato", "colItemLabel": "vermelho", "value": "NO" },
+        { "rowItemLabel": "gato", "colItemLabel": "amarelo", "value": "YES" },
+        { "rowItemLabel": "gato", "colItemLabel": "azul", "value": "NO" },
+        { "rowItemLabel": "gato", "colItemLabel": "verde", "value": "NO" },
+        { "rowItemLabel": "gato", "colItemLabel": "laranja", "value": "NO" },
+
+        { "rowItemLabel": "cachorro", "colItemLabel": "vermelho", "value": "NO" },
+        { "rowItemLabel": "cachorro", "colItemLabel": "amarelo", "value": "NO" },
+        { "rowItemLabel": "cachorro", "colItemLabel": "azul", "value": "NO" },
+        { "rowItemLabel": "cachorro", "colItemLabel": "verde", "value": "NO" },
+        { "rowItemLabel": "cachorro", "colItemLabel": "laranja", "value": "YES" },
+
+        { "rowItemLabel": "coelho", "colItemLabel": "vermelho", "value": "YES" },
+        { "rowItemLabel": "coelho", "colItemLabel": "amarelo", "value": "NO" },
+        { "rowItemLabel": "coelho", "colItemLabel": "azul", "value": "NO" },
+        { "rowItemLabel": "coelho", "colItemLabel": "verde", "value": "NO" },
+        { "rowItemLabel": "coelho", "colItemLabel": "laranja", "value": "NO" },
+
+        { "rowItemLabel": "peixe", "colItemLabel": "vermelho", "value": "NO" },
+        { "rowItemLabel": "peixe", "colItemLabel": "amarelo", "value": "NO" },
+        { "rowItemLabel": "peixe", "colItemLabel": "azul", "value": "YES" },
+        { "rowItemLabel": "peixe", "colItemLabel": "verde", "value": "NO" },
+        { "rowItemLabel": "peixe", "colItemLabel": "laranja", "value": "NO" },
+
+        { "rowItemLabel": "pássaro", "colItemLabel": "vermelho", "value": "NO" },
+        { "rowItemLabel": "pássaro", "colItemLabel": "amarelo", "value": "NO" },
+        { "rowItemLabel": "pássaro", "colItemLabel": "azul", "value": "NO" },
+        { "rowItemLabel": "pássaro", "colItemLabel": "verde", "value": "YES" },
+        { "rowItemLabel": "pássaro", "colItemLabel": "laranja", "value": "NO" }
+      ],
+      "grammarNote": "Use \"é\" para ligar o animal à cor: \"O gato é amarelo\". Para negar, use \"não é\": \"O cachorro não é vermelho\". A estrutura é simples: sujeito + \"é\" (ou \"não é\") + cor."
+    },
+    {
+      "title": "Objetos e cores (1)",
+      "themeSlug": "Objetos",
+      "levelCode": "PRE",
+      "languageCode": "pt",
+      "gridSize": 5,
+      "narrativeIntro": null,
+      "grammarFocus": ["substantivos", "adjetivos", "verbo ser"],
+      "categories": [
+        { "label": "Objetos", "emoji": "📦", "order": 0 },
+        { "label": "Cores", "emoji": "🎨", "order": 1 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "bola", "emoji": "⚽" },
+        { "categoryIndex": 0, "label": "livro", "emoji": "📘" },
+        { "categoryIndex": 0, "label": "cadeira", "emoji": "🪑" },
+        { "categoryIndex": 0, "label": "mochila", "emoji": "🎒" },
+        { "categoryIndex": 0, "label": "copo", "emoji": "🥤" },
+        { "categoryIndex": 1, "label": "azul", "emoji": "🔵" },
+        { "categoryIndex": 1, "label": "laranja", "emoji": "🟠" },
+        { "categoryIndex": 1, "label": "marrom", "emoji": "🟤" },
+        { "categoryIndex": 1, "label": "rosa", "emoji": "🩷" },
+        { "categoryIndex": 1, "label": "cinza", "emoji": "🩶" }
+      ],
+      "clues": [
+        { "text": "🎒 A mochila é azul.", "clueType": "positive" },
+        { "text": "📘 O livro é marrom.", "clueType": "positive" },
+        { "text": "⚽ A bola é rosa.", "clueType": "positive" },
+        { "text": "🪑 A cadeira não é laranja.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "rowItemLabel": "bola", "colItemLabel": "azul", "value": "NO" },
+        { "rowItemLabel": "bola", "colItemLabel": "laranja", "value": "NO" },
+        { "rowItemLabel": "bola", "colItemLabel": "marrom", "value": "NO" },
+        { "rowItemLabel": "bola", "colItemLabel": "rosa", "value": "YES" },
+        { "rowItemLabel": "bola", "colItemLabel": "cinza", "value": "NO" },
+
+        { "rowItemLabel": "livro", "colItemLabel": "azul", "value": "NO" },
+        { "rowItemLabel": "livro", "colItemLabel": "laranja", "value": "NO" },
+        { "rowItemLabel": "livro", "colItemLabel": "marrom", "value": "YES" },
+        { "rowItemLabel": "livro", "colItemLabel": "rosa", "value": "NO" },
+        { "rowItemLabel": "livro", "colItemLabel": "cinza", "value": "NO" },
+
+        { "rowItemLabel": "cadeira", "colItemLabel": "azul", "value": "NO" },
+        { "rowItemLabel": "cadeira", "colItemLabel": "laranja", "value": "NO" },
+        { "rowItemLabel": "cadeira", "colItemLabel": "marrom", "value": "NO" },
+        { "rowItemLabel": "cadeira", "colItemLabel": "rosa", "value": "NO" },
+        { "rowItemLabel": "cadeira", "colItemLabel": "cinza", "value": "YES" },
+
+        { "rowItemLabel": "mochila", "colItemLabel": "azul", "value": "YES" },
+        { "rowItemLabel": "mochila", "colItemLabel": "laranja", "value": "NO" },
+        { "rowItemLabel": "mochila", "colItemLabel": "marrom", "value": "NO" },
+        { "rowItemLabel": "mochila", "colItemLabel": "rosa", "value": "NO" },
+        { "rowItemLabel": "mochila", "colItemLabel": "cinza", "value": "NO" },
+
+        { "rowItemLabel": "copo", "colItemLabel": "azul", "value": "NO" },
+        { "rowItemLabel": "copo", "colItemLabel": "laranja", "value": "YES" },
+        { "rowItemLabel": "copo", "colItemLabel": "marrom", "value": "NO" },
+        { "rowItemLabel": "copo", "colItemLabel": "rosa", "value": "NO" },
+        { "rowItemLabel": "copo", "colItemLabel": "cinza", "value": "NO" }
+      ],
+      "grammarNote": "Para ligar um objeto à cor, use \"é\": \"A mochila é azul\". Para negar, use \"não é\": \"A cadeira não é laranja\". A forma é: sujeito + \"é\" (ou \"não é\") + cor."
+    },
+    {
+      "title": "Animais e lugares (1)",
+      "themeSlug": "Animais",
+      "levelCode": "PRE",
+      "languageCode": "pt",
+      "gridSize": 5,
+      "narrativeIntro": null,
+      "grammarFocus": ["substantivos", "preposições", "verbo estar"],
+      "categories": [
+        { "label": "Animais", "emoji": "🐾", "order": 0 },
+        { "label": "Lugares", "emoji": "🗺️", "order": 1 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "cachorro", "emoji": "🐶" },
+        { "categoryIndex": 0, "label": "gato", "emoji": "🐱" },
+        { "categoryIndex": 0, "label": "pato", "emoji": "🦆" },
+        { "categoryIndex": 0, "label": "tartaruga", "emoji": "🐢" },
+        { "categoryIndex": 0, "label": "sapo", "emoji": "🐸" },
+        { "categoryIndex": 1, "label": "casa", "emoji": "🏠" },
+        { "categoryIndex": 1, "label": "árvore", "emoji": "🌳" },
+        { "categoryIndex": 1, "label": "lago", "emoji": "💧" },
+        { "categoryIndex": 1, "label": "areia", "emoji": "🏖️" },
+        { "categoryIndex": 1, "label": "grama", "emoji": "🌿" }
+      ],
+      "clues": [
+        { "text": "🦆 O pato está no lago.", "clueType": "positive" },
+        { "text": "🐢 A tartaruga está na areia.", "clueType": "positive" },
+        { "text": "🐱 O gato está na árvore.", "clueType": "positive" },
+        { "text": "🐶 O cachorro não está na grama.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "rowItemLabel": "cachorro", "colItemLabel": "casa", "value": "YES" },
+        { "rowItemLabel": "cachorro", "colItemLabel": "árvore", "value": "NO" },
+        { "rowItemLabel": "cachorro", "colItemLabel": "lago", "value": "NO" },
+        { "rowItemLabel": "cachorro", "colItemLabel": "areia", "value": "NO" },
+        { "rowItemLabel": "cachorro", "colItemLabel": "grama", "value": "NO" },
+
+        { "rowItemLabel": "gato", "colItemLabel": "casa", "value": "NO" },
+        { "rowItemLabel": "gato", "colItemLabel": "árvore", "value": "YES" },
+        { "rowItemLabel": "gato", "colItemLabel": "lago", "value": "NO" },
+        { "rowItemLabel": "gato", "colItemLabel": "areia", "value": "NO" },
+        { "rowItemLabel": "gato", "colItemLabel": "grama", "value": "NO" },
+
+        { "rowItemLabel": "pato", "colItemLabel": "casa", "value": "NO" },
+        { "rowItemLabel": "pato", "colItemLabel": "árvore", "value": "NO" },
+        { "rowItemLabel": "pato", "colItemLabel": "lago", "value": "YES" },
+        { "rowItemLabel": "pato", "colItemLabel": "areia", "value": "NO" },
+        { "rowItemLabel": "pato", "colItemLabel": "grama", "value": "NO" },
+
+        { "rowItemLabel": "tartaruga", "colItemLabel": "casa", "value": "NO" },
+        { "rowItemLabel": "tartaruga", "colItemLabel": "árvore", "value": "NO" },
+        { "rowItemLabel": "tartaruga", "colItemLabel": "lago", "value": "NO" },
+        { "rowItemLabel": "tartaruga", "colItemLabel": "areia", "value": "YES" },
+        { "rowItemLabel": "tartaruga", "colItemLabel": "grama", "value": "NO" },
+
+        { "rowItemLabel": "sapo", "colItemLabel": "casa", "value": "NO" },
+        { "rowItemLabel": "sapo", "colItemLabel": "árvore", "value": "NO" },
+        { "rowItemLabel": "sapo", "colItemLabel": "lago", "value": "NO" },
+        { "rowItemLabel": "sapo", "colItemLabel": "areia", "value": "NO" },
+        { "rowItemLabel": "sapo", "colItemLabel": "grama", "value": "YES" }
+      ],
+      "grammarNote": "Use \"está\" para lugar: \"O pato está no lago\". Para negar, use \"não está\": \"O cachorro não está na grama\". Observe as preposições \"no/na\" antes do lugar."
+    },
+    {
+      "title": "Objetos e lugares (1)",
+      "themeSlug": "Objetos",
+      "levelCode": "PRE",
+      "languageCode": "pt",
+      "gridSize": 5,
+      "narrativeIntro": null,
+      "grammarFocus": ["substantivos", "preposições", "verbo estar"],
+      "categories": [
+        { "label": "Objetos", "emoji": "📦", "order": 0 },
+        { "label": "Lugares", "emoji": "🗺️", "order": 1 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "celular", "emoji": "📱" },
+        { "categoryIndex": 0, "label": "chave", "emoji": "🔑" },
+        { "categoryIndex": 0, "label": "óculos", "emoji": "👓" },
+        { "categoryIndex": 0, "label": "caderno", "emoji": "📓" },
+        { "categoryIndex": 0, "label": "brinquedo", "emoji": "🧸" },
+        { "categoryIndex": 1, "label": "mesa", "emoji": "🍽️" },
+        { "categoryIndex": 1, "label": "bolso", "emoji": "👖" },
+        { "categoryIndex": 1, "label": "mochila", "emoji": "🎒" },
+        { "categoryIndex": 1, "label": "cama", "emoji": "🛏️" },
+        { "categoryIndex": 1, "label": "prateleira", "emoji": "🗄️" }
+      ],
+      "clues": [
+        { "text": "👓 Os óculos estão na mesa.", "clueType": "positive" },
+        { "text": "📱 O celular está no bolso.", "clueType": "positive" },
+        { "text": "🔑 A chave não está na cama.", "clueType": "negative" },
+        { "text": "📓 O caderno está na mochila.", "clueType": "positive" }
+      ],
+      "solution": [
+        { "rowItemLabel": "celular", "colItemLabel": "mesa", "value": "NO" },
+        { "rowItemLabel": "celular", "colItemLabel": "bolso", "value": "YES" },
+        { "rowItemLabel": "celular", "colItemLabel": "mochila", "value": "NO" },
+        { "rowItemLabel": "celular", "colItemLabel": "cama", "value": "NO" },
+        { "rowItemLabel": "celular", "colItemLabel": "prateleira", "value": "NO" },
+
+        { "rowItemLabel": "chave", "colItemLabel": "mesa", "value": "NO" },
+        { "rowItemLabel": "chave", "colItemLabel": "bolso", "value": "NO" },
+        { "rowItemLabel": "chave", "colItemLabel": "mochila", "value": "NO" },
+        { "rowItemLabel": "chave", "colItemLabel": "cama", "value": "NO" },
+        { "rowItemLabel": "chave", "colItemLabel": "prateleira", "value": "YES" },
+
+        { "rowItemLabel": "óculos", "colItemLabel": "mesa", "value": "YES" },
+        { "rowItemLabel": "óculos", "colItemLabel": "bolso", "value": "NO" },
+        { "rowItemLabel": "óculos", "colItemLabel": "mochila", "value": "NO" },
+        { "rowItemLabel": "óculos", "colItemLabel": "cama", "value": "NO" },
+        { "rowItemLabel": "óculos", "colItemLabel": "prateleira", "value": "NO" },
+
+        { "rowItemLabel": "caderno", "colItemLabel": "mesa", "value": "NO" },
+        { "rowItemLabel": "caderno", "colItemLabel": "bolso", "value": "NO" },
+        { "rowItemLabel": "caderno", "colItemLabel": "mochila", "value": "YES" },
+        { "rowItemLabel": "caderno", "colItemLabel": "cama", "value": "NO" },
+        { "rowItemLabel": "caderno", "colItemLabel": "prateleira", "value": "NO" },
+
+        { "rowItemLabel": "brinquedo", "colItemLabel": "mesa", "value": "NO" },
+        { "rowItemLabel": "brinquedo", "colItemLabel": "bolso", "value": "NO" },
+        { "rowItemLabel": "brinquedo", "colItemLabel": "mochila", "value": "NO" },
+        { "rowItemLabel": "brinquedo", "colItemLabel": "cama", "value": "YES" },
+        { "rowItemLabel": "brinquedo", "colItemLabel": "prateleira", "value": "NO" }
+      ],
+      "grammarNote": "Use \"está\" com lugares: \"Os óculos estão na mesa\" e \"O celular está no bolso\". Para negar, use \"não está/estão\": \"A chave não está na cama\"."
+    },
+    {
+      "title": "Pessoas e objetos (1)",
+      "themeSlug": "Pessoas",
+      "levelCode": "PRE",
+      "languageCode": "pt",
+      "gridSize": 5,
+      "narrativeIntro": null,
+      "grammarFocus": ["substantivos", "verbo ter", "posse simples"],
+      "categories": [
+        { "label": "Pessoas", "emoji": "👥", "order": 0 },
+        { "label": "Objetos", "emoji": "📦", "order": 1 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Ana", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Bruno", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Carla", "emoji": "👩‍🦱" },
+        { "categoryIndex": 0, "label": "Diego", "emoji": "👨‍🦱" },
+        { "categoryIndex": 0, "label": "Elisa", "emoji": "👩‍🦱" },
+        { "categoryIndex": 1, "label": "celular", "emoji": "📱" },
+        { "categoryIndex": 1, "label": "livro", "emoji": "📘" },
+        { "categoryIndex": 1, "label": "garrafa", "emoji": "🧴" },
+        { "categoryIndex": 1, "label": "chave", "emoji": "🔑" },
+        { "categoryIndex": 1, "label": "boné", "emoji": "🧢" }
+      ],
+      "clues": [
+        { "text": "👩 A Ana tem um livro.", "clueType": "positive" },
+        { "text": "👨 O Bruno tem um celular.", "clueType": "positive" },
+        { "text": "👨‍🦱 O Diego tem uma garrafa.", "clueType": "positive" },
+        { "text": "👩‍🦱 A Carla não tem um boné.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "rowItemLabel": "Ana", "colItemLabel": "celular", "value": "NO" },
+        { "rowItemLabel": "Ana", "colItemLabel": "livro", "value": "YES" },
+        { "rowItemLabel": "Ana", "colItemLabel": "garrafa", "value": "NO" },
+        { "rowItemLabel": "Ana", "colItemLabel": "chave", "value": "NO" },
+        { "rowItemLabel": "Ana", "colItemLabel": "boné", "value": "NO" },
+
+        { "rowItemLabel": "Bruno", "colItemLabel": "celular", "value": "YES" },
+        { "rowItemLabel": "Bruno", "colItemLabel": "livro", "value": "NO" },
+        { "rowItemLabel": "Bruno", "colItemLabel": "garrafa", "value": "NO" },
+        { "rowItemLabel": "Bruno", "colItemLabel": "chave", "value": "NO" },
+        { "rowItemLabel": "Bruno", "colItemLabel": "boné", "value": "NO" },
+
+        { "rowItemLabel": "Carla", "colItemLabel": "celular", "value": "NO" },
+        { "rowItemLabel": "Carla", "colItemLabel": "livro", "value": "NO" },
+        { "rowItemLabel": "Carla", "colItemLabel": "garrafa", "value": "NO" },
+        { "rowItemLabel": "Carla", "colItemLabel": "chave", "value": "YES" },
+        { "rowItemLabel": "Carla", "colItemLabel": "boné", "value": "NO" },
+
+        { "rowItemLabel": "Diego", "colItemLabel": "celular", "value": "NO" },
+        { "rowItemLabel": "Diego", "colItemLabel": "livro", "value": "NO" },
+        { "rowItemLabel": "Diego", "colItemLabel": "garrafa", "value": "YES" },
+        { "rowItemLabel": "Diego", "colItemLabel": "chave", "value": "NO" },
+        { "rowItemLabel": "Diego", "colItemLabel": "boné", "value": "NO" },
+
+        { "rowItemLabel": "Elisa", "colItemLabel": "celular", "value": "NO" },
+        { "rowItemLabel": "Elisa", "colItemLabel": "livro", "value": "NO" },
+        { "rowItemLabel": "Elisa", "colItemLabel": "garrafa", "value": "NO" },
+        { "rowItemLabel": "Elisa", "colItemLabel": "chave", "value": "NO" },
+        { "rowItemLabel": "Elisa", "colItemLabel": "boné", "value": "YES" }
+      ],
+      "grammarNote": "Use \"tem\" para posse: \"A Ana tem um livro\". Para negar, use \"não tem\": \"A Carla não tem um boné\". Estrutura: sujeito + \"tem\" (ou \"não tem\") + objeto."
+    },
+    {
+      "title": "Pessoas e animais (1)",
+      "themeSlug": "Pessoas",
+      "levelCode": "PRE",
+      "languageCode": "pt",
+      "gridSize": 5,
+      "narrativeIntro": null,
+      "grammarFocus": ["substantivos", "verbo ter", "posse simples"],
+      "categories": [
+        { "label": "Pessoas", "emoji": "👥", "order": 0 },
+        { "label": "Animais", "emoji": "🐾", "order": 1 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "João", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Maria", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Pedro", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Luiza", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Tiago", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "gato", "emoji": "🐱" },
+        { "categoryIndex": 1, "label": "cachorro", "emoji": "🐶" },
+        { "categoryIndex": 1, "label": "peixe", "emoji": "🐟" },
+        { "categoryIndex": 1, "label": "pássaro", "emoji": "🐦" },
+        { "categoryIndex": 1, "label": "tartaruga", "emoji": "🐢" }
+      ],
+      "clues": [
+        { "text": "👩 A Maria tem um gato.", "clueType": "positive" },
+        { "text": "👨 O Pedro tem um pássaro.", "clueType": "positive" },
+        { "text": "👨 O Tiago tem um peixe.", "clueType": "positive" },
+        { "text": "👨 O João não tem uma tartaruga.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "rowItemLabel": "João", "colItemLabel": "gato", "value": "NO" },
+        { "rowItemLabel": "João", "colItemLabel": "cachorro", "value": "YES" },
+        { "rowItemLabel": "João", "colItemLabel": "peixe", "value": "NO" },
+        { "rowItemLabel": "João", "colItemLabel": "pássaro", "value": "NO" },
+        { "rowItemLabel": "João", "colItemLabel": "tartaruga", "value": "NO" },
+
+        { "rowItemLabel": "Maria", "colItemLabel": "gato", "value": "YES" },
+        { "rowItemLabel": "Maria", "colItemLabel": "cachorro", "value": "NO" },
+        { "rowItemLabel": "Maria", "colItemLabel": "peixe", "value": "NO" },
+        { "rowItemLabel": "Maria", "colItemLabel": "pássaro", "value": "NO" },
+        { "rowItemLabel": "Maria", "colItemLabel": "tartaruga", "value": "NO" },
+
+        { "rowItemLabel": "Pedro", "colItemLabel": "gato", "value": "NO" },
+        { "rowItemLabel": "Pedro", "colItemLabel": "cachorro", "value": "NO" },
+        { "rowItemLabel": "Pedro", "colItemLabel": "peixe", "value": "NO" },
+        { "rowItemLabel": "Pedro", "colItemLabel": "pássaro", "value": "YES" },
+        { "rowItemLabel": "Pedro", "colItemLabel": "tartaruga", "value": "NO" },
+
+        { "rowItemLabel": "Luiza", "colItemLabel": "gato", "value": "NO" },
+        { "rowItemLabel": "Luiza", "colItemLabel": "cachorro", "value": "NO" },
+        { "rowItemLabel": "Luiza", "colItemLabel": "peixe", "value": "NO" },
+        { "rowItemLabel": "Luiza", "colItemLabel": "pássaro", "value": "NO" },
+        { "rowItemLabel": "Luiza", "colItemLabel": "tartaruga", "value": "YES" },
+
+        { "rowItemLabel": "Tiago", "colItemLabel": "gato", "value": "NO" },
+        { "rowItemLabel": "Tiago", "colItemLabel": "cachorro", "value": "NO" },
+        { "rowItemLabel": "Tiago", "colItemLabel": "peixe", "value": "YES" },
+        { "rowItemLabel": "Tiago", "colItemLabel": "pássaro", "value": "NO" },
+        { "rowItemLabel": "Tiago", "colItemLabel": "tartaruga", "value": "NO" }
+      ],
+      "grammarNote": "Use \"tem\" para dizer posse: \"A Maria tem um gato\". Para negar, use \"não tem\": \"O João não tem um peixe\". Padrão: sujeito + \"tem\" (ou \"não tem\") + coisa."
+    },
+    {
+      "title": "Comida e pessoas (1)",
+      "themeSlug": "Comida",
+      "levelCode": "PRE",
+      "languageCode": "pt",
+      "gridSize": 5,
+      "narrativeIntro": null,
+      "grammarFocus": ["posse simples", "verbo ser", "preposição de"],
+      "categories": [
+        { "label": "Comidas", "emoji": "🍽️", "order": 0 },
+        { "label": "Pessoas", "emoji": "👥", "order": 1 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "pizza", "emoji": "🍕" },
+        { "categoryIndex": 0, "label": "sopa", "emoji": "🍲" },
+        { "categoryIndex": 0, "label": "salada", "emoji": "🥗" },
+        { "categoryIndex": 0, "label": "bolo", "emoji": "🍰" },
+        { "categoryIndex": 0, "label": "sanduíche", "emoji": "🥪" },
+        { "categoryIndex": 1, "label": "Lia", "emoji": "👩" },
+        { "categoryIndex": 1, "label": "Neto", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "Rafa", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "Sora", "emoji": "👩" },
+        { "categoryIndex": 1, "label": "Tom", "emoji": "👨" }
+      ],
+      "clues": [
+        { "text": "🍕 A pizza é da Lia.", "clueType": "positive" },
+        { "text": "🥗 A salada é do Neto.", "clueType": "positive" },
+        { "text": "🥪 O sanduíche é do Rafa.", "clueType": "positive" },
+        { "text": "🍲 A sopa não é da Sora.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "rowItemLabel": "pizza", "colItemLabel": "Lia", "value": "YES" },
+        { "rowItemLabel": "pizza", "colItemLabel": "Neto", "value": "NO" },
+        { "rowItemLabel": "pizza", "colItemLabel": "Rafa", "value": "NO" },
+        { "rowItemLabel": "pizza", "colItemLabel": "Sora", "value": "NO" },
+        { "rowItemLabel": "pizza", "colItemLabel": "Tom", "value": "NO" },
+
+        { "rowItemLabel": "sopa", "colItemLabel": "Lia", "value": "NO" },
+        { "rowItemLabel": "sopa", "colItemLabel": "Neto", "value": "NO" },
+        { "rowItemLabel": "sopa", "colItemLabel": "Rafa", "value": "NO" },
+        { "rowItemLabel": "sopa", "colItemLabel": "Sora", "value": "NO" },
+        { "rowItemLabel": "sopa", "colItemLabel": "Tom", "value": "YES" },
+
+        { "rowItemLabel": "salada", "colItemLabel": "Lia", "value": "NO" },
+        { "rowItemLabel": "salada", "colItemLabel": "Neto", "value": "YES" },
+        { "rowItemLabel": "salada", "colItemLabel": "Rafa", "value": "NO" },
+        { "rowItemLabel": "salada", "colItemLabel": "Sora", "value": "NO" },
+        { "rowItemLabel": "salada", "colItemLabel": "Tom", "value": "NO" },
+
+        { "rowItemLabel": "bolo", "colItemLabel": "Lia", "value": "NO" },
+        { "rowItemLabel": "bolo", "colItemLabel": "Neto", "value": "NO" },
+        { "rowItemLabel": "bolo", "colItemLabel": "Rafa", "value": "NO" },
+        { "rowItemLabel": "bolo", "colItemLabel": "Sora", "value": "YES" },
+        { "rowItemLabel": "bolo", "colItemLabel": "Tom", "value": "NO" },
+
+        { "rowItemLabel": "sanduíche", "colItemLabel": "Lia", "value": "NO" },
+        { "rowItemLabel": "sanduíche", "colItemLabel": "Neto", "value": "NO" },
+        { "rowItemLabel": "sanduíche", "colItemLabel": "Rafa", "value": "YES" },
+        { "rowItemLabel": "sanduíche", "colItemLabel": "Sora", "value": "NO" },
+        { "rowItemLabel": "sanduíche", "colItemLabel": "Tom", "value": "NO" }
+      ],
+      "grammarNote": "Para indicar posse simples, use \"é de\": \"A pizza é da Lia\". Para negar, use \"não é de\": \"A sopa não é da Lia\". Estrutura: coisa + \"é (não é) de\" + pessoa."
+    },
+    {
+      "title": "Roupas e cores (1)",
+      "themeSlug": "Roupas",
+      "levelCode": "PRE",
+      "languageCode": "pt",
+      "gridSize": 5,
+      "narrativeIntro": null,
+      "grammarFocus": ["substantivos", "adjetivos", "verbo ser"],
+      "categories": [
+        { "label": "Roupas", "emoji": "👗", "order": 0 },
+        { "label": "Cores", "emoji": "🎨", "order": 1 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "camisa", "emoji": "👕" },
+        { "categoryIndex": 0, "label": "calça", "emoji": "👖" },
+        { "categoryIndex": 0, "label": "vestido", "emoji": "👗" },
+        { "categoryIndex": 0, "label": "boné", "emoji": "🧢" },
+        { "categoryIndex": 0, "label": "sapato", "emoji": "👟" },
+        { "categoryIndex": 1, "label": "vermelho", "emoji": "🔴" },
+        { "categoryIndex": 1, "label": "azul", "emoji": "🔵" },
+        { "categoryIndex": 1, "label": "preto", "emoji": "⬛" },
+        { "categoryIndex": 1, "label": "branco", "emoji": "⚪" },
+        { "categoryIndex": 1, "label": "verde", "emoji": "🟢" }
+      ],
+      "clues": [
+        { "text": "👗 O vestido é vermelho.", "clueType": "positive" },
+        { "text": "👖 A calça é preta.", "clueType": "positive" },
+        { "text": "🧢 O boné é verde.", "clueType": "positive" },
+        { "text": "👕 A camisa não é azul.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "rowItemLabel": "camisa", "colItemLabel": "vermelho", "value": "NO" },
+        { "rowItemLabel": "camisa", "colItemLabel": "azul", "value": "NO" },
+        { "rowItemLabel": "camisa", "colItemLabel": "preto", "value": "NO" },
+        { "rowItemLabel": "camisa", "colItemLabel": "branco", "value": "YES" },
+        { "rowItemLabel": "camisa", "colItemLabel": "verde", "value": "NO" },
+
+        { "rowItemLabel": "calça", "colItemLabel": "vermelho", "value": "NO" },
+        { "rowItemLabel": "calça", "colItemLabel": "azul", "value": "NO" },
+        { "rowItemLabel": "calça", "colItemLabel": "preto", "value": "YES" },
+        { "rowItemLabel": "calça", "colItemLabel": "branco", "value": "NO" },
+        { "rowItemLabel": "calça", "colItemLabel": "verde", "value": "NO" },
+
+        { "rowItemLabel": "vestido", "colItemLabel": "vermelho", "value": "YES" },
+        { "rowItemLabel": "vestido", "colItemLabel": "azul", "value": "NO" },
+        { "rowItemLabel": "vestido", "colItemLabel": "preto", "value": "NO" },
+        { "rowItemLabel": "vestido", "colItemLabel": "branco", "value": "NO" },
+        { "rowItemLabel": "vestido", "colItemLabel": "verde", "value": "NO" },
+
+        { "rowItemLabel": "boné", "colItemLabel": "vermelho", "value": "NO" },
+        { "rowItemLabel": "boné", "colItemLabel": "azul", "value": "NO" },
+        { "rowItemLabel": "boné", "colItemLabel": "preto", "value": "NO" },
+        { "rowItemLabel": "boné", "colItemLabel": "branco", "value": "NO" },
+        { "rowItemLabel": "boné", "colItemLabel": "verde", "value": "YES" },
+
+        { "rowItemLabel": "sapato", "colItemLabel": "vermelho", "value": "NO" },
+        { "rowItemLabel": "sapato", "colItemLabel": "azul", "value": "YES" },
+        { "rowItemLabel": "sapato", "colItemLabel": "preto", "value": "NO" },
+        { "rowItemLabel": "sapato", "colItemLabel": "branco", "value": "NO" },
+        { "rowItemLabel": "sapato", "colItemLabel": "verde", "value": "NO" }
+      ],
+      "grammarNote": "Use \"é\" para ligar roupa e cor: \"A calça é preta\". Para negar, use \"não é\": \"A camisa não é verde\". Em português, a cor pode variar: \"preto/preta\"; no jogo, o rótulo aparece na forma básica."
+    },
+    {
+      "title": "Profissões e lugares (1)",
+      "themeSlug": "Profissões",
+      "levelCode": "PRE",
+      "languageCode": "pt",
+      "gridSize": 5,
+      "narrativeIntro": null,
+      "grammarFocus": ["substantivos", "profissões", "verbo trabalhar"],
+      "categories": [
+        { "label": "Profissões", "emoji": "💼", "order": 0 },
+        { "label": "Lugares", "emoji": "🗺️", "order": 1 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "médico", "emoji": "🩺" },
+        { "categoryIndex": 0, "label": "professor", "emoji": "🧑‍🏫" },
+        { "categoryIndex": 0, "label": "artista", "emoji": "🎨" },
+        { "categoryIndex": 0, "label": "cozinheiro", "emoji": "🍳" },
+        { "categoryIndex": 0, "label": "engenheiro", "emoji": "🔧" },
+        { "categoryIndex": 1, "label": "hospital", "emoji": "🏥" },
+        { "categoryIndex": 1, "label": "escola", "emoji": "🏫" },
+        { "categoryIndex": 1, "label": "estúdio", "emoji": "🎭" },
+        { "categoryIndex": 1, "label": "restaurante", "emoji": "🍽️" },
+        { "categoryIndex": 1, "label": "obra", "emoji": "🏗️" }
+      ],
+      "clues": [
+        { "text": "🩺 O médico trabalha no hospital.", "clueType": "positive" },
+        { "text": "🧑‍🏫 O professor trabalha na escola.", "clueType": "positive" },
+        { "text": "🎨 O artista trabalha no estúdio.", "clueType": "positive" },
+        { "text": "🍳 O cozinheiro não trabalha na obra.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "rowItemLabel": "médico", "colItemLabel": "hospital", "value": "YES" },
+        { "rowItemLabel": "médico", "colItemLabel": "escola", "value": "NO" },
+        { "rowItemLabel": "médico", "colItemLabel": "estúdio", "value": "NO" },
+        { "rowItemLabel": "médico", "colItemLabel": "restaurante", "value": "NO" },
+        { "rowItemLabel": "médico", "colItemLabel": "obra", "value": "NO" },
+
+        { "rowItemLabel": "professor", "colItemLabel": "hospital", "value": "NO" },
+        { "rowItemLabel": "professor", "colItemLabel": "escola", "value": "YES" },
+        { "rowItemLabel": "professor", "colItemLabel": "estúdio", "value": "NO" },
+        { "rowItemLabel": "professor", "colItemLabel": "restaurante", "value": "NO" },
+        { "rowItemLabel": "professor", "colItemLabel": "obra", "value": "NO" },
+
+        { "rowItemLabel": "artista", "colItemLabel": "hospital", "value": "NO" },
+        { "rowItemLabel": "artista", "colItemLabel": "escola", "value": "NO" },
+        { "rowItemLabel": "artista", "colItemLabel": "estúdio", "value": "YES" },
+        { "rowItemLabel": "artista", "colItemLabel": "restaurante", "value": "NO" },
+        { "rowItemLabel": "artista", "colItemLabel": "obra", "value": "NO" },
+
+        { "rowItemLabel": "cozinheiro", "colItemLabel": "hospital", "value": "NO" },
+        { "rowItemLabel": "cozinheiro", "colItemLabel": "escola", "value": "NO" },
+        { "rowItemLabel": "cozinheiro", "colItemLabel": "estúdio", "value": "NO" },
+        { "rowItemLabel": "cozinheiro", "colItemLabel": "restaurante", "value": "YES" },
+        { "rowItemLabel": "cozinheiro", "colItemLabel": "obra", "value": "NO" },
+
+        { "rowItemLabel": "engenheiro", "colItemLabel": "hospital", "value": "NO" },
+        { "rowItemLabel": "engenheiro", "colItemLabel": "escola", "value": "NO" },
+        { "rowItemLabel": "engenheiro", "colItemLabel": "estúdio", "value": "NO" },
+        { "rowItemLabel": "engenheiro", "colItemLabel": "restaurante", "value": "NO" },
+        { "rowItemLabel": "engenheiro", "colItemLabel": "obra", "value": "YES" }
+      ],
+      "grammarNote": "Use \"trabalha\" para ligar profissão e lugar: \"O médico trabalha no hospital\". Para negar, use \"não trabalha\": \"O cozinheiro não trabalha na obra\". Note as preposições: \"no\" antes de lugar masculino (hospital, estúdio, restaurante) e \"na\" antes de lugar feminino (escola, obra)."
+    },
+    {
+      "title": "Pessoas e dias da semana (1)",
+      "themeSlug": "Pessoas",
+      "levelCode": "PRE",
+      "languageCode": "pt",
+      "gridSize": 5,
+      "narrativeIntro": null,
+      "grammarFocus": ["substantivos", "datas simples", "verbo ser"],
+      "categories": [
+        { "label": "Pessoas", "emoji": "👥", "order": 0 },
+        { "label": "Dias da semana", "emoji": "🗓️", "order": 1 }
+      ],
+      "items": [
+        { "categoryIndex": 0, "label": "Fábio", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Gabi", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Hugo", "emoji": "👨" },
+        { "categoryIndex": 0, "label": "Isa", "emoji": "👩" },
+        { "categoryIndex": 0, "label": "Leo", "emoji": "👨" },
+        { "categoryIndex": 1, "label": "segunda", "emoji": "1️⃣" },
+        { "categoryIndex": 1, "label": "terça", "emoji": "2️⃣" },
+        { "categoryIndex": 1, "label": "quarta", "emoji": "3️⃣" },
+        { "categoryIndex": 1, "label": "quinta", "emoji": "4️⃣" },
+        { "categoryIndex": 1, "label": "sexta", "emoji": "5️⃣" }
+      ],
+      "clues": [
+        { "text": "👨 O dia do Fábio é quarta.", "clueType": "positive" },
+        { "text": "👩 O dia da Gabi é segunda.", "clueType": "positive" },
+        { "text": "👩 O dia da Isa é quinta.", "clueType": "positive" },
+        { "text": "👨 O dia do Hugo não é terça.", "clueType": "negative" }
+      ],
+      "solution": [
+        { "rowItemLabel": "Fábio", "colItemLabel": "segunda", "value": "NO" },
+        { "rowItemLabel": "Fábio", "colItemLabel": "terça", "value": "NO" },
+        { "rowItemLabel": "Fábio", "colItemLabel": "quarta", "value": "YES" },
+        { "rowItemLabel": "Fábio", "colItemLabel": "quinta", "value": "NO" },
+        { "rowItemLabel": "Fábio", "colItemLabel": "sexta", "value": "NO" },
+
+        { "rowItemLabel": "Gabi", "colItemLabel": "segunda", "value": "YES" },
+        { "rowItemLabel": "Gabi", "colItemLabel": "terça", "value": "NO" },
+        { "rowItemLabel": "Gabi", "colItemLabel": "quarta", "value": "NO" },
+        { "rowItemLabel": "Gabi", "colItemLabel": "quinta", "value": "NO" },
+        { "rowItemLabel": "Gabi", "colItemLabel": "sexta", "value": "NO" },
+
+        { "rowItemLabel": "Hugo", "colItemLabel": "segunda", "value": "NO" },
+        { "rowItemLabel": "Hugo", "colItemLabel": "terça", "value": "NO" },
+        { "rowItemLabel": "Hugo", "colItemLabel": "quarta", "value": "NO" },
+        { "rowItemLabel": "Hugo", "colItemLabel": "quinta", "value": "NO" },
+        { "rowItemLabel": "Hugo", "colItemLabel": "sexta", "value": "YES" },
+
+        { "rowItemLabel": "Isa", "colItemLabel": "segunda", "value": "NO" },
+        { "rowItemLabel": "Isa", "colItemLabel": "terça", "value": "NO" },
+        { "rowItemLabel": "Isa", "colItemLabel": "quarta", "value": "NO" },
+        { "rowItemLabel": "Isa", "colItemLabel": "quinta", "value": "YES" },
+        { "rowItemLabel": "Isa", "colItemLabel": "sexta", "value": "NO" },
+
+        { "rowItemLabel": "Leo", "colItemLabel": "segunda", "value": "NO" },
+        { "rowItemLabel": "Leo", "colItemLabel": "terça", "value": "YES" },
+        { "rowItemLabel": "Leo", "colItemLabel": "quarta", "value": "NO" },
+        { "rowItemLabel": "Leo", "colItemLabel": "quinta", "value": "NO" },
+        { "rowItemLabel": "Leo", "colItemLabel": "sexta", "value": "NO" }
+      ],
+      "grammarNote": "Para ligar pessoa e dia, use \"é\": \"O dia do Fábio é quarta\" e \"O dia da Gabi é segunda\". Para negar, use \"não é\": \"O dia do Hugo não é terça\". Estrutura: \"o dia de + nome + é (não é) + dia\"."
+    }
+  ]
+}
+

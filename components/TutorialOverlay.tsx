@@ -69,7 +69,7 @@ const T2_CLUES = [
 type StepAction = "ok" | "interact" | "freeSolve";
 
 interface TutorialStep {
-  text: string;
+  text: React.ReactNode;
   action: StepAction;
   targetA?: string;
   targetB?: string;
@@ -83,7 +83,7 @@ const T1_STEPS: TutorialStep[] = [
     action: "ok",
   },
   {
-    text: "The first clue says 🐱 The cat is red. Click the cell where cat meets red to mark it as YES. (Hint: first click = ✗, second click = ✓)",
+    text: <>The first clue says 🐱 The cat is red. Click the cell where <strong>🐱 cat</strong> meets <strong>🔴 red</strong> — click once to mark ✗ (NO), click again to mark ✓ (YES). Mark it as YES.</>,
     action: "interact",
     targetA: "t1-a-cat",
     targetB: "t1-c-red",
@@ -95,7 +95,7 @@ const T1_STEPS: TutorialStep[] = [
     action: "ok",
   },
   {
-    text: "The second clue says 🐶 The dog is not green. Click dog × green to mark it as NO.",
+    text: <>The second clue says 🐶 The dog is not green. Click the cell where <strong>🐶 dog</strong> meets <strong>🟢 green</strong> to mark it as NO (one click).</>,
     action: "interact",
     targetA: "t1-a-dog",
     targetB: "t1-c-green",
@@ -103,7 +103,7 @@ const T1_STEPS: TutorialStep[] = [
     activeClue: 1,
   },
   {
-    text: "The dog is not green and not red — it must be blue! Click dog × blue to confirm.",
+    text: <>The dog is not green and not red — it must be blue! Click the cell where <strong>🐶 dog</strong> meets <strong>🔵 blue</strong> to mark it as YES.</>,
     action: "interact",
     targetA: "t1-a-dog",
     targetB: "t1-c-blue",
@@ -111,7 +111,7 @@ const T1_STEPS: TutorialStep[] = [
     activeClue: 1,
   },
   {
-    text: "Only green is left for the bird. Click bird × green to finish the puzzle!",
+    text: <>Only green is left for the bird. Click the cell where <strong>🐦 bird</strong> meets <strong>🟢 green</strong> to finish the puzzle!</>,
     action: "interact",
     targetA: "t1-a-bird",
     targetB: "t1-c-green",
@@ -126,7 +126,7 @@ const T2_STEPS: TutorialStep[] = [
     action: "ok",
   },
   {
-    text: "The first clue says 🐶 The dog is red. Mark dog × red as YES.",
+    text: <>The first clue says 🐶 The dog is red. Click the cell where <strong>🐶 dog</strong> meets <strong>🔴 red</strong> and mark it as YES.</>,
     action: "interact",
     targetA: "t2-a-dog",
     targetB: "t2-c-red",
@@ -134,7 +134,7 @@ const T2_STEPS: TutorialStep[] = [
     activeClue: 0,
   },
   {
-    text: "The second clue: 🔵 The blue animal lives in the water. Mark blue × water!",
+    text: <>The second clue: 🔵 The blue animal lives in the water. Click the cell where <strong>🔵 blue</strong> meets <strong>💧 water</strong> and mark it as YES.</>,
     action: "interact",
     targetA: "t2-c-blue",
     targetB: "t2-h-water",
@@ -142,7 +142,7 @@ const T2_STEPS: TutorialStep[] = [
     activeClue: 1,
   },
   {
-    text: "The third clue: 🐦 The bird lives in the tree. Mark bird × tree!",
+    text: <>The third clue: 🐦 The bird lives in the tree. Click the cell where <strong>🐦 bird</strong> meets <strong>🌳 tree</strong> and mark it as YES.</>,
     action: "interact",
     targetA: "t2-a-bird",
     targetB: "t2-h-tree",
@@ -150,7 +150,7 @@ const T2_STEPS: TutorialStep[] = [
     activeClue: 2,
   },
   {
-    text: "Bird lives in the tree — not in the water. Blue lives in water. So bird is NOT blue. Mark bird × blue as NO.",
+    text: <>Bird lives in the tree — not in the water. Blue lives in water. So bird is NOT blue. Click the cell where <strong>🐦 bird</strong> meets <strong>🔵 blue</strong> and mark it as NO.</>,
     action: "interact",
     targetA: "t2-a-bird",
     targetB: "t2-c-blue",
@@ -158,7 +158,7 @@ const T2_STEPS: TutorialStep[] = [
     activeClue: 2,
   },
   {
-    text: "Dog is red — so dog is not blue either. The only animal left for blue is cat! Mark cat × blue as YES.",
+    text: <>Dog is red — so dog is not blue either. The only animal left for blue is cat! Click the cell where <strong>🐱 cat</strong> meets <strong>🔵 blue</strong> and mark it as YES.</>,
     action: "interact",
     targetA: "t2-a-cat",
     targetB: "t2-c-blue",
@@ -166,7 +166,7 @@ const T2_STEPS: TutorialStep[] = [
     activeClue: 0,
   },
   {
-    text: "Cat is blue. Blue lives in water. So cat lives in water! Mark cat × water.",
+    text: <>Cat is blue. Blue lives in water. So cat lives in water! Click the cell where <strong>🐱 cat</strong> meets <strong>💧 water</strong> and mark it as YES.</>,
     action: "interact",
     targetA: "t2-a-cat",
     targetB: "t2-h-water",
